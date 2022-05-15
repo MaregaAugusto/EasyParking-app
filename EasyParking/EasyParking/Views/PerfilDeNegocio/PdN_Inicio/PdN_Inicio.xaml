@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:views="clr-namespace:EasyParking.Components" xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms"
+             x:Class="EasyParking.Views.PerfilDeNegocio.PdN_Inicio.PdN_Inicio" >
+
+    <NavigationPage.TitleView>
+        <views:NavBar x:Name="navBar" Title="Perfil de negocio"   IsVisibleBoxSearch="False" IsVisibleFavoritos="False" Margin="0,0,10,0"  />
+    </NavigationPage.TitleView>
+
+
+    <ContentPage.Content>
+        <StackLayout Padding="10" >
+            <syncfusion:SfListView x:Name="lwlistado" AllowSwiping="True" ItemTapped="lwlistado_ItemTapped" IsScrollingEnabled="False" AutoFitMode="DynamicHeight"
+                      VerticalOptions="FillAndExpand"  SelectionMode="None">
+                <syncfusion:SfListView.LayoutManager>
+                    <syncfusion:GridLayout SpanCount="1" />
+                </syncfusion:SfListView.LayoutManager>
+                <syncfusion:SfListView.ItemTemplate>
+
+                    <DataTemplate>
+                        <ViewCell>
+                            <views:Card_MenuItem x:Name="Card_MenuItem" BorderContent_BackgroundColor="{StaticResource Color2}" FrameCantidad_BackgroundColor="{StaticResource Color2}"
+                                                 LabelDescripciond_TextColor="Black" BorderContent_BorderColor="{StaticResource Color2}"
+                                                 LabelCantidad_TextColor="Black" LabelSub_Descripciond_TextColor="Black" FrameCantidad_BorderColor="Black"/>
+
+
+
+                        </ViewCell>
+                    </DataTemplate>
+                </syncfusion:SfListView.ItemTemplate>
+
+            </syncfusion:SfListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

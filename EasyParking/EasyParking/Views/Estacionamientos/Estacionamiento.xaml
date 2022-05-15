@@ -1,0 +1,322 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+                          xmlns:ListCollection="clr-namespace:System.Collections.Generic;assembly=netstandard" 
+
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:custom="clr-namespace:EasyParking.Custom" xmlns:inputLayout="clr-namespace:Syncfusion.XForms.TextInputLayout;assembly=Syncfusion.Core.XForms" xmlns:syncfusion="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms" xmlns:views="clr-namespace:EasyParking.Components" xmlns:combobox="clr-namespace:Syncfusion.XForms.ComboBox;assembly=Syncfusion.SfComboBox.XForms"
+             x:Class="EasyParking.Views.Estacionamientos.Estacionamiento">
+
+    <NavigationPage.TitleView>
+        <views:NavBar x:Name="navBar" Title="Nuevo Estacionamiento"   IsVisibleBoxSearch="False" IsVisibleFavoritos="False" Margin="0,0,0,0"  />
+    </NavigationPage.TitleView>
+    
+    <AbsoluteLayout  AbsoluteLayout.LayoutBounds="0,0,1,1" AbsoluteLayout.LayoutFlags="All">
+        <ScrollView  AbsoluteLayout.LayoutBounds="0,0,1,1" AbsoluteLayout.LayoutFlags="All">
+            <StackLayout Padding="10,10,10,10" Spacing="10" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+
+                <AbsoluteLayout HorizontalOptions="FillAndExpand"  HeightRequest="250">
+                    <ImageButton AbsoluteLayout.LayoutBounds="0,0,1,1" AbsoluteLayout.LayoutFlags="All" CornerRadius="3" BorderColor="Gray" BorderWidth="1.5" BackgroundColor="Transparent"/>
+
+                    <StackLayout AbsoluteLayout.LayoutBounds="0.5,0.5" AbsoluteLayout.LayoutFlags="PositionProportional">
+                        <Image Source="EmptyImage.png" HeightRequest="50" WidthRequest="50"/>
+                        <custom:CustomLabel  Text="Imagen del lugar" FontSize="16" TextColor="Gray"/>
+                    </StackLayout>
+
+                </AbsoluteLayout>
+
+                <Grid ColumnSpacing="10" RowSpacing="10">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+
+                    <syncfusion:SfButton Grid.Column="0" Grid.Row="0"  Text="Tomar foto" HorizontalOptions="FillAndExpand" HeightRequest="40"  
+                                         Padding="0" FontSize="14"
+                                         BorderColor="#2968C8" BorderWidth="1.5" TextColor="#2968C8" BackgroundColor="Transparent" 
+                                         VerticalTextAlignment="Center" HorizontalTextAlignment="Center"
+                                         CornerRadius="3" ShowIcon="True" ImageAlignment="Right" ImageSource="camera.png"   />
+
+
+                    <syncfusion:SfButton Grid.Column="1" Grid.Row="0" Text="Seleccionar foto" HorizontalOptions="FillAndExpand" HeightRequest="40" 
+                                         Padding="0"
+                                         FontSize="14" BorderColor="#2968C8" BorderWidth="1.5" TextColor="#2968C8" BackgroundColor="Transparent"  
+                                         VerticalTextAlignment="Center"  HorizontalTextAlignment="Center"
+                                         CornerRadius="3" ShowIcon="True" ImageAlignment="Right" ImageSource="upload.png"   />
+
+
+                </Grid>
+
+
+                <inputLayout:SfTextInputLayout FocusedColor="#2968C8"   ContainerType="Outlined" Hint="Nombre del lugar" BackgroundColor="Transparent" ContainerBackgroundColor="Transparent"  HorizontalOptions="FillAndExpand" VerticalOptions="Center"  HelperText="Obligatorio *">
+                    <custom:CustomEntry   Keyboard="Default" Placeholder="Ingrese el nombre" ClearButtonVisibility="WhileEditing" HorizontalOptions="FillAndExpand"/>
+                </inputLayout:SfTextInputLayout>
+
+
+                <inputLayout:SfTextInputLayout  FocusedColor="#2968C8"  ContainerType="Outlined" Hint="Dirección del lugar" BackgroundColor="Transparent" ContainerBackgroundColor="Transparent"  HorizontalOptions="FillAndExpand" VerticalOptions="Center"  HelperText="Obligatorio *">
+                    <custom:CustomEntry   Keyboard="Default" Placeholder="Ingrese la dirección" ClearButtonVisibility="WhileEditing" HorizontalOptions="FillAndExpand"/>
+                </inputLayout:SfTextInputLayout>
+
+                <Frame  CornerRadius="3" Padding="10,10,10,10" HasShadow="True"  BackgroundColor="White">
+                    <StackLayout>
+                        <custom:CustomLabel Text="Indique el tipo del lugar:"  FontAttributes="Bold" FontSize="16" TextColor="Black"/>
+
+                        <combobox:SfComboBox Margin="5,0,5,0" TextSize="16" Watermark="Tipo" VerticalOptions="Center" EnableAutoSize="True"  
+                                             HorizontalOptions="Fill" WatermarkColor="#0366D6"  DropDownHeaderViewHeight="30"
+                                             MaximumDropDownHeight="1000" IsEditableMode="false" x:Name="comboBoxTipoDeLugar" SelectionChanged="comboBoxTipoDeLugar_SelectionChanged" >
+                            <combobox:SfComboBox.ComboBoxSource>
+                                <ListCollection:List x:TypeArguments="x:String">
+                                    <x:String>Terreno al aire libre</x:String>
+                                    <x:String>Terreno parialmente cubierto</x:String>
+                                    <x:String>Galpón abierto</x:String>
+                                    <x:String>Galpón cerrado</x:String>
+                                    <x:String>Lugar bajo edificio</x:String>
+                                    <x:String>Casa</x:String>
+                                </ListCollection:List>
+                            </combobox:SfComboBox.ComboBoxSource>
+                        </combobox:SfComboBox>
+                    </StackLayout>
+                </Frame>
+
+                <Frame  CornerRadius="3" Padding="10" HasShadow="True"  BackgroundColor="White">
+                    <StackLayout Spacing="10">
+
+                        <custom:CustomLabel Text="Seleeccione el tipo de vehículo y la cantidad de ellos que puede guardar allí:" FontAttributes="Bold" FontSize="16" TextColor="Black"/>
+
+                        <Grid ColumnSpacing="0" RowSpacing="0">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*" />
+                                <RowDefinition Height="*" />
+                                <RowDefinition Height="*" />
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+
+                            <syncfusion:SfCheckBox Grid.Column="0" Grid.Row="0" x:Name="checkBoxAuto" PropertyChanged="checkBoxAuto_PropertyChanged" Text="Autos"  Margin="0,0,0,0" VerticalOptions="Center" FontSize="18"/>
+
+                            <inputLayout:SfTextInputLayout x:Name="entryCantidadAuto" FocusedColor="#2968C8"  Grid.Column="1" Grid.Row="0"   ContainerType="Outlined" Hint="Cantidad" Margin="0,0,0,0"   BackgroundColor="Transparent" ContainerBackgroundColor="Transparent" 
+                                                         HorizontalOptions="FillAndExpand"  VerticalOptions="Center"   HelperText="">
+
+                                <custom:CustomEntry   Keyboard="Numeric"     HorizontalOptions="FillAndExpand"/>
+
+                            </inputLayout:SfTextInputLayout>
+
+                            <syncfusion:SfCheckBox Grid.Column="0" Grid.Row="1" x:Name="checkBoxCamioneta" PropertyChanged="checkBoxCamioneta_PropertyChanged" Text="Camionetas"  Margin="0,0,0,0" VerticalOptions="Center" FontSize="18"/>
+
+                            <inputLayout:SfTextInputLayout x:Name="entryCantidadCamioneta" FocusedColor="#2968C8"  Grid.Column="1" Grid.Row="1"   ContainerType="Outlined" Hint="Cantidad"  BackgroundColor="Transparent" ContainerBackgroundColor="Transparent" 
+                                                         HorizontalOptions="FillAndExpand"  VerticalOptions="Center" Margin="0,0,0,0"  HelperText="">
+
+                                <custom:CustomEntry   Keyboard="Numeric"     HorizontalOptions="FillAndExpand"/>
+
+                            </inputLayout:SfTextInputLayout>
+
+                            <syncfusion:SfCheckBox Grid.Column="0" Grid.Row="2" x:Name="checkBoxMoto" PropertyChanged="checkBoxMoto_PropertyChanged" Text="Motos"  Margin="0,0,0,0" VerticalOptions="Center" FontSize="18"/>
+
+                            <inputLayout:SfTextInputLayout x:Name="entryCantidadMoto" FocusedColor="#2968C8"  Grid.Column="1" Grid.Row="2"   ContainerType="Outlined" Hint="Cantidad"   BackgroundColor="Transparent" ContainerBackgroundColor="Transparent" 
+                                                         HorizontalOptions="FillAndExpand"  VerticalOptions="Center" Margin="0,0,0,0" HelperText="">
+
+                                <custom:CustomEntry   Keyboard="Numeric"     HorizontalOptions="FillAndExpand"/>
+
+                            </inputLayout:SfTextInputLayout>
+                        </Grid>
+
+                    </StackLayout>
+                </Frame>
+
+                <Frame x:Name="frameTarifaAuto"  CornerRadius="3" Padding="10,10,10,10" HasShadow="True"  BackgroundColor="White">
+                    <Grid ColumnSpacing="10" RowSpacing="0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="*" />
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+
+                        <custom:CustomLabel  Grid.Column="0" Grid.Row="0" x:Name="labelTipoDeVehiculo" Text="Tarifa: Auto"  FontAttributes="Bold"  Margin="0,0,0,0" VerticalOptions="Center" FontSize="18"/>
+
+
+                        <inputLayout:SfTextInputLayout Grid.Column="0" Grid.Row="1"   ContainerType="Outlined" Hint="$ Hora"   BackgroundColor="Transparent" ContainerBackgroundColor="Transparent" 
+                                                         HorizontalOptions="FillAndExpand"  VerticalOptions="Center"  HelperText="Obligatorio *">
+
+                            <custom:CustomEntry   Keyboard="Numeric" Placeholder="Ingrese el monto"    HorizontalOptions="FillAndExpand"/>
+
+                        </inputLayout:SfTextInputLayout>
+                        <inputLayout:SfTextInputLayout  Grid.Column="1" Grid.Row="1"    ContainerType="Outlined" Hint="$ Día "   BackgroundColor="Transparent" ContainerBackgroundColor="Transparent" 
+                                                         HorizontalOptions="FillAndExpand"  VerticalOptions="Center"  HelperText="Opcional *">
+
+                            <custom:CustomEntry   Keyboard="Numeric"  Placeholder="Ingrese el monto"   HorizontalOptions="FillAndExpand"/>
+
+                        </inputLayout:SfTextInputLayout>
+
+                        <inputLayout:SfTextInputLayout Grid.Column="0" Grid.Row="2"   ContainerType="Outlined" Hint="$ Semana"   BackgroundColor="Transparent" ContainerBackgroundColor="Transparent" 
+                                                         HorizontalOptions="FillAndExpand"  VerticalOptions="Center"  HelperText="Obligatorio *">
+
+                            <custom:CustomEntry   Keyboard="Numeric" Placeholder="Ingrese el monto"    HorizontalOptions="FillAndExpand"/>
+
+                        </inputLayout:SfTextInputLayout>
+                        <inputLayout:SfTextInputLayout  Grid.Column="1" Grid.Row="2"  ContainerType="Outlined" Hint="$ Mes"   BackgroundColor="Transparent" ContainerBackgroundColor="Transparent" 
+                                                         HorizontalOptions="FillAndExpand"  VerticalOptions="Center"  HelperText="Opcional *">
+
+                            <custom:CustomEntry   Keyboard="Numeric"  Placeholder="Ingrese el monto"   HorizontalOptions="FillAndExpand"/>
+
+                        </inputLayout:SfTextInputLayout>
+
+                    </Grid>
+
+                </Frame>
+
+                <Frame x:Name="frameTarifaCamioneta"  CornerRadius="3" Padding="10,10,10,10" HasShadow="True"  BackgroundColor="White">
+                    <Grid ColumnSpacing="10" RowSpacing="0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="*" />
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+
+                        <custom:CustomLabel  Grid.Column="0" Grid.Row="0" Text="Tarifa: Camioneta"  FontAttributes="Bold"  Margin="0,0,0,0" VerticalOptions="Center" FontSize="18"/>
+
+
+                        <inputLayout:SfTextInputLayout Grid.Column="0" Grid.Row="1"   ContainerType="Outlined" Hint="$ Hora"   BackgroundColor="Transparent" ContainerBackgroundColor="Transparent" 
+                                                         HorizontalOptions="FillAndExpand"  VerticalOptions="Center"  HelperText="Obligatorio *">
+
+                            <custom:CustomEntry   Keyboard="Numeric" Placeholder="Ingrese el monto"    HorizontalOptions="FillAndExpand"/>
+
+                        </inputLayout:SfTextInputLayout>
+                        <inputLayout:SfTextInputLayout  Grid.Column="1" Grid.Row="1"    ContainerType="Outlined" Hint="$ Día "   BackgroundColor="Transparent" ContainerBackgroundColor="Transparent" 
+                                                         HorizontalOptions="FillAndExpand"  VerticalOptions="Center"  HelperText="Opcional *">
+
+                            <custom:CustomEntry   Keyboard="Numeric"  Placeholder="Ingrese el monto"   HorizontalOptions="FillAndExpand"/>
+
+                        </inputLayout:SfTextInputLayout>
+
+                        <inputLayout:SfTextInputLayout Grid.Column="0" Grid.Row="2"   ContainerType="Outlined" Hint="$ Semana"   BackgroundColor="Transparent" ContainerBackgroundColor="Transparent" 
+                                                         HorizontalOptions="FillAndExpand"  VerticalOptions="Center"  HelperText="Obligatorio *">
+
+                            <custom:CustomEntry   Keyboard="Numeric" Placeholder="Ingrese el monto"    HorizontalOptions="FillAndExpand"/>
+
+                        </inputLayout:SfTextInputLayout>
+                        <inputLayout:SfTextInputLayout  Grid.Column="1" Grid.Row="2"  ContainerType="Outlined" Hint="$ Mes"   BackgroundColor="Transparent" ContainerBackgroundColor="Transparent" 
+                                                         HorizontalOptions="FillAndExpand"  VerticalOptions="Center"  HelperText="Opcional *">
+
+                            <custom:CustomEntry   Keyboard="Numeric"  Placeholder="Ingrese el monto"   HorizontalOptions="FillAndExpand"/>
+
+                        </inputLayout:SfTextInputLayout>
+
+                    </Grid>
+
+                </Frame>
+
+                <Frame x:Name="frameTarifaMoto"  CornerRadius="3" Padding="10,10,10,10" HasShadow="True"  BackgroundColor="White">
+                    <Grid ColumnSpacing="10" RowSpacing="0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="*" />
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+
+                        <custom:CustomLabel  Grid.Column="0" Grid.Row="0" Text="Tarifa: Moto"  FontAttributes="Bold"  Margin="0,0,0,0" VerticalOptions="Center" FontSize="18"/>
+
+
+                        <inputLayout:SfTextInputLayout Grid.Column="0" Grid.Row="1"   ContainerType="Outlined" Hint="$ Hora"   BackgroundColor="Transparent" ContainerBackgroundColor="Transparent" 
+                                                         HorizontalOptions="FillAndExpand"  VerticalOptions="Center"  HelperText="Obligatorio *">
+
+                            <custom:CustomEntry   Keyboard="Numeric" Placeholder="Ingrese el monto"    HorizontalOptions="FillAndExpand"/>
+
+                        </inputLayout:SfTextInputLayout>
+                        <inputLayout:SfTextInputLayout  Grid.Column="1" Grid.Row="1"    ContainerType="Outlined" Hint="$ Día "   BackgroundColor="Transparent" ContainerBackgroundColor="Transparent" 
+                                                         HorizontalOptions="FillAndExpand"  VerticalOptions="Center"  HelperText="Opcional *">
+
+                            <custom:CustomEntry   Keyboard="Numeric"  Placeholder="Ingrese el monto"   HorizontalOptions="FillAndExpand"/>
+
+                        </inputLayout:SfTextInputLayout>
+
+                        <inputLayout:SfTextInputLayout Grid.Column="0" Grid.Row="2"   ContainerType="Outlined" Hint="$ Semana"   BackgroundColor="Transparent" ContainerBackgroundColor="Transparent" 
+                                                         HorizontalOptions="FillAndExpand"  VerticalOptions="Center"  HelperText="Obligatorio *">
+
+                            <custom:CustomEntry   Keyboard="Numeric" Placeholder="Ingrese el monto"    HorizontalOptions="FillAndExpand"/>
+
+                        </inputLayout:SfTextInputLayout>
+                        <inputLayout:SfTextInputLayout  Grid.Column="1" Grid.Row="2"  ContainerType="Outlined" Hint="$ Mes"   BackgroundColor="Transparent" ContainerBackgroundColor="Transparent" 
+                                                         HorizontalOptions="FillAndExpand"  VerticalOptions="Center"  HelperText="Opcional *">
+
+                            <custom:CustomEntry   Keyboard="Numeric"  Placeholder="Ingrese el monto"   HorizontalOptions="FillAndExpand"/>
+
+                        </inputLayout:SfTextInputLayout>
+
+                    </Grid>
+
+                </Frame>
+
+
+                <!--<Frame  CornerRadius="3" Padding="10,10,10,10" HasShadow="True"  BackgroundColor="White">
+                    <StackLayout>
+                        <custom:CustomLabel Text="Seleccione un vehículo para gestionar sus tarifas:" MaxLines="4" LineBreakMode="TailTruncation" FontAttributes="Bold" FontSize="16" TextColor="Black"/>
+
+                        <StackLayout Orientation="Horizontal" Spacing="10">
+                            <ImageButton x:Name="btnAutoTarifa" Clicked="btnAutoTarifa_Clicked" HorizontalOptions="FillAndExpand" VerticalOptions="EndAndExpand" HeightRequest="40" CornerRadius="3" BackgroundColor="Transparent"
+                                             Margin="0,10,0,20" Source="auto.png"
+                                 BorderColor="#2968C8" BorderWidth="1.5"/>
+                            <ImageButton x:Name="btnCamionetaTarifa" Clicked="btnCamionetaTarifa_Clicked" HorizontalOptions="FillAndExpand" VerticalOptions="EndAndExpand" HeightRequest="40" CornerRadius="3"  BackgroundColor="Transparent"
+                                             Margin="0,10,0,20" Source="camioneta.png"
+                                 BorderColor="#2968C8" BorderWidth="1.5"/>
+                            <ImageButton x:Name="btnMotoTarifa" Clicked="btnMotoTarifa_Clicked" HorizontalOptions="FillAndExpand" VerticalOptions="EndAndExpand" HeightRequest="40" CornerRadius="3"  BackgroundColor="Transparent"
+                                             Margin="0,10,0,20" Source="moto.png" Padding="5"
+                                 BorderColor="#2968C8" BorderWidth="1.5"/>
+
+                        </StackLayout>
+
+
+
+                    </StackLayout>
+                </Frame>-->
+
+                <Frame  CornerRadius="3" Padding="10,10,10,0" HasShadow="True"  BackgroundColor="White">
+                    <StackLayout>
+                        <custom:CustomLabel Text="Indique el monto de la reserva:"  FontAttributes="Bold" FontSize="16" TextColor="Black"/>
+
+                        <StackLayout Orientation="Horizontal">
+                            <Image Source="peso.png" HeightRequest="25" WidthRequest="25" Margin="0,0,0,37" VerticalOptions="Center"/>
+
+
+                            <inputLayout:SfTextInputLayout FocusedColor="#2968C8"   ContainerType="Outlined" Hint="Monto"   BackgroundColor="Transparent" ContainerBackgroundColor="Transparent" 
+                                                         HorizontalOptions="FillAndExpand"  VerticalOptions="Center"  HelperText="Opcional *">
+
+                                <custom:CustomEntry   Keyboard="Numeric"     HorizontalOptions="FillAndExpand"/>
+
+                            </inputLayout:SfTextInputLayout>
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+
+
+
+
+                <custom:CustomButton HorizontalOptions="FillAndExpand" VerticalOptions="EndAndExpand" HeightRequest="40" CornerRadius="3"  Margin="0,10,0,20" Text="Agregar estacionamiento" FontSize="16"
+                                 BackgroundColor="#2968C8" BorderWidth="1.5" TextColor="White"/>
+                
+                
+
+
+
+
+
+            </StackLayout>
+        </ScrollView>
+
+    </AbsoluteLayout>
+
+</ContentPage>

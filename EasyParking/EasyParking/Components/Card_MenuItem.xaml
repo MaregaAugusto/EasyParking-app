@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:custom="clr-namespace:EasyParking.Custom" xmlns:border="clr-namespace:Syncfusion.XForms.Border;assembly=Syncfusion.Core.XForms" xmlns:local="clr-namespace:EasyParking.Converter"
+             x:Class="EasyParking.Components.Card_MenuItem">
+    <ContentView.Resources>
+        <ResourceDictionary>
+            <local:IntToBoolConverter x:Key="IntToBoolConverter" />
+            <local:NullToBool         x:Key="NullToBool" />
+        </ResourceDictionary>
+    </ContentView.Resources>
+
+    <ContentView.Content>
+        <border:SfBorder x:Name="borderContent" Padding="5" CornerRadius="5" Margin="5"  HasShadow="True" >
+            <StackLayout Orientation="Horizontal" Spacing="15" BackgroundColor="Transparent" Padding="2">
+                <Image WidthRequest="30" HeightRequest="30" Source="{Binding Icono}"/>
+                <StackLayout Spacing="0" VerticalOptions="Center" Margin="0">
+                    <custom:CustomLabel x:Name="labelDescripcion" Text="{Binding Descripcion}" FontSize="18" VerticalOptions="Center"  MaxLines="5" LineBreakMode="TailTruncation" />
+                    <custom:CustomLabel x:Name="lableSub_Descripcion" Text="{Binding Sub_Descripcion}" IsVisible="{Binding Sub_Descripcion, Converter={StaticResource NullToBool}}" FontSize="11" MaxLines="5" LineBreakMode="TailTruncation" />
+                </StackLayout>
+                <Frame IsVisible="{Binding Id, Converter={StaticResource IntToBoolConverter}}" x:Name="frameCantidad" HorizontalOptions="EndAndExpand" Padding="5" CornerRadius="5"  VerticalOptions="Center" >
+                    <custom:CustomLabel x:Name="labelCantidad" Text="{Binding Cantidad}" FontAttributes="Bold"  VerticalOptions="CenterAndExpand"  FontSize="18" HorizontalOptions="Center"/>
+                </Frame>
+            </StackLayout>
+        </border:SfBorder>
+    </ContentView.Content>
+</ContentView>

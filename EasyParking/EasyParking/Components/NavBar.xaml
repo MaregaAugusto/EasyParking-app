@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:custom="clr-namespace:EasyParking.Custom" xmlns:border="clr-namespace:Syncfusion.XForms.Border;assembly=Syncfusion.Core.XForms"
+             x:Class="EasyParking.Components.NavBar">
+
+
+    <ContentView.Content>
+        <Grid  BackgroundColor="Transparent" ColumnSpacing="0">
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+
+
+            <custom:CustomLabel x:Name="TituloDePagina"  Grid.Column="0" Grid.Row="0" FontSize="22"  TextColor="Black" VerticalOptions="Center"/>
+
+            <border:SfBorder x:Name="BoxSearchBar" BackgroundColor="White" Grid.Column="0" Grid.Row="0" BorderColor = "White" CornerRadius="80,80,80,80" BorderWidth="1.5" Margin="5" Padding="0" HorizontalOptions="Fill" VerticalOptions="Center">
+                <SearchBar Placeholder="Buscar" x:Name="searchBar"  HorizontalOptions="FillAndExpand" Focused="searchBar_Focused" HeightRequest="30"/>
+
+            </border:SfBorder>
+
+            <ImageButton x:Name="BtnFavoritos" Grid.Column="1" Grid.Row="0" Source="heart.png" HeightRequest="27" WidthRequest="27" BackgroundColor="Transparent" Margin="10,0,10,0" Padding="2" CornerRadius="15" VerticalOptions="Center" HorizontalOptions="EndAndExpand"/>
+
+
+        </Grid>
+
+    </ContentView.Content>
+
+
+</ContentView>
