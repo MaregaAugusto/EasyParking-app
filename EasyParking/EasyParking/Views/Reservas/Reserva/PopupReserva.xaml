@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<pages:PopupPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                   xmlns:animations="clr-namespace:Rg.Plugins.Popup.Animations;assembly=Rg.Plugins.Popup"
+             xmlns:pages="clr-namespace:Rg.Plugins.Popup.Pages;assembly=Rg.Plugins.Popup" xmlns:syncfusion="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms" xmlns:custom="clr-namespace:EasyParking.Custom"
+                 x:Class="EasyParking.Views.Reservas.Reserva.PopupReserva">
+    <pages:PopupPage.Animation>
+        <animations:ScaleAnimation DurationIn="400"
+                                   DurationOut="200"
+                                   EasingIn="SinOut"
+                                   EasingOut="SinOut"
+                                   HasBackgroundAnimation="True"
+                                   PositionIn="Center"
+                                   PositionOut="Center"
+                                   ScaleIn="1.2"
+                                   ScaleOut="0.6"/>
+    </pages:PopupPage.Animation>
+
+
+    <Frame  CornerRadius="3" Padding="10" Margin="20" HasShadow="True"  BackgroundColor="White" VerticalOptions="Center">
+
+        <StackLayout>
+            <custom:CustomLabel   Text="Reserva" HorizontalOptions="Center"  Margin="0,0,0,0" VerticalOptions="Center" FontSize="20"/>
+
+            <Frame  CornerRadius="3" Padding="10" HasShadow="True"  BackgroundColor="White">
+                <StackLayout Orientation="Vertical" Spacing="0" HorizontalOptions="FillAndExpand"  BackgroundColor="Transparent">
+
+                    <custom:CustomLabel Text="Cocheria Ibañes" FontSize="16" Margin="0"  TextColor="Black"  MaxLines="4"  LineBreakMode="TailTruncation"/>
+                    <StackLayout Orientation="Horizontal">
+                        <Image Source="ubicacion.png" HeightRequest="15" WidthRequest="15"/>
+                        <custom:CustomLabel Text="Av 9 de Julio al 987" FontSize="14" VerticalOptions="Center" TextColor="Gray" />
+                    </StackLayout>
+
+
+                </StackLayout>
+            </Frame>
+
+            <Frame  CornerRadius="3" Padding="10" HasShadow="True"  BackgroundColor="White">
+                <StackLayout Orientation="Horizontal">
+                    <custom:CustomLabel Text="Total de la reserva:" FontSize="18" VerticalOptions="Center" TextColor="Gray" />
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="EndAndExpand" Spacing="0">
+                        <Image Source="peso.png" HeightRequest="20" WidthRequest="20"/>
+                        <custom:CustomLabel Text="120" FontSize="18" VerticalOptions="Center" TextColor="Gray" />
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+
+            <Frame  CornerRadius="3" Padding="10" HasShadow="True"  BackgroundColor="White">
+                <StackLayout Orientation="Horizontal">
+                    <custom:CustomLabel Text="Seleccione el tipo de vehículo: " FontSize="18" MaxLines="4" VerticalOptions="Center" TextColor="Gray" />
+                    <Grid HorizontalOptions="End">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+
+                        <Frame HorizontalOptions="Center" Padding="5" Grid.Column="0" Grid.Row="0">
+                            <StackLayout>
+                                <RadioButton/>
+                                <Image Source="auto.png" HeightRequest="20" WidthRequest="20"/>
+                            </StackLayout>
+
+                        </Frame>
+                        <Frame  HorizontalOptions="Center" Padding="5" Grid.Column="1" Grid.Row="0">
+                            <StackLayout>
+                                <RadioButton/>
+                                <Image Source="camioneta.png" HeightRequest="20" WidthRequest="20"/>
+                            </StackLayout>
+                        </Frame>
+                        <Frame  HorizontalOptions="Center" Padding="5" Grid.Column="2" Grid.Row="0">
+                            <StackLayout>
+                                <RadioButton/>
+                                <Image Source="moto.png" HeightRequest="20" WidthRequest="20"/>
+                            </StackLayout>
+                        </Frame>
+                    </Grid>
+
+                </StackLayout>
+            </Frame>
+
+
+
+
+
+
+            <StackLayout Orientation="Horizontal">
+                <syncfusion:SfButton x:Name="btnCancelar" Clicked="btnCancelar_Clicked" Grid.Column="0" Grid.Row="3"  Text="Cancelar" FontSize="16" HeightRequest="40"   HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" TextColor="#2968C8" Padding="0"  CornerRadius="3"
+                                                              BorderColor="#2968C8" BorderWidth="2"  BackgroundColor="Transparent"  Margin="0,10,0,10" FontAttributes="Bold"  VerticalOptions="EndAndExpand" />
+
+
+                <syncfusion:SfButton x:Name="btnConfirmarReserva" Grid.Column="1" Grid.Row="3"  Text="Pagar" FontSize="16" HeightRequest="40"   HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" TextColor="White" Padding="0"  CornerRadius="3"
+                                                              BackgroundColor="#2968C8"   Margin="0,10,0,10" FontAttributes="Bold"  VerticalOptions="EndAndExpand" />
+
+
+            </StackLayout>
+
+
+        </StackLayout>
+
+
+    </Frame>
+</pages:PopupPage>

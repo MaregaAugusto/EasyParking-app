@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:views="clr-namespace:EasyParking.Components" xmlns:custom="clr-namespace:EasyParking.Custom" xmlns:buttons="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms"
+             x:Class="EasyParking.Views.Estacionamientos.MisEstacionamientos.MisEstacionamientos">
+
+    <NavigationPage.TitleView>
+        <views:NavBar x:Name="navBar" Title="Mis Estacionamientos"   IsVisibleBoxSearch="False" IsVisibleFavoritos="False" Margin="0,0,10,0"  />
+    </NavigationPage.TitleView>
+
+
+    <AbsoluteLayout AbsoluteLayout.LayoutBounds="0,0,1,1" AbsoluteLayout.LayoutFlags="All">
+        <StackLayout AbsoluteLayout.LayoutBounds="0,0,1,1" AbsoluteLayout.LayoutFlags="All" Margin="0" Spacing="0">
+
+            <!--<buttons:SfButton x:Name="btnVerCategorias" Text="Tarifas"   HorizontalOptions="FillAndExpand"  CornerRadius="0,0,30,30" VerticalTextAlignment="Center" 
+                          AbsoluteLayout.LayoutBounds="0,0,1,40" AbsoluteLayout.LayoutFlags="XProportional,YProportional,WidthProportional"
+                                                              TextColor="#0366D6" BackgroundColor="Transparent" FontSize="16" BorderColor="Black"  BorderWidth="1"/>-->
+
+
+            <Frame  CornerRadius="3" Padding="0" HasShadow="True" Margin="10,20,10,10"  BackgroundColor="White">
+                <StackLayout Spacing="0">
+
+                    <StackLayout Orientation="Horizontal" BackgroundColor="Transparent">
+
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" Spacing="5">
+
+                            <AbsoluteLayout>
+
+                                <ImageButton    WidthRequest="100"  BackgroundColor="Transparent"  >
+                                    <ImageButton.Source>
+                                        <UriImageSource Uri="https://imgar.zonapropcdn.com/avisos/1/00/27/31/65/31/720x532/1615800904.jpg" 
+                                                                    CacheValidity="14"  
+                                                                    CachingEnabled="true"/>
+                                    </ImageButton.Source>
+                                </ImageButton>
+
+                            </AbsoluteLayout>
+
+                            <StackLayout BackgroundColor="Transparent" HorizontalOptions="FillAndExpand" Spacing="0">
+
+                                <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" Spacing="0">
+                                    <StackLayout Orientation="Vertical" Spacing="0" HorizontalOptions="FillAndExpand"  BackgroundColor="Transparent">
+
+                                        <custom:CustomLabel Text="Cocheria Ibañes" FontSize="16" Margin="0"  TextColor="Black"  MaxLines="4"  LineBreakMode="TailTruncation"/>
+                                        <StackLayout Orientation="Horizontal">
+                                            <Image Source="ubicacion.png" HeightRequest="15" WidthRequest="15"/>
+                                            <custom:CustomLabel Text="Av 9 de Julio al 987" FontSize="14" VerticalOptions="Center" TextColor="Gray" />
+                                        </StackLayout>
+
+
+                                    </StackLayout>
+
+                                    <ImageButton  BackgroundColor="Transparent" HorizontalOptions="End"  Padding="5" Margin="0,0,0,0" 
+                                                                      WidthRequest="30" HeightRequest="30"
+                                                                   Source="editar01.png" 
+                                                                      VerticalOptions="StartAndExpand">
+                                        <VisualStateManager.VisualStateGroups>
+                                            <VisualStateGroup x:Name="CommonStates">
+                                                <VisualState x:Name="Normal">
+                                                    <VisualState.Setters>
+                                                        <Setter Property="Scale" Value="1"/>
+                                                    </VisualState.Setters>
+                                                </VisualState>
+
+                                                <VisualState x:Name="Pressed">
+                                                    <VisualState.Setters>
+                                                        <Setter Property="Scale" Value="1.3"/>
+                                                    </VisualState.Setters>
+                                                </VisualState>
+                                            </VisualStateGroup>
+                                        </VisualStateManager.VisualStateGroups>
+
+                                    </ImageButton>
+
+
+                                </StackLayout>
+
+
+                                <StackLayout Orientation="Horizontal" Spacing="10" Margin="0,10,0,0">
+                                    <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Spacing="10"  VerticalOptions="Center">
+                                        <Image Source="auto.png" HeightRequest="16" WidthRequest="16" VerticalOptions="Center"/>
+                                        <custom:CustomLabel  Text="2" FontSize="15" VerticalOptions="Center" TextColor="Gray" />
+                                    </StackLayout>
+                                    <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Spacing="10"  VerticalOptions="Center" >
+                                        <Image Source="camioneta.png" HeightRequest="16" WidthRequest="16" VerticalOptions="Center"/>
+                                        <custom:CustomLabel  Text="8" FontSize="15" VerticalOptions="Center"  TextColor="Gray"/>
+                                    </StackLayout>
+                                    <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Spacing="10"  VerticalOptions="Center">
+                                        <Image Source="moto.png" HeightRequest="16" WidthRequest="16" VerticalOptions="Center"/>
+                                        <custom:CustomLabel  Text="18" FontSize="15" VerticalOptions="Center"  TextColor="Gray"/>
+                                    </StackLayout>
+                                </StackLayout>
+
+                                <custom:CustomLabel Text="Terreno parcialmente cubierto" Margin="0"  TextColor="Gray"  MaxLines="4"  LineBreakMode="TailTruncation"/>
+
+                                <StackLayout Orientation="Horizontal" Margin="0,10,0,0">
+
+                                    <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Spacing="2"  VerticalOptions="Center">
+                                        <Image Source="estrella.png" HeightRequest="16" WidthRequest="16" VerticalOptions="Center"/>
+                                        <custom:CustomLabel  Text="3.3" FontSize="15" VerticalOptions="Center" TextColor="Black" />
+                                    </StackLayout>
+
+                                    <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Spacing="0" Margin="15,0,0,0"  VerticalOptions="Center">
+                                        <Image Source="peso.png" HeightRequest="16" WidthRequest="16" VerticalOptions="Center"/>
+                                        <custom:CustomLabel  Text="120 x hs" FontSize="15" VerticalOptions="Center" TextColor="Black" />
+                                    </StackLayout>
+                                </StackLayout>
+
+
+                            </StackLayout>
+
+
+
+
+
+
+
+
+                        </StackLayout>
+
+
+
+
+                    </StackLayout>
+
+                </StackLayout>
+
+
+            </Frame>
+
+        </StackLayout>
+        <ImageButton Source="agregar.png"   x:Name="btnAgregar" Clicked="btnAgregar_Clicked"
+                     AbsoluteLayout.LayoutBounds="0.95,0.95" WidthRequest="50" HeightRequest="50" BackgroundColor="Transparent"  AbsoluteLayout.LayoutFlags="PositionProportional">
+            <VisualStateManager.VisualStateGroups>
+                <VisualStateGroup x:Name="CommonStates">
+                    <VisualState x:Name="Normal">
+                        <VisualState.Setters>
+                            <Setter Property="Scale" Value="1"/>
+                        </VisualState.Setters>
+                    </VisualState>
+
+                    <VisualState x:Name="Pressed">
+                        <VisualState.Setters>
+                            <Setter Property="Scale" Value="0.8"/>
+                        </VisualState.Setters>
+                    </VisualState>
+
+                </VisualStateGroup>
+            </VisualStateManager.VisualStateGroups>
+        </ImageButton>
+        
+    </AbsoluteLayout>
+</ContentPage>

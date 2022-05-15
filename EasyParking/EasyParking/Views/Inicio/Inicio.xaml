@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:views="clr-namespace:EasyParking.Components"
+             x:Class="EasyParking.Views.Inicio.Inicio" BackgroundColor="#FAFAFA" >
+
+
+
+    <NavigationPage.TitleView>
+        <views:NavBar x:Name="navBar"    IsVisibleTituloDePagina="False" IsVisibleFavoritos="False" Margin="0,0,10,0"  />
+    </NavigationPage.TitleView>
+    
+    <ContentPage.Content>
+        <StackLayout Spacing="10">
+            <views:Card_Parking x:Name="Card_Parking" OnClicked_VerMapa="Card_Parking_OnClicked_VerMapa" OnClicked_VerMas="Card_Parking_OnClicked_VerMas"  Margin="10,10,10,0" OnClicked_Reserva="Card_Parking_OnClicked_Reserva"/>
+            <views:Card_Parking  Margin="10,0,10,0"/>
+            <views:Card_Parking  Margin="10,0,10,0"/>
+        </StackLayout>
+
+
+    </ContentPage.Content>
+</ContentPage>

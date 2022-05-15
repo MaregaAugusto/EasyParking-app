@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+
+             xmlns:sfavatar="clr-namespace:Syncfusion.XForms.AvatarView;assembly=Syncfusion.Core.XForms" xmlns:custom="clr-namespace:EasyParking.Custom" xmlns:rating="clr-namespace:Syncfusion.SfRating.XForms;assembly=Syncfusion.SfRating.XForms" xmlns:views="clr-namespace:EasyParking.Components"
+             x:Class="EasyParking.Views.Reseñas.Reseñas" >
+
+    <NavigationPage.TitleView>
+        <views:NavBar x:Name="navBar" Title="Comentarios" IsVisibleFavoritos="False"  IsVisibleBoxSearch="False"  />
+    </NavigationPage.TitleView>
+    
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame  CornerRadius="3" Padding="10" HasShadow="True"  BackgroundColor="White">
+                <StackLayout Orientation="Horizontal">
+                    <sfavatar:SfAvatarView ContentType="Custom"    VerticalOptions="Center"
+                                   ImageSource="https://images2.revistafama.com/4lfcIqKctFrQiPli-JJM8Kf9MKE=/958x596/uploads/media/2021/10/07/tierno-video-bruno-mars-imita-1.jpg"
+
+                                   HorizontalOptions="Center"   
+                                   HeightRequest="50"
+                                   CornerRadius="25"
+                                   WidthRequest="50" />
+
+                    <StackLayout HorizontalOptions="FillAndExpand">
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+                            <custom:CustomLabel Text="Bruno Mars" FontSize="16" Margin="0"  TextColor="Black"  MaxLines="4"  LineBreakMode="TailTruncation"/>
+                         
+                            <rating:SfRating VerticalOptions="Center" HorizontalOptions="FillAndExpand" Value="3"  ItemCount="5" ItemSize="14" Precision="Standard">
+                                <rating:SfRating.RatingSettings>
+                                    <rating:SfRatingSettings RatedFill="#F1C40F" UnRatedFill="Transparent" />
+                                </rating:SfRating.RatingSettings>
+                            </rating:SfRating>
+                            
+                            <custom:CustomLabel Text="22 abr. 2022" FontSize="12" Margin="0"  TextColor="Gray" VerticalOptions="Center"  MaxLines="4" HorizontalOptions="EndAndExpand"  LineBreakMode="TailTruncation"/>
+
+                        </StackLayout>
+                        <custom:CustomLabel Text="Muy buen lugar, excelente servicio" FontSize="14" Margin="0" VerticalOptions="Center"  TextColor="Black"  MaxLines="50"  LineBreakMode="TailTruncation"/>
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+            <Frame  CornerRadius="3" Padding="10" HasShadow="True"  BackgroundColor="White">
+                <StackLayout Orientation="Horizontal">
+                    <sfavatar:SfAvatarView ContentType="Custom"    VerticalOptions="Center"
+                                   ImageSource="https://cloudfront-us-east-1.images.arcpublishing.com/infobae/TK2ZWD5NFFCSLEMRA3DKAUYIBU.jpg"
+
+                                   HorizontalOptions="Center"   
+                                   HeightRequest="50"
+                                   CornerRadius="25"
+                                   WidthRequest="50" />
+
+                    <StackLayout HorizontalOptions="FillAndExpand">
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+                            <custom:CustomLabel Text="Bigotes" FontSize="16" Margin="0"  TextColor="Black"  MaxLines="4"  LineBreakMode="TailTruncation"/>
+
+                            <rating:SfRating VerticalOptions="Center" HorizontalOptions="FillAndExpand" Value="5"  ItemCount="5" ItemSize="14" Precision="Standard">
+                                <rating:SfRating.RatingSettings>
+                                    <rating:SfRatingSettings RatedFill="#F1C40F" UnRatedFill="Transparent" />
+                                </rating:SfRating.RatingSettings>
+                            </rating:SfRating>
+
+                            <custom:CustomLabel Text="22 abr. 2022" FontSize="12" Margin="0"  TextColor="Gray" VerticalOptions="Center"  MaxLines="4" HorizontalOptions="EndAndExpand"  LineBreakMode="TailTruncation"/>
+
+                        </StackLayout>
+                        <custom:CustomLabel Text="Lindo negocio che, le voy a crear impuestos extras" FontSize="14" Margin="0" VerticalOptions="Center"  TextColor="Black"  MaxLines="50"  LineBreakMode="TailTruncation"/>
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+            <Frame  CornerRadius="3" Padding="10" HasShadow="True"  BackgroundColor="White">
+                <StackLayout Orientation="Horizontal">
+                    <sfavatar:SfAvatarView ContentType="Custom"    VerticalOptions="Center"
+                                   ImageSource="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Vladimir_Putin_2022-02-22_%28cropped%29.jpg/220px-Vladimir_Putin_2022-02-22_%28cropped%29.jpg"
+
+                                   HorizontalOptions="Center"   
+                                   HeightRequest="50"
+                                   CornerRadius="25"
+                                   WidthRequest="50" />
+
+                    <StackLayout HorizontalOptions="FillAndExpand">
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+                            <custom:CustomLabel Text="Sr Putin" FontSize="16" Margin="0"  TextColor="Black"  MaxLines="4"  LineBreakMode="TailTruncation"/>
+
+                            <rating:SfRating VerticalOptions="Center" HorizontalOptions="FillAndExpand" Value="1"  ItemCount="5" ItemSize="14" Precision="Standard">
+                                <rating:SfRating.RatingSettings>
+                                    <rating:SfRatingSettings RatedFill="#F1C40F" UnRatedFill="Transparent" />
+                                </rating:SfRating.RatingSettings>
+                            </rating:SfRating>
+
+                            <custom:CustomLabel Text="22 abr. 2022" FontSize="12" Margin="0"  TextColor="Gray" VerticalOptions="Center"  MaxLines="4" HorizontalOptions="EndAndExpand"  LineBreakMode="TailTruncation"/>
+
+                        </StackLayout>
+                        <custom:CustomLabel Text="No me dejaron guardar mi tanque" FontSize="14" Margin="0" VerticalOptions="Center"  TextColor="Black"  MaxLines="50"  LineBreakMode="TailTruncation"/>
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+            <Frame  CornerRadius="3" Padding="10" HasShadow="True"  BackgroundColor="White">
+                <StackLayout Orientation="Horizontal">
+                    <sfavatar:SfAvatarView ContentType="Custom"    VerticalOptions="Center"
+                                   ImageSource="https://assets-es.imgfoot.com/media/cache/642x382/photo-sans-2022-03-03t190136-498.jpg"
+
+                                   HorizontalOptions="Center"   
+                                   HeightRequest="50"
+                                   CornerRadius="25"
+                                   WidthRequest="50" />
+
+                    <StackLayout HorizontalOptions="FillAndExpand">
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+                            <custom:CustomLabel Text="Messi" FontSize="16" Margin="0"  TextColor="Black"  MaxLines="4"  LineBreakMode="TailTruncation"/>
+
+                            <rating:SfRating VerticalOptions="Center" HorizontalOptions="FillAndExpand" Value="3"  ItemCount="5" ItemSize="14" Precision="Standard">
+                                <rating:SfRating.RatingSettings>
+                                    <rating:SfRatingSettings RatedFill="#F1C40F" UnRatedFill="Transparent" />
+                                </rating:SfRating.RatingSettings>
+                            </rating:SfRating>
+
+                            <custom:CustomLabel Text="22 abr. 2022" FontSize="12" Margin="0"  TextColor="Gray" VerticalOptions="Center"  MaxLines="4" HorizontalOptions="EndAndExpand"  LineBreakMode="TailTruncation"/>
+
+                        </StackLayout>
+                        <custom:CustomLabel Text="Una masa el lugar loco" FontSize="14" Margin="0" VerticalOptions="Center"  TextColor="Black"  MaxLines="50"  LineBreakMode="TailTruncation"/>
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+            <Frame  CornerRadius="3" Padding="10" HasShadow="True"  BackgroundColor="White">
+                <StackLayout Orientation="Horizontal">
+                    <sfavatar:SfAvatarView ContentType="Custom"    VerticalOptions="Center"
+                                   ImageSource="https://www.soyfutbol.com/__export/1648418341843/sites/debate/img/2022/03/27/dua_lipa_ap_habitos_alimenticios_x1x.jpg_423682103.jpg"
+
+                                   HorizontalOptions="Center"   
+                                   HeightRequest="50"
+                                   CornerRadius="25"
+                                   WidthRequest="50" />
+
+                    <StackLayout HorizontalOptions="FillAndExpand">
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+                            <custom:CustomLabel Text="Dua Lipa" FontSize="16" Margin="0"  TextColor="Black"  MaxLines="4"  LineBreakMode="TailTruncation"/>
+
+                            <rating:SfRating VerticalOptions="Center" HorizontalOptions="FillAndExpand" Value="4"  ItemCount="5" ItemSize="14" Precision="Standard">
+                                <rating:SfRating.RatingSettings>
+                                    <rating:SfRatingSettings RatedFill="#F1C40F" UnRatedFill="Transparent" />
+                                </rating:SfRating.RatingSettings>
+                            </rating:SfRating>
+
+                            <custom:CustomLabel Text="22 abr. 2022" FontSize="12" Margin="0"  TextColor="Gray" VerticalOptions="Center"  MaxLines="4" HorizontalOptions="EndAndExpand"  LineBreakMode="TailTruncation"/>
+
+                        </StackLayout>
+                        <custom:CustomLabel Text="Lo recomiendo" FontSize="14" Margin="0" VerticalOptions="Center"  TextColor="Black"  MaxLines="50"  LineBreakMode="TailTruncation"/>
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

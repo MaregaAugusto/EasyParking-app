@@ -1,0 +1,250 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                          xmlns:views="clr-namespace:EasyParking.Components" xmlns:buttons="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms"
+             xmlns:combobox="clr-namespace:Syncfusion.XForms.ComboBox;assembly=Syncfusion.SfComboBox.XForms"
+             xmlns:ListCollection="clr-namespace:System.Collections.Generic;assembly=netstandard" 
+             xmlns:custom="clr-namespace:EasyParking.Custom"
+             x:Class="EasyParking.Views.Estacionamientos.DetalleDeEstacionamiento">
+    
+    <NavigationPage.TitleView>
+        <views:NavBar x:Name="navBar" Title="Detalle del estacionamiento" IsVisibleFavoritos="False"  IsVisibleBoxSearch="False"  />
+    </NavigationPage.TitleView>
+
+    <ContentPage.Content>
+        <StackLayout Spacing="15">
+            <Frame  CornerRadius="3" Padding="0" HasShadow="True" Margin="10,10,10,0"  BackgroundColor="White">
+                <StackLayout Orientation="Horizontal" BackgroundColor="Transparent">
+
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" Spacing="5">
+
+                        <AbsoluteLayout>
+
+                            <ImageButton    WidthRequest="100"  BackgroundColor="Transparent"  >
+                                <ImageButton.Source>
+                                    <UriImageSource Uri="https://imgar.zonapropcdn.com/avisos/1/00/27/31/65/31/720x532/1615800904.jpg" 
+                                                                    CacheValidity="14"  
+                                                                    CachingEnabled="true"/>
+                                </ImageButton.Source>
+                            </ImageButton>
+
+                        </AbsoluteLayout>
+
+                        <StackLayout BackgroundColor="Transparent" HorizontalOptions="FillAndExpand" Spacing="0">
+
+                            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" Spacing="0">
+                                <StackLayout Orientation="Vertical" Spacing="0" HorizontalOptions="FillAndExpand"  BackgroundColor="Transparent">
+
+                                    <custom:CustomLabel Text="Cocheria Ibañes" FontSize="16" Margin="0"  TextColor="Black"  MaxLines="4"  LineBreakMode="TailTruncation"/>
+                                    <StackLayout Orientation="Horizontal">
+                                        <Image Source="ubicacion.png" HeightRequest="15" WidthRequest="15"/>
+                                        <custom:CustomLabel Text="Av 9 de Julio al 987" FontSize="14" VerticalOptions="Center" TextColor="Gray" />
+                                    </StackLayout>
+
+
+                                </StackLayout>
+
+                                <ImageButton  BackgroundColor="Transparent" HorizontalOptions="End"  Padding="5" Margin="0,0,0,0" 
+                                                                      WidthRequest="30" HeightRequest="30"
+                                                                   Source="heart.png" 
+                                                                      VerticalOptions="StartAndExpand">
+                                    <VisualStateManager.VisualStateGroups>
+                                        <VisualStateGroup x:Name="CommonStates">
+                                            <VisualState x:Name="Normal">
+                                                <VisualState.Setters>
+                                                    <Setter Property="Scale" Value="1"/>
+                                                </VisualState.Setters>
+                                            </VisualState>
+
+                                            <VisualState x:Name="Pressed">
+                                                <VisualState.Setters>
+                                                    <Setter Property="Scale" Value="1.3"/>
+                                                </VisualState.Setters>
+                                            </VisualState>
+                                        </VisualStateGroup>
+                                    </VisualStateManager.VisualStateGroups>
+
+                                </ImageButton>
+
+
+                            </StackLayout>
+
+
+                            <StackLayout Orientation="Horizontal" Spacing="10" Margin="0,10,0,0">
+                                <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Spacing="10"  VerticalOptions="Center">
+                                    <Image Source="auto.png" HeightRequest="16" WidthRequest="16" VerticalOptions="Center"/>
+                                    <custom:CustomLabel  Text="2" FontSize="15" VerticalOptions="Center" TextColor="Gray" />
+                                </StackLayout>
+                                <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Spacing="10"  VerticalOptions="Center" >
+                                    <Image Source="camioneta.png" HeightRequest="16" WidthRequest="16" VerticalOptions="Center"/>
+                                    <custom:CustomLabel  Text="8" FontSize="15" VerticalOptions="Center"  TextColor="Gray"/>
+                                </StackLayout>
+                                <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Spacing="10"  VerticalOptions="Center">
+                                    <Image Source="moto.png" HeightRequest="16" WidthRequest="16" VerticalOptions="Center"/>
+                                    <custom:CustomLabel  Text="18" FontSize="15" VerticalOptions="Center"  TextColor="Gray"/>
+                                </StackLayout>
+                            </StackLayout>
+
+                            <custom:CustomLabel Text="Terreno parcialmente cubierto" Margin="0"  TextColor="Gray"  MaxLines="4"  LineBreakMode="TailTruncation"/>
+
+                            <StackLayout Orientation="Horizontal" Margin="0,10,0,0" Spacing="10">
+
+                                <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Spacing="2"  VerticalOptions="Center">
+                                    <Image Source="estrella.png" HeightRequest="16" WidthRequest="16" VerticalOptions="Center"/>
+                                    <custom:CustomLabel  Text="3.3" FontSize="15" VerticalOptions="Center" TextColor="Black" />
+                                </StackLayout>
+
+                                <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Spacing="0"  VerticalOptions="Center">
+                                    <!--<Image Source="peso.png" HeightRequest="16" WidthRequest="16" VerticalOptions="Center"/>-->
+                                    <custom:CustomLabel  Text="Reserva:" FontSize="15" VerticalOptions="Center" TextColor="Black" />
+                                    <Image Source="peso.png" HeightRequest="16" WidthRequest="16" VerticalOptions="Center"/>
+                                    <custom:CustomLabel  Text="120" FontSize="15" VerticalOptions="Center" TextColor="Black" />
+                                </StackLayout>
+
+                                <custom:CustomLabel HorizontalOptions="EndAndExpand"  Text="a 1.5 km" Margin="0,0,10,0" FontSize="15" VerticalOptions="Center" TextColor="Black" />
+
+                            </StackLayout>
+
+                        </StackLayout>
+
+
+
+
+
+
+
+
+                    </StackLayout>
+
+
+
+
+                </StackLayout>
+
+
+            </Frame>
+
+
+
+            <Frame  CornerRadius="3" Padding="0" HasShadow="True" Margin="10,0,10,0" HorizontalOptions="FillAndExpand"  BackgroundColor="White">
+                <buttons:SfButton Text="Ver ubicación en el mapa" HeightRequest="40"  Padding="0" FontSize="14" TextColor="#2968C8" BackgroundColor="White"  HorizontalOptions="CenterAndExpand" VerticalTextAlignment="Center"
+                               CornerRadius="3"
+                              ShowIcon="True" ImageAlignment="Right" ImageSource="map.png"   />
+
+            </Frame>
+
+            <Frame  CornerRadius="3" Padding="0" HasShadow="True" Margin="10,0,10,0" HorizontalOptions="FillAndExpand"  BackgroundColor="White">
+                <buttons:SfButton Text="Ver reseñas del lugar" HeightRequest="40"  Padding="0" FontSize="14" TextColor="#2968C8" BackgroundColor="White"  HorizontalOptions="CenterAndExpand" VerticalTextAlignment="Center"
+                               CornerRadius="3" x:Name="btnVerReseñas" Clicked="btnVerReseñas_Clicked"
+                              ShowIcon="True" ImageAlignment="Right" ImageSource="comment.png"     />
+
+            </Frame>
+
+
+
+            <Frame  CornerRadius="3" Padding="10" HasShadow="True" Margin="10,0,10,0"  BackgroundColor="White">
+                <StackLayout Spacing="0">
+
+                    <custom:CustomLabel Text="Horarios de atención " FontSize="16" Margin="0" FontAttributes="Bold" TextColor="Black"  MaxLines="4"  LineBreakMode="TailTruncation"/>
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="Start" Spacing="10" Margin="0,0,0,0"  VerticalOptions="Center">
+                        <custom:CustomLabel Text="8:00hs a 23:00hs" FontSize="14" VerticalOptions="Center" TextColor="Gray" />
+                        <custom:CustomLabel Text="Abierto" FontSize="14" VerticalOptions="Center" TextColor="Green" />
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+            
+            
+
+            <Frame  CornerRadius="3" Padding="10" HasShadow="True" Margin="10,0,10,0"  BackgroundColor="White">
+
+                <StackLayout>
+                    <StackLayout Orientation="Horizontal">
+
+                        <custom:CustomLabel Text="Tarifa según vehículo:" FontSize="16" Margin="0,0,10,0" VerticalOptions="Center" HorizontalOptions="FillAndExpand" FontAttributes="Bold" TextColor="Black"  MaxLines="4"  LineBreakMode="TailTruncation"/>
+
+                        <combobox:SfComboBox HeightRequest="40" x:Name="comboBox"    Text="Auto" VerticalOptions="Center" Margin="0,0,0,0" ShowClearButton="False" HorizontalOptions="FillAndExpand">
+                            <combobox:SfComboBox.ComboBoxSource>
+                                <ListCollection:List x:TypeArguments="x:String">
+                                    <x:String>Auto</x:String>
+                                    <x:String>Camioneta</x:String>
+                                    <x:String>Moto</x:String>
+                                </ListCollection:List>
+                            </combobox:SfComboBox.ComboBoxSource>
+                        </combobox:SfComboBox>
+
+
+                    </StackLayout>
+
+                    <StackLayout Spacing="5">
+
+                        <StackLayout Orientation="Horizontal">
+                            <custom:CustomLabel Text="Periodos" FontSize="16" Margin="0" FontAttributes="Bold" TextColor="Gray"  MaxLines="4"  LineBreakMode="TailTruncation"/>
+                            <custom:CustomLabel Text="Precios" FontSize="16" Margin="0" FontAttributes="Bold" TextColor="Gray"  HorizontalOptions="EndAndExpand" MaxLines="4"  LineBreakMode="TailTruncation"/>
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal">
+                            <custom:CustomLabel Text="Hora" FontSize="14" TextColor="Gray" VerticalOptions="Center" HorizontalOptions="Start" />
+
+                            <StackLayout Orientation="Horizontal" HorizontalOptions="EndAndExpand" Spacing="0" Margin="15,0,0,0"  VerticalOptions="Center">
+                                <Image Source="peso.png" HeightRequest="16" WidthRequest="16" VerticalOptions="Center"/>
+                                <custom:CustomLabel  Text="120" FontSize="15" VerticalOptions="Center" TextColor="Black" />
+                            </StackLayout>
+                        </StackLayout>
+
+                        <StackLayout Orientation="Horizontal">
+                            <custom:CustomLabel Text="Día" FontSize="14" TextColor="Gray" VerticalOptions="Center" HorizontalOptions="Start" />
+
+                            <StackLayout Orientation="Horizontal" HorizontalOptions="EndAndExpand" Spacing="0" Margin="15,0,0,0"  VerticalOptions="Center">
+                                <Image Source="peso.png" HeightRequest="16" WidthRequest="16" VerticalOptions="Center"/>
+                                <custom:CustomLabel  Text="2.500" FontSize="15" VerticalOptions="Center" TextColor="Black" />
+                            </StackLayout>
+                        </StackLayout>
+
+                        <StackLayout Orientation="Horizontal">
+                            <custom:CustomLabel Text="Semana" FontSize="14" TextColor="Gray" VerticalOptions="Center" HorizontalOptions="Start" />
+
+                            <StackLayout Orientation="Horizontal" HorizontalOptions="EndAndExpand" Spacing="0" Margin="15,0,0,0"  VerticalOptions="Center">
+                                <Image Source="peso.png" HeightRequest="16" WidthRequest="16" VerticalOptions="Center"/>
+                                <custom:CustomLabel  Text="12.000" FontSize="15" VerticalOptions="Center" TextColor="Black" />
+                            </StackLayout>
+                        </StackLayout>
+
+                        <StackLayout Orientation="Horizontal">
+                            <custom:CustomLabel Text="Mes" FontSize="14" TextColor="Gray" VerticalOptions="Center" HorizontalOptions="Start" />
+
+                            <StackLayout Orientation="Horizontal" HorizontalOptions="EndAndExpand" Spacing="0" Margin="15,0,0,0"  VerticalOptions="Center">
+                                <Image Source="peso.png" HeightRequest="16" WidthRequest="16" VerticalOptions="Center"/>
+                                <custom:CustomLabel  Text="30.000" FontSize="15" VerticalOptions="Center" TextColor="Black" />
+                            </StackLayout>
+                        </StackLayout>
+                    </StackLayout>
+
+                </StackLayout>
+
+            </Frame>
+
+
+            <Frame  CornerRadius="3" Padding="10" HasShadow="True" Margin="10,0,10,0"  BackgroundColor="White">
+                <StackLayout Spacing="0">
+
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" Spacing="10" Margin="0,0,0,0"  VerticalOptions="Center">
+                        <custom:CustomLabel Text="Monto de la reserva" FontSize="16" Margin="0" FontAttributes="Bold" TextColor="Black"  MaxLines="4" VerticalOptions="Center" 
+                                            LineBreakMode="TailTruncation"/>
+
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="EndAndExpand" Spacing="0" Margin="15,0,0,0"  VerticalOptions="Center">
+                            <Image Source="peso.png" HeightRequest="25" WidthRequest="25" VerticalOptions="Center"/>
+                            <custom:CustomLabel  Text="120" FontSize="20" VerticalOptions="Center" TextColor="Gray" FontAttributes="Bold" />
+                        </StackLayout>
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+
+
+            <buttons:SfButton x:Name="btnReserva" Clicked="btnReserva_Clicked"  Text="Pagar reservar" FontSize="16" HeightRequest="40"   HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" TextColor="White" Padding="0"  CornerRadius="0"
+                                                              BackgroundColor="#2968C8"   Margin="10" FontAttributes="Bold"  VerticalOptions="EndAndExpand" />
+
+
+        </StackLayout>
+
+
+    </ContentPage.Content>
+</ContentPage>

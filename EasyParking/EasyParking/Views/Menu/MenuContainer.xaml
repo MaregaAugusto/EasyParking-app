@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:customControls="clr-namespace:EasyParking.MenuItems" xmlns:sfavatar="clr-namespace:Syncfusion.XForms.AvatarView;assembly=Syncfusion.Core.XForms" xmlns:custom="clr-namespace:EasyParking.Custom"
+                  mc:Ignorable="d"
+             NavigationPage.HasNavigationBar="False"           
+
+             x:Class="EasyParking.Views.Menu.MenuContainer">
+
+
+    <MasterDetailPage.Master>
+
+        <ContentPage
+            Title="Menu"
+                 BackgroundColor="White">
+
+            <!--<AbsoluteLayout>
+                <AbsoluteLayout 
+                    BackgroundColor="Aqua"
+                    AbsoluteLayout.LayoutBounds="0,0,0.5,0.2"
+                    AbsoluteLayout.LayoutFlags="XProportional,YProportional,WidthProportional,HeightProportional">
+                    
+                </AbsoluteLayout>
+            </AbsoluteLayout>-->
+            <AbsoluteLayout AbsoluteLayout.LayoutBounds="0,0,1,1" BackgroundColor="Transparent" 
+                                AbsoluteLayout.LayoutFlags="All">
+
+                <AbsoluteLayout AbsoluteLayout.LayoutBounds="0,0,1,0.9" BackgroundColor="Transparent" AbsoluteLayout.LayoutFlags="All">
+
+                    <AbsoluteLayout AbsoluteLayout.LayoutBounds="0,0,1,1" BackgroundColor="Transparent" 
+                                AbsoluteLayout.LayoutFlags="All">
+
+                        <AbsoluteLayout AbsoluteLayout.LayoutBounds="0,0,1,0.25" BackgroundColor="Transparent" 
+                                AbsoluteLayout.LayoutFlags="All">
+                            <!--<Image                            
+                                Source="https://iteragrow.com/wp-content/uploads/2018/04/buyer-persona-e1545248524290.jpg"
+                                AbsoluteLayout.LayoutBounds="0.5,0.5,0.8,0.8" 
+                                AbsoluteLayout.LayoutFlags="XProportional,YProportional,WidthProportional,HeightProportional">
+                            </Image>-->
+
+                            <StackLayout  BackgroundColor="Transparent" Padding="10" AbsoluteLayout.LayoutBounds="0.5,0.5,1,1" AbsoluteLayout.LayoutFlags="PositionProportional,SizeProportional">
+
+                                <sfavatar:SfAvatarView ContentType="Custom"   Margin="0,20,0,0"
+                                   ImageSource="https://images2.revistafama.com/4lfcIqKctFrQiPli-JJM8Kf9MKE=/958x596/uploads/media/2021/10/07/tierno-video-bruno-mars-imita-1.jpg"
+
+                                   VerticalOptions="Center"
+                                   HorizontalOptions="Center"   
+                                   HeightRequest="100"
+                                   CornerRadius="50"
+                                   WidthRequest="100" />
+
+                                <custom:CustomLabel Text="Bruno Mars" FontSize="20" TextColor="Black" FontAttributes="Bold" HorizontalOptions="Center"/>
+                            </StackLayout>
+
+
+
+                        </AbsoluteLayout>
+
+                        <AbsoluteLayout AbsoluteLayout.LayoutBounds="0,1,1,0.75" BackgroundColor="Transparent" 
+                                AbsoluteLayout.LayoutFlags="All">
+                            <ListView x:Name="navigationDrawerList"  RowHeight="55" SelectionMode="None"
+                                AbsoluteLayout.LayoutBounds="0,0,1,1" Margin="0,15,0,0"
+                                AbsoluteLayout.LayoutFlags="XProportional,YProportional,WidthProportional,HeightProportional"
+                                SeparatorVisibility="None" ItemTapped="navigationDrawerList_ItemTapped" BackgroundColor="Transparent">
+                                <ListView.ItemTemplate>
+                                    <DataTemplate>
+                                        <customControls:ExtendedViewCell SelectedBackgroundColor="Transparent">
+                                            <ViewCell.View>
+
+                                                <StackLayout 
+                                                            VerticalOptions="FillAndExpand"  
+                                                            Orientation="Horizontal"  
+                                                            Padding="20,10,0,10"  
+                                                            Spacing="20">
+                                                    <Image Source="{Binding Icon}"  
+                                                            WidthRequest="25"  
+                                                            HeightRequest="25"  
+                                                            VerticalOptions="Center" />
+                                                    <custom:CustomLabel Text="{Binding Title}"  
+                                                            FontSize="15"  
+                                                            VerticalOptions="Center"  
+                                                            TextColor="Black"/>
+                                                </StackLayout>
+
+                                            </ViewCell.View>
+                                        </customControls:ExtendedViewCell>
+                                    </DataTemplate>
+                                </ListView.ItemTemplate>
+
+                            </ListView>
+                        </AbsoluteLayout>
+                    </AbsoluteLayout>
+
+                </AbsoluteLayout>
+
+                <!--<AbsoluteLayout AbsoluteLayout.LayoutBounds="0,1,1,0.1" BackgroundColor="White" 
+                                AbsoluteLayout.LayoutFlags="All">
+
+                    --><!--<customControlsLabels:CustomLabel Margin="10,0,0,0" AbsoluteLayout.LayoutBounds="0,0.5" AbsoluteLayout.LayoutFlags="XProportional,YProportional" 
+                                                      Text="© LS Sistemas Soluciones Informáticas" MaxLines="2" LineBreakMode="TailTruncation" TextColor="White" FontSize="13">--><!--
+                    <customControlsLabels1:CustomLabel Margin="10,0,0,0" AbsoluteLayout.LayoutBounds="0,0.5" AbsoluteLayout.LayoutFlags="XProportional,YProportional" FontSize="13" MaxLines="2"  LineBreakMode="TailTruncation" >
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <Span Text="© 2022" TextColor="White" FontSize="13"/>
+                                <Span Text="Easy Parking" FontSize="13"
+                                        TextColor="Black"
+                                        TextDecorations="Underline">
+                                    --><!--<Span.GestureRecognizers>
+                                        <TapGestureRecognizer Command="{Binding ClickCommand}"
+                                          CommandParameter="http://lssistemas.com.ar/" />
+                                    </Span.GestureRecognizers>--><!--
+                                </Span>
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </customControlsLabels1:CustomLabel>
+                </AbsoluteLayout>-->
+
+            </AbsoluteLayout>
+
+        </ContentPage>
+    </MasterDetailPage.Master>
+
+    <MasterDetailPage.Detail  >
+        <NavigationPage BarBackgroundColor="White" >
+
+        </NavigationPage>
+    </MasterDetailPage.Detail>
+
+</MasterDetailPage>
