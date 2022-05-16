@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:views="clr-namespace:EasyParking.Components"
              xmlns:buttons="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms"
              xmlns:custom="clr-namespace:EasyParking.Custom"
-             x:Class="EasyParking.Views.Favoritos.Favoritos">
+             x:Class="EasyParking.Views.Favoritos.Favoritos" NavigationPage.IconColor="Black">
 
 
 
@@ -37,7 +37,7 @@
                                 <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" Spacing="0">
                                     <StackLayout Orientation="Vertical" Spacing="0" HorizontalOptions="FillAndExpand"  BackgroundColor="Transparent">
 
-                                        <custom:CustomLabel Text="Cocheria Ibañes" FontSize="16" Margin="0"  TextColor="Black"  MaxLines="4"  LineBreakMode="TailTruncation"/>
+                                        <custom:CustomLabel Text="Estacionamiento Ibañes" FontSize="16" Margin="0"  TextColor="Black"  MaxLines="4"  LineBreakMode="TailTruncation"/>
                                         <StackLayout Orientation="Horizontal">
                                             <Image Source="ubicacion.png" HeightRequest="15" WidthRequest="15"/>
                                             <custom:CustomLabel Text="Av 9 de Julio al 987" FontSize="14" VerticalOptions="Center" TextColor="Gray" />
@@ -152,7 +152,7 @@
                                 <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" Spacing="0">
                                     <StackLayout Orientation="Vertical" Spacing="0" HorizontalOptions="FillAndExpand"  BackgroundColor="Transparent">
 
-                                        <custom:CustomLabel Text="Cocheria Ibañes" FontSize="16" Margin="0"  TextColor="Black"  MaxLines="4"  LineBreakMode="TailTruncation"/>
+                                        <custom:CustomLabel Text="Estacionamiento Ibañes" FontSize="16" Margin="0"  TextColor="Black"  MaxLines="4"  LineBreakMode="TailTruncation"/>
                                         <StackLayout Orientation="Horizontal">
                                             <Image Source="ubicacion.png" HeightRequest="15" WidthRequest="15"/>
                                             <custom:CustomLabel Text="Av 9 de Julio al 987" FontSize="14" VerticalOptions="Center" TextColor="Gray" />

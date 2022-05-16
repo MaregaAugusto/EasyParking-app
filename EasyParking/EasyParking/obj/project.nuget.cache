@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "atTCIc+SRGTQzy1cXpjcmBxa01yMkR9K3cTNQPAsouzrcJwuHErOEROIniJVxxFK/ZGRvT746oi5ktwXL5Nuiw==",
+  "dgSpecHash": "pHd6vcs2/fQwm7URzEuJB1W8UbqYfo7H78z5MMdRRi298yQTamZZOp1PIRpsIwiGjHgV14RY3myg2S/Vv7Tbaw==",
   "success": true,
   "projectFilePath": "C:\\ProyectosGitHubUTN\\EasyParkingApp\\EasyParking\\EasyParking\\EasyParking.csproj",
   "expectedPackageFiles": [
@@ -15,6 +15,7 @@
     "C:\\Users\\LUCIANO\\.nuget\\packages\\syncfusion.xamarin.sfcombobox\\20.1.0.55\\syncfusion.xamarin.sfcombobox.20.1.0.55.nupkg.sha512",
     "C:\\Users\\LUCIANO\\.nuget\\packages\\syncfusion.xamarin.sflistview\\20.1.0.55\\syncfusion.xamarin.sflistview.20.1.0.55.nupkg.sha512",
     "C:\\Users\\LUCIANO\\.nuget\\packages\\syncfusion.xamarin.sfnavigationdrawer\\20.1.0.55\\syncfusion.xamarin.sfnavigationdrawer.20.1.0.55.nupkg.sha512",
+    "C:\\Users\\LUCIANO\\.nuget\\packages\\syncfusion.xamarin.sfnumericupdown\\20.1.0.55\\syncfusion.xamarin.sfnumericupdown.20.1.0.55.nupkg.sha512",
     "C:\\Users\\LUCIANO\\.nuget\\packages\\syncfusion.xamarin.sfrating\\20.1.0.55\\syncfusion.xamarin.sfrating.20.1.0.55.nupkg.sha512",
     "C:\\Users\\LUCIANO\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Users\\LUCIANO\\.nuget\\packages\\xamarin.essentials\\1.7.3\\xamarin.essentials.1.7.3.nupkg.sha512",

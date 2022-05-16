@@ -25,7 +25,7 @@
             <Frame  CornerRadius="3" Padding="10" HasShadow="True"  BackgroundColor="White">
                 <StackLayout Orientation="Vertical" Spacing="0" HorizontalOptions="FillAndExpand"  BackgroundColor="Transparent">
 
-                    <custom:CustomLabel Text="Cocheria Ibañes" FontSize="16" Margin="0"  TextColor="Black"  MaxLines="4"  LineBreakMode="TailTruncation"/>
+                    <custom:CustomLabel Text="Estacionamiento Ibañes" FontSize="16" Margin="0"  TextColor="Black"  MaxLines="4"  LineBreakMode="TailTruncation"/>
                     <StackLayout Orientation="Horizontal">
                         <Image Source="ubicacion.png" HeightRequest="15" WidthRequest="15"/>
                         <custom:CustomLabel Text="Av 9 de Julio al 987" FontSize="14" VerticalOptions="Center" TextColor="Gray" />

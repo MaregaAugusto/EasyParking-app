@@ -20,6 +20,8 @@ public class MonoPackageManager_Resources {
 		"Syncfusion.SfNavigationDrawer.Android.dll",
 		"Syncfusion.SfNavigationDrawer.XForms.Android.dll",
 		"Syncfusion.SfNavigationDrawer.XForms.dll",
+		"Syncfusion.SfNumericUpDown.XForms.Android.dll",
+		"Syncfusion.SfNumericUpDown.XForms.dll",
 		"Syncfusion.SfRating.Android.dll",
 		"Syncfusion.SfRating.XForms.Android.dll",
 		"Syncfusion.SfRating.XForms.dll",

@@ -131,6 +131,10 @@
               "target": "Package",
               "version": "[20.1.0.55, )"
             },
+            "Syncfusion.Xamarin.SfNumericUpDown": {
+              "target": "Package",
+              "version": "[20.1.0.55, )"
+            },
             "Syncfusion.Xamarin.SfRating": {
               "target": "Package",
               "version": "[20.1.0.55, )"

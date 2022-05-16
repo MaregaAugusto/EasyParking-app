@@ -123,6 +123,21 @@
           "lib/MonoAndroid10.0/Syncfusion.SfNavigationDrawer.XForms.dll": {}
         }
       },
+      "Syncfusion.Xamarin.SfNumericUpDown/20.1.0.55": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Xamarin.Core": "20.1.0.55",
+          "Xamarin.Forms": "5.0.0.2012"
+        },
+        "compile": {
+          "lib/MonoAndroid10.0/Syncfusion.SfNumericUpDown.XForms.Android.dll": {},
+          "lib/MonoAndroid10.0/Syncfusion.SfNumericUpDown.XForms.dll": {}
+        },
+        "runtime": {
+          "lib/MonoAndroid10.0/Syncfusion.SfNumericUpDown.XForms.Android.dll": {},
+          "lib/MonoAndroid10.0/Syncfusion.SfNumericUpDown.XForms.dll": {}
+        }
+      },
       "Syncfusion.Xamarin.SfRating/20.1.0.55": {
         "type": "package",
         "dependencies": {
@@ -1687,6 +1702,7 @@
           "Syncfusion.Xamarin.SfComboBox": "20.1.0.55",
           "Syncfusion.Xamarin.SfListView": "20.1.0.55",
           "Syncfusion.Xamarin.SfNavigationDrawer": "20.1.0.55",
+          "Syncfusion.Xamarin.SfNumericUpDown": "20.1.0.55",
           "Syncfusion.Xamarin.SfRating": "20.1.0.55",
           "Xamarin.Essentials": "1.7.3",
           "Xamarin.Forms": "5.0.0.2401"
@@ -1991,6 +2007,34 @@
         "lib/uap10.0/Syncfusion.SfNavigationDrawer.XForms.xml",
         "syncfusion.xamarin.sfnavigationdrawer.20.1.0.55.nupkg.sha512",
         "syncfusion.xamarin.sfnavigationdrawer.nuspec",
+        "syncfusion_logo.png"
+      ]
+    },
+    "Syncfusion.Xamarin.SfNumericUpDown/20.1.0.55": {
+      "sha512": "a/25Gn93BLKshHV40qGTZkEJceyQJb7EbBHbmmgTmVMKr0hl6JXt2lL+fZ1S+Yip6Zdkw/cZ4H7rZ0c2fsEIMQ==",
+      "type": "package",
+      "path": "syncfusion.xamarin.sfnumericupdown/20.1.0.55",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "README.md",
+        "lib/MonoAndroid10.0/Syncfusion.SfNumericUpDown.XForms.Android.dll",
+        "lib/MonoAndroid10.0/Syncfusion.SfNumericUpDown.XForms.dll",
+        "lib/MonoAndroid10.0/Syncfusion.SfNumericUpDown.XForms.xml",
+        "lib/Xamarin.iOS10/Syncfusion.SfNumericUpDown.XForms.dll",
+        "lib/Xamarin.iOS10/Syncfusion.SfNumericUpDown.XForms.iOS.dll",
+        "lib/Xamarin.iOS10/Syncfusion.SfNumericUpDown.XForms.xml",
+        "lib/netstandard2.0/Syncfusion.SfNumericUpDown.XForms.dll",
+        "lib/netstandard2.0/Syncfusion.SfNumericUpDown.XForms.xml",
+        "lib/portable-win+net45+wp80+win81+wpa81/Syncfusion.SfNumericUpDown.XForms.dll",
+        "lib/portable-win+net45+wp80+win81+wpa81/Syncfusion.SfNumericUpDown.XForms.xml",
+        "lib/uap10.0/Syncfusion.SfNumericUpDown.XForms.UWP.XML",
+        "lib/uap10.0/Syncfusion.SfNumericUpDown.XForms.UWP.dll",
+        "lib/uap10.0/Syncfusion.SfNumericUpDown.XForms.dll",
+        "lib/uap10.0/Syncfusion.SfNumericUpDown.XForms.xml",
+        "syncfusion.xamarin.sfnumericupdown.20.1.0.55.nupkg.sha512",
+        "syncfusion.xamarin.sfnumericupdown.nuspec",
         "syncfusion_logo.png"
       ]
     },
