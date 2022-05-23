@@ -16,6 +16,7 @@ namespace EasyParking.Views.Reservas.Reserva
         public PopupReserva()
         {
             InitializeComponent();
+            radiobuttonAuto.IsChecked = true;
         }
 
         private async void btnCancelar_Clicked(object sender, EventArgs e)

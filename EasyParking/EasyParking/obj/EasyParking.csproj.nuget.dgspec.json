@@ -29,7 +29,7 @@
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "C:\\Program Files\\dotnet\\library-packs": {},
-          "http://104.41.143.16:12555/nuget": {},
+          "http://20.85.241.82:12525/nuget": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {

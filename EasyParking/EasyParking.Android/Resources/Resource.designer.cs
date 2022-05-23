@@ -24443,6 +24443,9 @@ namespace EasyParking.Droid
 			// aapt resource value: 0x7F0700D8
 			public const int upload = 2131165400;
 			
+			// aapt resource value: 0x7F0700D9
+			public const int warning = 2131165401;
+			
 			static Drawable()
 			{
 				global::Android.Runtime.ResourceIdManager.UpdateIdValues();

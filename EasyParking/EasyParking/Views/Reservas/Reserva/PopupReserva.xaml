@@ -20,7 +20,17 @@
     <Frame  CornerRadius="3" Padding="10" Margin="20" HasShadow="True"  BackgroundColor="White" VerticalOptions="Center">
 
         <StackLayout>
-            <custom:CustomLabel   Text="Reserva" HorizontalOptions="Center"  Margin="0,0,0,0" VerticalOptions="Center" FontSize="20"/>
+
+            <AbsoluteLayout HorizontalOptions="FillAndExpand">
+                <custom:CustomLabel AbsoluteLayout.LayoutBounds="0.5,0.5" AbsoluteLayout.LayoutFlags="PositionProportional"  Text="Reservar" HorizontalOptions="Center"  Margin="0,0,0,0" VerticalOptions="Center" FontSize="20"/>
+
+                <StackLayout Orientation="Horizontal" AbsoluteLayout.LayoutBounds="1,0.5" AbsoluteLayout.LayoutFlags="PositionProportional" Spacing="2"  VerticalOptions="Center">
+                    
+                    <Image Source="estrella.png" HeightRequest="16" WidthRequest="16" VerticalOptions="Center"/>
+                    <custom:CustomLabel  Text="3.3" FontSize="15" VerticalOptions="Center" TextColor="Black" />
+                </StackLayout>
+            </AbsoluteLayout>
+
 
             <Frame  CornerRadius="3" Padding="10" HasShadow="True"  BackgroundColor="White">
                 <StackLayout Orientation="Vertical" Spacing="0" HorizontalOptions="FillAndExpand"  BackgroundColor="Transparent">
@@ -30,6 +40,7 @@
                         <Image Source="ubicacion.png" HeightRequest="15" WidthRequest="15"/>
                         <custom:CustomLabel Text="Av 9 de Julio al 987" FontSize="14" VerticalOptions="Center" TextColor="Gray" />
                     </StackLayout>
+                    <custom:CustomLabel Text="Terreno parcialmente cubierto" Margin="0"  TextColor="Gray"  MaxLines="4"  LineBreakMode="TailTruncation"/>
 
 
                 </StackLayout>
@@ -60,20 +71,20 @@
 
                         <Frame HorizontalOptions="Center" Padding="5" Grid.Column="0" Grid.Row="0">
                             <StackLayout>
-                                <RadioButton/>
+                                <RadioButton x:Name="radiobuttonAuto"/>
                                 <Image Source="auto.png" HeightRequest="20" WidthRequest="20"/>
                             </StackLayout>
 
                         </Frame>
                         <Frame  HorizontalOptions="Center" Padding="5" Grid.Column="1" Grid.Row="0">
                             <StackLayout>
-                                <RadioButton/>
+                                <RadioButton x:Name="radiobuttonCamioneta"/>
                                 <Image Source="camioneta.png" HeightRequest="20" WidthRequest="20"/>
                             </StackLayout>
                         </Frame>
                         <Frame  HorizontalOptions="Center" Padding="5" Grid.Column="2" Grid.Row="0">
                             <StackLayout>
-                                <RadioButton/>
+                                <RadioButton x:Name="radiobuttonMoto"/>
                                 <Image Source="moto.png" HeightRequest="20" WidthRequest="20"/>
                             </StackLayout>
                         </Frame>
@@ -82,21 +93,38 @@
                 </StackLayout>
             </Frame>
 
+            <StackLayout Margin="0,10,0,0" Orientation="Horizontal" AbsoluteLayout.LayoutBounds="1,0.5" AbsoluteLayout.LayoutFlags="PositionProportional" Spacing="2"  VerticalOptions="Center">
+
+                <Image Source="warning.png" HeightRequest="16" WidthRequest="16" VerticalOptions="Center"/>
+                <custom:CustomLabel  Text="Duración de la reserva antes de su vencimiento: 1 hs" MaxLines="10" FontSize="12" VerticalOptions="Center" TextColor="Black" />
+            </StackLayout>
+            <custom:CustomLabel  Text="Pasado este lapso de tiempo luego de realizado el pago y obtenida la confirmacion efectiva de la reserva, no podrá reclamarse por el mismo sí no se cumplió con el arribo al lugar en ese lapso de tiempo fijado." MaxLines="10" FontSize="12" VerticalOptions="Center" TextColor="Black" />
 
 
 
 
+            <Grid HorizontalOptions="End" Margin="0,20,0,0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
 
-            <StackLayout Orientation="Horizontal">
-                <syncfusion:SfButton x:Name="btnCancelar" Clicked="btnCancelar_Clicked" Grid.Column="0" Grid.Row="3"  Text="Cancelar" FontSize="16" HeightRequest="40"   HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" TextColor="#2968C8" Padding="0"  CornerRadius="3"
+                <syncfusion:SfButton Grid.Column="0" Grid.Row="0" x:Name="btnCancelar" Clicked="btnCancelar_Clicked"   Text="Cancelar" FontSize="16" HeightRequest="40"   HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" TextColor="#2968C8" Padding="0"  CornerRadius="3"
                                                               BorderColor="#2968C8" BorderWidth="2"  BackgroundColor="Transparent"  Margin="0,10,0,10" FontAttributes="Bold"  VerticalOptions="EndAndExpand" />
 
 
-                <syncfusion:SfButton x:Name="btnConfirmarReserva" Grid.Column="1" Grid.Row="3"  Text="Pagar" FontSize="16" HeightRequest="40"   HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" TextColor="White" Padding="0"  CornerRadius="3"
+                <syncfusion:SfButton Grid.Column="1" Grid.Row="0" x:Name="btnConfirmarReserva"  Text="Pagar" FontSize="16" HeightRequest="40"   HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" TextColor="White" Padding="0"  CornerRadius="3"
                                                               BackgroundColor="#2968C8"   Margin="0,10,0,10" FontAttributes="Bold"  VerticalOptions="EndAndExpand" />
 
 
-            </StackLayout>
+
+            </Grid>
+
+
+
 
 
         </StackLayout>

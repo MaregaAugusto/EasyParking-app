@@ -10266,6 +10266,7 @@ public final class R {
     public static final int ubicacion=0x7f0700d6;
     public static final int upbutton=0x7f0700d7;
     public static final int upload=0x7f0700d8;
+    public static final int warning=0x7f0700d9;
   }
   public static final class id {
     public static final int ALT=0x7f080000;

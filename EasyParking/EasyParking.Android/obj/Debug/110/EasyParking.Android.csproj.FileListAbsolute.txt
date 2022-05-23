@@ -1556,3 +1556,4 @@ C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking.Android\obj\Debug\1
 C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking.Android\obj\Debug\110\android\src\crc6402131d12ce4cf4ce\SfNumericUpDown.java
 C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking.Android\obj\Debug\110\android\src\crc6402131d12ce4cf4ce\SpinButtonRenderer.java
 C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking.Android\obj\Debug\110\android\src\crc647afef5a3fc29c4f6\SfNumericUpDownRenderer.java
+C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking.Android\obj\Debug\110\res\drawable\warning.png
