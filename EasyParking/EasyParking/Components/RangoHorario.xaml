@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms"                           xmlns:ListCollection="clr-namespace:System.Collections.Generic;assembly=netstandard" 
+
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:inputLayout="clr-namespace:Syncfusion.XForms.TextInputLayout;assembly=Syncfusion.Core.XForms" xmlns:custom="clr-namespace:EasyParking.Custom" xmlns:combobox="clr-namespace:Syncfusion.XForms.ComboBox;assembly=Syncfusion.SfComboBox.XForms"
+             x:Class="EasyParking.Components.RangoHorario">
+    <ContentView.Content>
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Fill" Spacing="0">
+
+ 
+            <StackLayout  Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+                <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand" >
+
+                    <Frame  CornerRadius="3" Padding="0" HasShadow="True"  BackgroundColor="White">
+                        <combobox:SfComboBox TextSize="16" VerticalOptions="Center" EnableAutoSize="True"   WidthRequest="60"  ShowClearButton="False" ValueChanged="comboboxHora_Desde_ValueChanged"
+                                             HorizontalOptions="Center" WatermarkColor="#0366D6"  DropDownHeaderViewHeight="30"
+                                             MaximumDropDownHeight="250" Watermark="H"  IsEditableMode="false" x:Name="comboboxHora_Desde" >
+                            <combobox:SfComboBox.ComboBoxSource>
+                                <ListCollection:List x:TypeArguments="x:String">
+
+                                </ListCollection:List>
+                            </combobox:SfComboBox.ComboBoxSource>
+                        </combobox:SfComboBox>
+
+                    </Frame>
+
+                    <custom:CustomLabel  Text=":" FontSize="20" MaxLines="2" HorizontalOptions="Center" VerticalOptions="Center" TextColor="Gray" />
+
+                    <Frame  CornerRadius="3" Padding="0" HasShadow="True"  BackgroundColor="White">
+                        <combobox:SfComboBox TextSize="16" Watermark="M" VerticalOptions="Center" EnableAutoSize="True"  WidthRequest="60"     ShowClearButton="False" ValueChanged="comboboxMinuto_Desde_ValueChanged"
+                                             HorizontalOptions="Center" WatermarkColor="#0366D6"  DropDownHeaderViewHeight="30"
+                                             MaximumDropDownHeight="250" IsEditableMode="false" x:Name="comboboxMinuto_Desde">
+                            <combobox:SfComboBox.ComboBoxSource>
+                                <ListCollection:List x:TypeArguments="x:String">
+
+                                </ListCollection:List>
+                            </combobox:SfComboBox.ComboBoxSource>
+                        </combobox:SfComboBox>
+
+                    </Frame>
+                </StackLayout>
+
+
+                <StackLayout Orientation="Horizontal" HorizontalOptions="EndAndExpand">
+                    <Frame  CornerRadius="3" Padding="0" HasShadow="True"  BackgroundColor="White">
+                        <combobox:SfComboBox TextSize="16" VerticalOptions="Center" EnableAutoSize="True" WidthRequest="60"    ShowClearButton="False" ValueChanged="comboboxHora_Hasta_ValueChanged"
+                                             HorizontalOptions="Center" WatermarkColor="#0366D6"  DropDownHeaderViewHeight="30"
+                                             MaximumDropDownHeight="250" Watermark="H"  IsEditableMode="false"  x:Name="comboboxHora_Hasta">
+                            <combobox:SfComboBox.ComboBoxSource>
+                                <ListCollection:List x:TypeArguments="x:String">
+
+                                </ListCollection:List>
+                            </combobox:SfComboBox.ComboBoxSource>
+                        </combobox:SfComboBox>
+
+                    </Frame>
+
+                    <custom:CustomLabel  Text=":" FontSize="20" MaxLines="2" HorizontalOptions="Center" VerticalOptions="Center" TextColor="Gray" />
+
+                    <Frame  CornerRadius="3" Padding="0" HasShadow="True"  BackgroundColor="White">
+                        <combobox:SfComboBox TextSize="16" Watermark="M" VerticalOptions="Center" EnableAutoSize="True"  WidthRequest="60"  ShowClearButton="False" ValueChanged="comboboxMinuto_Hasta_ValueChanged"
+                                             HorizontalOptions="Center" WatermarkColor="#0366D6"  DropDownHeaderViewHeight="30"
+                                             MaximumDropDownHeight="250" IsEditableMode="false"  x:Name="comboboxMinuto_Hasta">
+                            <combobox:SfComboBox.ComboBoxSource>
+                                <ListCollection:List x:TypeArguments="x:String">
+
+                                </ListCollection:List>
+                            </combobox:SfComboBox.ComboBoxSource>
+                        </combobox:SfComboBox>
+
+                    </Frame>
+                </StackLayout>
+
+
+            </StackLayout>
+
+
+            <ImageButton Source="cerrar.png" x:Name="btnEliminar" HeightRequest="30" HorizontalOptions="EndAndExpand" WidthRequest="30" Margin="0,0,0,0" 
+                                             Clicked="btnEliminar_Clicked" CornerRadius="15" Padding="10" VerticalOptions="Center" BackgroundColor="Transparent"/>
+
+        </StackLayout>
+    </ContentView.Content>
+</ContentView>

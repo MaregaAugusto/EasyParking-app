@@ -1,4 +1,5 @@
-﻿using EasyParking.Views.Inicio;
+﻿using EasyParking.Views.Estacionamientos;
+using EasyParking.Views.Inicio;
 using EasyParking.Views.PerfilDeNegocio.Tarifas.Tarifa;
 using EasyParking.Views.Reservas.Reserva;
 using System;
@@ -15,8 +16,10 @@ namespace EasyParking
 
             InitializeComponent();
 
-            MainPage = new NavigationPage(new EasyParking.Views.Menu.MenuContainer(new Inicio()));
+           //MainPage = new NavigationPage(new EasyParking.Views.Menu.MenuContainer(new Inicio()));
+           MainPage = new NavigationPage(new EasyParking.Views.Menu.MenuContainer(new Estacionamiento()));
         }
+
 
         protected override void OnStart()
         {

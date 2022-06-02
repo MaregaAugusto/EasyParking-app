@@ -5,7 +5,7 @@ using Android.OS;
 
 namespace EasyParking.Droid
 {
-    [Activity(Theme = "@style/MyTheme.Splash", Label ="xx",
+    [Activity(Theme = "@style/MyTheme.Splash", Label ="Easy Parking",
         MainLauncher = true,
         NoHistory = true)]
     public class SplashActivity : Activity

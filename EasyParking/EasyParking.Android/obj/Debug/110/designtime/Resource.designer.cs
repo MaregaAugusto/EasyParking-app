@@ -25,6 +25,228 @@ namespace EasyParking.Droid
 		
 		public static void UpdateIdValues()
 		{
+			global::Plugin.Media.Resource.Attribute.alpha = global::EasyParking.Droid.Resource.Attribute.alpha;
+			global::Plugin.Media.Resource.Attribute.coordinatorLayoutStyle = global::EasyParking.Droid.Resource.Attribute.coordinatorLayoutStyle;
+			global::Plugin.Media.Resource.Attribute.font = global::EasyParking.Droid.Resource.Attribute.font;
+			global::Plugin.Media.Resource.Attribute.fontProviderAuthority = global::EasyParking.Droid.Resource.Attribute.fontProviderAuthority;
+			global::Plugin.Media.Resource.Attribute.fontProviderCerts = global::EasyParking.Droid.Resource.Attribute.fontProviderCerts;
+			global::Plugin.Media.Resource.Attribute.fontProviderFetchStrategy = global::EasyParking.Droid.Resource.Attribute.fontProviderFetchStrategy;
+			global::Plugin.Media.Resource.Attribute.fontProviderFetchTimeout = global::EasyParking.Droid.Resource.Attribute.fontProviderFetchTimeout;
+			global::Plugin.Media.Resource.Attribute.fontProviderPackage = global::EasyParking.Droid.Resource.Attribute.fontProviderPackage;
+			global::Plugin.Media.Resource.Attribute.fontProviderQuery = global::EasyParking.Droid.Resource.Attribute.fontProviderQuery;
+			global::Plugin.Media.Resource.Attribute.fontStyle = global::EasyParking.Droid.Resource.Attribute.fontStyle;
+			global::Plugin.Media.Resource.Attribute.fontVariationSettings = global::EasyParking.Droid.Resource.Attribute.fontVariationSettings;
+			global::Plugin.Media.Resource.Attribute.fontWeight = global::EasyParking.Droid.Resource.Attribute.fontWeight;
+			global::Plugin.Media.Resource.Attribute.keylines = global::EasyParking.Droid.Resource.Attribute.keylines;
+			global::Plugin.Media.Resource.Attribute.layout_anchor = global::EasyParking.Droid.Resource.Attribute.layout_anchor;
+			global::Plugin.Media.Resource.Attribute.layout_anchorGravity = global::EasyParking.Droid.Resource.Attribute.layout_anchorGravity;
+			global::Plugin.Media.Resource.Attribute.layout_behavior = global::EasyParking.Droid.Resource.Attribute.layout_behavior;
+			global::Plugin.Media.Resource.Attribute.layout_dodgeInsetEdges = global::EasyParking.Droid.Resource.Attribute.layout_dodgeInsetEdges;
+			global::Plugin.Media.Resource.Attribute.layout_insetEdge = global::EasyParking.Droid.Resource.Attribute.layout_insetEdge;
+			global::Plugin.Media.Resource.Attribute.layout_keyline = global::EasyParking.Droid.Resource.Attribute.layout_keyline;
+			global::Plugin.Media.Resource.Attribute.statusBarBackground = global::EasyParking.Droid.Resource.Attribute.statusBarBackground;
+			global::Plugin.Media.Resource.Attribute.ttcIndex = global::EasyParking.Droid.Resource.Attribute.ttcIndex;
+			global::Plugin.Media.Resource.Color.browser_actions_bg_grey = global::EasyParking.Droid.Resource.Color.browser_actions_bg_grey;
+			global::Plugin.Media.Resource.Color.browser_actions_divider_color = global::EasyParking.Droid.Resource.Color.browser_actions_divider_color;
+			global::Plugin.Media.Resource.Color.browser_actions_text_color = global::EasyParking.Droid.Resource.Color.browser_actions_text_color;
+			global::Plugin.Media.Resource.Color.browser_actions_title_color = global::EasyParking.Droid.Resource.Color.browser_actions_title_color;
+			global::Plugin.Media.Resource.Color.notification_action_color_filter = global::EasyParking.Droid.Resource.Color.notification_action_color_filter;
+			global::Plugin.Media.Resource.Color.notification_icon_bg_color = global::EasyParking.Droid.Resource.Color.notification_icon_bg_color;
+			global::Plugin.Media.Resource.Color.ripple_material_light = global::EasyParking.Droid.Resource.Color.ripple_material_light;
+			global::Plugin.Media.Resource.Color.secondary_text_default_material_light = global::EasyParking.Droid.Resource.Color.secondary_text_default_material_light;
+			global::Plugin.Media.Resource.Dimension.browser_actions_context_menu_max_width = global::EasyParking.Droid.Resource.Dimension.browser_actions_context_menu_max_width;
+			global::Plugin.Media.Resource.Dimension.browser_actions_context_menu_min_padding = global::EasyParking.Droid.Resource.Dimension.browser_actions_context_menu_min_padding;
+			global::Plugin.Media.Resource.Dimension.compat_button_inset_horizontal_material = global::EasyParking.Droid.Resource.Dimension.compat_button_inset_horizontal_material;
+			global::Plugin.Media.Resource.Dimension.compat_button_inset_vertical_material = global::EasyParking.Droid.Resource.Dimension.compat_button_inset_vertical_material;
+			global::Plugin.Media.Resource.Dimension.compat_button_padding_horizontal_material = global::EasyParking.Droid.Resource.Dimension.compat_button_padding_horizontal_material;
+			global::Plugin.Media.Resource.Dimension.compat_button_padding_vertical_material = global::EasyParking.Droid.Resource.Dimension.compat_button_padding_vertical_material;
+			global::Plugin.Media.Resource.Dimension.compat_control_corner_material = global::EasyParking.Droid.Resource.Dimension.compat_control_corner_material;
+			global::Plugin.Media.Resource.Dimension.compat_notification_large_icon_max_height = global::EasyParking.Droid.Resource.Dimension.compat_notification_large_icon_max_height;
+			global::Plugin.Media.Resource.Dimension.compat_notification_large_icon_max_width = global::EasyParking.Droid.Resource.Dimension.compat_notification_large_icon_max_width;
+			global::Plugin.Media.Resource.Dimension.notification_action_icon_size = global::EasyParking.Droid.Resource.Dimension.notification_action_icon_size;
+			global::Plugin.Media.Resource.Dimension.notification_action_text_size = global::EasyParking.Droid.Resource.Dimension.notification_action_text_size;
+			global::Plugin.Media.Resource.Dimension.notification_big_circle_margin = global::EasyParking.Droid.Resource.Dimension.notification_big_circle_margin;
+			global::Plugin.Media.Resource.Dimension.notification_content_margin_start = global::EasyParking.Droid.Resource.Dimension.notification_content_margin_start;
+			global::Plugin.Media.Resource.Dimension.notification_large_icon_height = global::EasyParking.Droid.Resource.Dimension.notification_large_icon_height;
+			global::Plugin.Media.Resource.Dimension.notification_large_icon_width = global::EasyParking.Droid.Resource.Dimension.notification_large_icon_width;
+			global::Plugin.Media.Resource.Dimension.notification_main_column_padding_top = global::EasyParking.Droid.Resource.Dimension.notification_main_column_padding_top;
+			global::Plugin.Media.Resource.Dimension.notification_media_narrow_margin = global::EasyParking.Droid.Resource.Dimension.notification_media_narrow_margin;
+			global::Plugin.Media.Resource.Dimension.notification_right_icon_size = global::EasyParking.Droid.Resource.Dimension.notification_right_icon_size;
+			global::Plugin.Media.Resource.Dimension.notification_right_side_padding_top = global::EasyParking.Droid.Resource.Dimension.notification_right_side_padding_top;
+			global::Plugin.Media.Resource.Dimension.notification_small_icon_background_padding = global::EasyParking.Droid.Resource.Dimension.notification_small_icon_background_padding;
+			global::Plugin.Media.Resource.Dimension.notification_small_icon_size_as_large = global::EasyParking.Droid.Resource.Dimension.notification_small_icon_size_as_large;
+			global::Plugin.Media.Resource.Dimension.notification_subtext_size = global::EasyParking.Droid.Resource.Dimension.notification_subtext_size;
+			global::Plugin.Media.Resource.Dimension.notification_top_pad = global::EasyParking.Droid.Resource.Dimension.notification_top_pad;
+			global::Plugin.Media.Resource.Dimension.notification_top_pad_large_text = global::EasyParking.Droid.Resource.Dimension.notification_top_pad_large_text;
+			global::Plugin.Media.Resource.Drawable.notification_action_background = global::EasyParking.Droid.Resource.Drawable.notification_action_background;
+			global::Plugin.Media.Resource.Drawable.notification_bg = global::EasyParking.Droid.Resource.Drawable.notification_bg;
+			global::Plugin.Media.Resource.Drawable.notification_bg_low = global::EasyParking.Droid.Resource.Drawable.notification_bg_low;
+			global::Plugin.Media.Resource.Drawable.notification_bg_low_normal = global::EasyParking.Droid.Resource.Drawable.notification_bg_low_normal;
+			global::Plugin.Media.Resource.Drawable.notification_bg_low_pressed = global::EasyParking.Droid.Resource.Drawable.notification_bg_low_pressed;
+			global::Plugin.Media.Resource.Drawable.notification_bg_normal = global::EasyParking.Droid.Resource.Drawable.notification_bg_normal;
+			global::Plugin.Media.Resource.Drawable.notification_bg_normal_pressed = global::EasyParking.Droid.Resource.Drawable.notification_bg_normal_pressed;
+			global::Plugin.Media.Resource.Drawable.notification_icon_background = global::EasyParking.Droid.Resource.Drawable.notification_icon_background;
+			global::Plugin.Media.Resource.Drawable.notification_template_icon_bg = global::EasyParking.Droid.Resource.Drawable.notification_template_icon_bg;
+			global::Plugin.Media.Resource.Drawable.notification_template_icon_low_bg = global::EasyParking.Droid.Resource.Drawable.notification_template_icon_low_bg;
+			global::Plugin.Media.Resource.Drawable.notification_tile_bg = global::EasyParking.Droid.Resource.Drawable.notification_tile_bg;
+			global::Plugin.Media.Resource.Drawable.notify_panel_notification_icon_bg = global::EasyParking.Droid.Resource.Drawable.notify_panel_notification_icon_bg;
+			global::Plugin.Media.Resource.Id.accessibility_action_clickable_span = global::EasyParking.Droid.Resource.Id.accessibility_action_clickable_span;
+			global::Plugin.Media.Resource.Id.accessibility_custom_action_0 = global::EasyParking.Droid.Resource.Id.accessibility_custom_action_0;
+			global::Plugin.Media.Resource.Id.accessibility_custom_action_1 = global::EasyParking.Droid.Resource.Id.accessibility_custom_action_1;
+			global::Plugin.Media.Resource.Id.accessibility_custom_action_10 = global::EasyParking.Droid.Resource.Id.accessibility_custom_action_10;
+			global::Plugin.Media.Resource.Id.accessibility_custom_action_11 = global::EasyParking.Droid.Resource.Id.accessibility_custom_action_11;
+			global::Plugin.Media.Resource.Id.accessibility_custom_action_12 = global::EasyParking.Droid.Resource.Id.accessibility_custom_action_12;
+			global::Plugin.Media.Resource.Id.accessibility_custom_action_13 = global::EasyParking.Droid.Resource.Id.accessibility_custom_action_13;
+			global::Plugin.Media.Resource.Id.accessibility_custom_action_14 = global::EasyParking.Droid.Resource.Id.accessibility_custom_action_14;
+			global::Plugin.Media.Resource.Id.accessibility_custom_action_15 = global::EasyParking.Droid.Resource.Id.accessibility_custom_action_15;
+			global::Plugin.Media.Resource.Id.accessibility_custom_action_16 = global::EasyParking.Droid.Resource.Id.accessibility_custom_action_16;
+			global::Plugin.Media.Resource.Id.accessibility_custom_action_17 = global::EasyParking.Droid.Resource.Id.accessibility_custom_action_17;
+			global::Plugin.Media.Resource.Id.accessibility_custom_action_18 = global::EasyParking.Droid.Resource.Id.accessibility_custom_action_18;
+			global::Plugin.Media.Resource.Id.accessibility_custom_action_19 = global::EasyParking.Droid.Resource.Id.accessibility_custom_action_19;
+			global::Plugin.Media.Resource.Id.accessibility_custom_action_2 = global::EasyParking.Droid.Resource.Id.accessibility_custom_action_2;
+			global::Plugin.Media.Resource.Id.accessibility_custom_action_20 = global::EasyParking.Droid.Resource.Id.accessibility_custom_action_20;
+			global::Plugin.Media.Resource.Id.accessibility_custom_action_21 = global::EasyParking.Droid.Resource.Id.accessibility_custom_action_21;
+			global::Plugin.Media.Resource.Id.accessibility_custom_action_22 = global::EasyParking.Droid.Resource.Id.accessibility_custom_action_22;
+			global::Plugin.Media.Resource.Id.accessibility_custom_action_23 = global::EasyParking.Droid.Resource.Id.accessibility_custom_action_23;
+			global::Plugin.Media.Resource.Id.accessibility_custom_action_24 = global::EasyParking.Droid.Resource.Id.accessibility_custom_action_24;
+			global::Plugin.Media.Resource.Id.accessibility_custom_action_25 = global::EasyParking.Droid.Resource.Id.accessibility_custom_action_25;
+			global::Plugin.Media.Resource.Id.accessibility_custom_action_26 = global::EasyParking.Droid.Resource.Id.accessibility_custom_action_26;
+			global::Plugin.Media.Resource.Id.accessibility_custom_action_27 = global::EasyParking.Droid.Resource.Id.accessibility_custom_action_27;
+			global::Plugin.Media.Resource.Id.accessibility_custom_action_28 = global::EasyParking.Droid.Resource.Id.accessibility_custom_action_28;
+			global::Plugin.Media.Resource.Id.accessibility_custom_action_29 = global::EasyParking.Droid.Resource.Id.accessibility_custom_action_29;
+			global::Plugin.Media.Resource.Id.accessibility_custom_action_3 = global::EasyParking.Droid.Resource.Id.accessibility_custom_action_3;
+			global::Plugin.Media.Resource.Id.accessibility_custom_action_30 = global::EasyParking.Droid.Resource.Id.accessibility_custom_action_30;
+			global::Plugin.Media.Resource.Id.accessibility_custom_action_31 = global::EasyParking.Droid.Resource.Id.accessibility_custom_action_31;
+			global::Plugin.Media.Resource.Id.accessibility_custom_action_4 = global::EasyParking.Droid.Resource.Id.accessibility_custom_action_4;
+			global::Plugin.Media.Resource.Id.accessibility_custom_action_5 = global::EasyParking.Droid.Resource.Id.accessibility_custom_action_5;
+			global::Plugin.Media.Resource.Id.accessibility_custom_action_6 = global::EasyParking.Droid.Resource.Id.accessibility_custom_action_6;
+			global::Plugin.Media.Resource.Id.accessibility_custom_action_7 = global::EasyParking.Droid.Resource.Id.accessibility_custom_action_7;
+			global::Plugin.Media.Resource.Id.accessibility_custom_action_8 = global::EasyParking.Droid.Resource.Id.accessibility_custom_action_8;
+			global::Plugin.Media.Resource.Id.accessibility_custom_action_9 = global::EasyParking.Droid.Resource.Id.accessibility_custom_action_9;
+			global::Plugin.Media.Resource.Id.actions = global::EasyParking.Droid.Resource.Id.actions;
+			global::Plugin.Media.Resource.Id.action_container = global::EasyParking.Droid.Resource.Id.action_container;
+			global::Plugin.Media.Resource.Id.action_divider = global::EasyParking.Droid.Resource.Id.action_divider;
+			global::Plugin.Media.Resource.Id.action_image = global::EasyParking.Droid.Resource.Id.action_image;
+			global::Plugin.Media.Resource.Id.action_text = global::EasyParking.Droid.Resource.Id.action_text;
+			global::Plugin.Media.Resource.Id.all = global::EasyParking.Droid.Resource.Id.all;
+			global::Plugin.Media.Resource.Id.async = global::EasyParking.Droid.Resource.Id.async;
+			global::Plugin.Media.Resource.Id.blocking = global::EasyParking.Droid.Resource.Id.blocking;
+			global::Plugin.Media.Resource.Id.bottom = global::EasyParking.Droid.Resource.Id.bottom;
+			global::Plugin.Media.Resource.Id.browser_actions_header_text = global::EasyParking.Droid.Resource.Id.browser_actions_header_text;
+			global::Plugin.Media.Resource.Id.browser_actions_menu_items = global::EasyParking.Droid.Resource.Id.browser_actions_menu_items;
+			global::Plugin.Media.Resource.Id.browser_actions_menu_item_icon = global::EasyParking.Droid.Resource.Id.browser_actions_menu_item_icon;
+			global::Plugin.Media.Resource.Id.browser_actions_menu_item_text = global::EasyParking.Droid.Resource.Id.browser_actions_menu_item_text;
+			global::Plugin.Media.Resource.Id.browser_actions_menu_view = global::EasyParking.Droid.Resource.Id.browser_actions_menu_view;
+			global::Plugin.Media.Resource.Id.center = global::EasyParking.Droid.Resource.Id.center;
+			global::Plugin.Media.Resource.Id.center_horizontal = global::EasyParking.Droid.Resource.Id.center_horizontal;
+			global::Plugin.Media.Resource.Id.center_vertical = global::EasyParking.Droid.Resource.Id.center_vertical;
+			global::Plugin.Media.Resource.Id.chronometer = global::EasyParking.Droid.Resource.Id.chronometer;
+			global::Plugin.Media.Resource.Id.clip_horizontal = global::EasyParking.Droid.Resource.Id.clip_horizontal;
+			global::Plugin.Media.Resource.Id.clip_vertical = global::EasyParking.Droid.Resource.Id.clip_vertical;
+			global::Plugin.Media.Resource.Id.dialog_button = global::EasyParking.Droid.Resource.Id.dialog_button;
+			global::Plugin.Media.Resource.Id.end = global::EasyParking.Droid.Resource.Id.end;
+			global::Plugin.Media.Resource.Id.fill = global::EasyParking.Droid.Resource.Id.fill;
+			global::Plugin.Media.Resource.Id.fill_horizontal = global::EasyParking.Droid.Resource.Id.fill_horizontal;
+			global::Plugin.Media.Resource.Id.fill_vertical = global::EasyParking.Droid.Resource.Id.fill_vertical;
+			global::Plugin.Media.Resource.Id.forever = global::EasyParking.Droid.Resource.Id.forever;
+			global::Plugin.Media.Resource.Id.icon = global::EasyParking.Droid.Resource.Id.icon;
+			global::Plugin.Media.Resource.Id.icon_group = global::EasyParking.Droid.Resource.Id.icon_group;
+			global::Plugin.Media.Resource.Id.info = global::EasyParking.Droid.Resource.Id.info;
+			global::Plugin.Media.Resource.Id.italic = global::EasyParking.Droid.Resource.Id.italic;
+			global::Plugin.Media.Resource.Id.left = global::EasyParking.Droid.Resource.Id.left;
+			global::Plugin.Media.Resource.Id.line1 = global::EasyParking.Droid.Resource.Id.line1;
+			global::Plugin.Media.Resource.Id.line3 = global::EasyParking.Droid.Resource.Id.line3;
+			global::Plugin.Media.Resource.Id.none = global::EasyParking.Droid.Resource.Id.none;
+			global::Plugin.Media.Resource.Id.normal = global::EasyParking.Droid.Resource.Id.normal;
+			global::Plugin.Media.Resource.Id.notification_background = global::EasyParking.Droid.Resource.Id.notification_background;
+			global::Plugin.Media.Resource.Id.notification_main_column = global::EasyParking.Droid.Resource.Id.notification_main_column;
+			global::Plugin.Media.Resource.Id.notification_main_column_container = global::EasyParking.Droid.Resource.Id.notification_main_column_container;
+			global::Plugin.Media.Resource.Id.right = global::EasyParking.Droid.Resource.Id.right;
+			global::Plugin.Media.Resource.Id.right_icon = global::EasyParking.Droid.Resource.Id.right_icon;
+			global::Plugin.Media.Resource.Id.right_side = global::EasyParking.Droid.Resource.Id.right_side;
+			global::Plugin.Media.Resource.Id.start = global::EasyParking.Droid.Resource.Id.start;
+			global::Plugin.Media.Resource.Id.tag_accessibility_actions = global::EasyParking.Droid.Resource.Id.tag_accessibility_actions;
+			global::Plugin.Media.Resource.Id.tag_accessibility_clickable_spans = global::EasyParking.Droid.Resource.Id.tag_accessibility_clickable_spans;
+			global::Plugin.Media.Resource.Id.tag_accessibility_heading = global::EasyParking.Droid.Resource.Id.tag_accessibility_heading;
+			global::Plugin.Media.Resource.Id.tag_accessibility_pane_title = global::EasyParking.Droid.Resource.Id.tag_accessibility_pane_title;
+			global::Plugin.Media.Resource.Id.tag_screen_reader_focusable = global::EasyParking.Droid.Resource.Id.tag_screen_reader_focusable;
+			global::Plugin.Media.Resource.Id.tag_transition_group = global::EasyParking.Droid.Resource.Id.tag_transition_group;
+			global::Plugin.Media.Resource.Id.tag_unhandled_key_event_manager = global::EasyParking.Droid.Resource.Id.tag_unhandled_key_event_manager;
+			global::Plugin.Media.Resource.Id.tag_unhandled_key_listeners = global::EasyParking.Droid.Resource.Id.tag_unhandled_key_listeners;
+			global::Plugin.Media.Resource.Id.text = global::EasyParking.Droid.Resource.Id.text;
+			global::Plugin.Media.Resource.Id.text2 = global::EasyParking.Droid.Resource.Id.text2;
+			global::Plugin.Media.Resource.Id.time = global::EasyParking.Droid.Resource.Id.time;
+			global::Plugin.Media.Resource.Id.title = global::EasyParking.Droid.Resource.Id.title;
+			global::Plugin.Media.Resource.Id.top = global::EasyParking.Droid.Resource.Id.top;
+			global::Plugin.Media.Resource.Integer.status_bar_notification_info_maxnum = global::EasyParking.Droid.Resource.Integer.status_bar_notification_info_maxnum;
+			global::Plugin.Media.Resource.Layout.browser_actions_context_menu_page = global::EasyParking.Droid.Resource.Layout.browser_actions_context_menu_page;
+			global::Plugin.Media.Resource.Layout.browser_actions_context_menu_row = global::EasyParking.Droid.Resource.Layout.browser_actions_context_menu_row;
+			global::Plugin.Media.Resource.Layout.custom_dialog = global::EasyParking.Droid.Resource.Layout.custom_dialog;
+			global::Plugin.Media.Resource.Layout.notification_action = global::EasyParking.Droid.Resource.Layout.notification_action;
+			global::Plugin.Media.Resource.Layout.notification_action_tombstone = global::EasyParking.Droid.Resource.Layout.notification_action_tombstone;
+			global::Plugin.Media.Resource.Layout.notification_template_custom_big = global::EasyParking.Droid.Resource.Layout.notification_template_custom_big;
+			global::Plugin.Media.Resource.Layout.notification_template_icon_group = global::EasyParking.Droid.Resource.Layout.notification_template_icon_group;
+			global::Plugin.Media.Resource.Layout.notification_template_part_chronometer = global::EasyParking.Droid.Resource.Layout.notification_template_part_chronometer;
+			global::Plugin.Media.Resource.Layout.notification_template_part_time = global::EasyParking.Droid.Resource.Layout.notification_template_part_time;
+			global::Plugin.Media.Resource.String.status_bar_notification_info_overflow = global::EasyParking.Droid.Resource.String.status_bar_notification_info_overflow;
+			global::Plugin.Media.Resource.Style.TextAppearance_Compat_Notification = global::EasyParking.Droid.Resource.Style.TextAppearance_Compat_Notification;
+			global::Plugin.Media.Resource.Style.TextAppearance_Compat_Notification_Info = global::EasyParking.Droid.Resource.Style.TextAppearance_Compat_Notification_Info;
+			global::Plugin.Media.Resource.Style.TextAppearance_Compat_Notification_Line2 = global::EasyParking.Droid.Resource.Style.TextAppearance_Compat_Notification_Line2;
+			global::Plugin.Media.Resource.Style.TextAppearance_Compat_Notification_Time = global::EasyParking.Droid.Resource.Style.TextAppearance_Compat_Notification_Time;
+			global::Plugin.Media.Resource.Style.TextAppearance_Compat_Notification_Title = global::EasyParking.Droid.Resource.Style.TextAppearance_Compat_Notification_Title;
+			global::Plugin.Media.Resource.Style.Widget_Compat_NotificationActionContainer = global::EasyParking.Droid.Resource.Style.Widget_Compat_NotificationActionContainer;
+			global::Plugin.Media.Resource.Style.Widget_Compat_NotificationActionText = global::EasyParking.Droid.Resource.Style.Widget_Compat_NotificationActionText;
+			global::Plugin.Media.Resource.Style.Widget_Support_CoordinatorLayout = global::EasyParking.Droid.Resource.Style.Widget_Support_CoordinatorLayout;
+			global::Plugin.Media.Resource.Styleable.ColorStateListItem = global::EasyParking.Droid.Resource.Styleable.ColorStateListItem;
+			global::Plugin.Media.Resource.Styleable.ColorStateListItem_alpha = global::EasyParking.Droid.Resource.Styleable.ColorStateListItem_alpha;
+			global::Plugin.Media.Resource.Styleable.ColorStateListItem_android_alpha = global::EasyParking.Droid.Resource.Styleable.ColorStateListItem_android_alpha;
+			global::Plugin.Media.Resource.Styleable.ColorStateListItem_android_color = global::EasyParking.Droid.Resource.Styleable.ColorStateListItem_android_color;
+			global::Plugin.Media.Resource.Styleable.CoordinatorLayout = global::EasyParking.Droid.Resource.Styleable.CoordinatorLayout;
+			global::Plugin.Media.Resource.Styleable.CoordinatorLayout_keylines = global::EasyParking.Droid.Resource.Styleable.CoordinatorLayout_keylines;
+			global::Plugin.Media.Resource.Styleable.CoordinatorLayout_Layout = global::EasyParking.Droid.Resource.Styleable.CoordinatorLayout_Layout;
+			global::Plugin.Media.Resource.Styleable.CoordinatorLayout_Layout_android_layout_gravity = global::EasyParking.Droid.Resource.Styleable.CoordinatorLayout_Layout_android_layout_gravity;
+			global::Plugin.Media.Resource.Styleable.CoordinatorLayout_Layout_layout_anchor = global::EasyParking.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_anchor;
+			global::Plugin.Media.Resource.Styleable.CoordinatorLayout_Layout_layout_anchorGravity = global::EasyParking.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_anchorGravity;
+			global::Plugin.Media.Resource.Styleable.CoordinatorLayout_Layout_layout_behavior = global::EasyParking.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_behavior;
+			global::Plugin.Media.Resource.Styleable.CoordinatorLayout_Layout_layout_dodgeInsetEdges = global::EasyParking.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_dodgeInsetEdges;
+			global::Plugin.Media.Resource.Styleable.CoordinatorLayout_Layout_layout_insetEdge = global::EasyParking.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_insetEdge;
+			global::Plugin.Media.Resource.Styleable.CoordinatorLayout_Layout_layout_keyline = global::EasyParking.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_keyline;
+			global::Plugin.Media.Resource.Styleable.CoordinatorLayout_statusBarBackground = global::EasyParking.Droid.Resource.Styleable.CoordinatorLayout_statusBarBackground;
+			global::Plugin.Media.Resource.Styleable.FontFamily = global::EasyParking.Droid.Resource.Styleable.FontFamily;
+			global::Plugin.Media.Resource.Styleable.FontFamilyFont = global::EasyParking.Droid.Resource.Styleable.FontFamilyFont;
+			global::Plugin.Media.Resource.Styleable.FontFamilyFont_android_font = global::EasyParking.Droid.Resource.Styleable.FontFamilyFont_android_font;
+			global::Plugin.Media.Resource.Styleable.FontFamilyFont_android_fontStyle = global::EasyParking.Droid.Resource.Styleable.FontFamilyFont_android_fontStyle;
+			global::Plugin.Media.Resource.Styleable.FontFamilyFont_android_fontVariationSettings = global::EasyParking.Droid.Resource.Styleable.FontFamilyFont_android_fontVariationSettings;
+			global::Plugin.Media.Resource.Styleable.FontFamilyFont_android_fontWeight = global::EasyParking.Droid.Resource.Styleable.FontFamilyFont_android_fontWeight;
+			global::Plugin.Media.Resource.Styleable.FontFamilyFont_android_ttcIndex = global::EasyParking.Droid.Resource.Styleable.FontFamilyFont_android_ttcIndex;
+			global::Plugin.Media.Resource.Styleable.FontFamilyFont_font = global::EasyParking.Droid.Resource.Styleable.FontFamilyFont_font;
+			global::Plugin.Media.Resource.Styleable.FontFamilyFont_fontStyle = global::EasyParking.Droid.Resource.Styleable.FontFamilyFont_fontStyle;
+			global::Plugin.Media.Resource.Styleable.FontFamilyFont_fontVariationSettings = global::EasyParking.Droid.Resource.Styleable.FontFamilyFont_fontVariationSettings;
+			global::Plugin.Media.Resource.Styleable.FontFamilyFont_fontWeight = global::EasyParking.Droid.Resource.Styleable.FontFamilyFont_fontWeight;
+			global::Plugin.Media.Resource.Styleable.FontFamilyFont_ttcIndex = global::EasyParking.Droid.Resource.Styleable.FontFamilyFont_ttcIndex;
+			global::Plugin.Media.Resource.Styleable.FontFamily_fontProviderAuthority = global::EasyParking.Droid.Resource.Styleable.FontFamily_fontProviderAuthority;
+			global::Plugin.Media.Resource.Styleable.FontFamily_fontProviderCerts = global::EasyParking.Droid.Resource.Styleable.FontFamily_fontProviderCerts;
+			global::Plugin.Media.Resource.Styleable.FontFamily_fontProviderFetchStrategy = global::EasyParking.Droid.Resource.Styleable.FontFamily_fontProviderFetchStrategy;
+			global::Plugin.Media.Resource.Styleable.FontFamily_fontProviderFetchTimeout = global::EasyParking.Droid.Resource.Styleable.FontFamily_fontProviderFetchTimeout;
+			global::Plugin.Media.Resource.Styleable.FontFamily_fontProviderPackage = global::EasyParking.Droid.Resource.Styleable.FontFamily_fontProviderPackage;
+			global::Plugin.Media.Resource.Styleable.FontFamily_fontProviderQuery = global::EasyParking.Droid.Resource.Styleable.FontFamily_fontProviderQuery;
+			global::Plugin.Media.Resource.Styleable.GradientColor = global::EasyParking.Droid.Resource.Styleable.GradientColor;
+			global::Plugin.Media.Resource.Styleable.GradientColorItem = global::EasyParking.Droid.Resource.Styleable.GradientColorItem;
+			global::Plugin.Media.Resource.Styleable.GradientColorItem_android_color = global::EasyParking.Droid.Resource.Styleable.GradientColorItem_android_color;
+			global::Plugin.Media.Resource.Styleable.GradientColorItem_android_offset = global::EasyParking.Droid.Resource.Styleable.GradientColorItem_android_offset;
+			global::Plugin.Media.Resource.Styleable.GradientColor_android_centerColor = global::EasyParking.Droid.Resource.Styleable.GradientColor_android_centerColor;
+			global::Plugin.Media.Resource.Styleable.GradientColor_android_centerX = global::EasyParking.Droid.Resource.Styleable.GradientColor_android_centerX;
+			global::Plugin.Media.Resource.Styleable.GradientColor_android_centerY = global::EasyParking.Droid.Resource.Styleable.GradientColor_android_centerY;
+			global::Plugin.Media.Resource.Styleable.GradientColor_android_endColor = global::EasyParking.Droid.Resource.Styleable.GradientColor_android_endColor;
+			global::Plugin.Media.Resource.Styleable.GradientColor_android_endX = global::EasyParking.Droid.Resource.Styleable.GradientColor_android_endX;
+			global::Plugin.Media.Resource.Styleable.GradientColor_android_endY = global::EasyParking.Droid.Resource.Styleable.GradientColor_android_endY;
+			global::Plugin.Media.Resource.Styleable.GradientColor_android_gradientRadius = global::EasyParking.Droid.Resource.Styleable.GradientColor_android_gradientRadius;
+			global::Plugin.Media.Resource.Styleable.GradientColor_android_startColor = global::EasyParking.Droid.Resource.Styleable.GradientColor_android_startColor;
+			global::Plugin.Media.Resource.Styleable.GradientColor_android_startX = global::EasyParking.Droid.Resource.Styleable.GradientColor_android_startX;
+			global::Plugin.Media.Resource.Styleable.GradientColor_android_startY = global::EasyParking.Droid.Resource.Styleable.GradientColor_android_startY;
+			global::Plugin.Media.Resource.Styleable.GradientColor_android_tileMode = global::EasyParking.Droid.Resource.Styleable.GradientColor_android_tileMode;
+			global::Plugin.Media.Resource.Styleable.GradientColor_android_type = global::EasyParking.Droid.Resource.Styleable.GradientColor_android_type;
+			global::Plugin.Media.Resource.Xml.xamarin_essentials_fileprovider_file_paths = global::EasyParking.Droid.Resource.Xml.xamarin_essentials_fileprovider_file_paths;
 			global::Rg.Plugins.Popup.Resource.Animation.abc_fade_in = global::EasyParking.Droid.Resource.Animation.abc_fade_in;
 			global::Rg.Plugins.Popup.Resource.Animation.abc_fade_out = global::EasyParking.Droid.Resource.Animation.abc_fade_out;
 			global::Rg.Plugins.Popup.Resource.Animation.abc_grow_fade_in_from_bottom = global::EasyParking.Droid.Resource.Animation.abc_grow_fade_in_from_bottom;
@@ -24180,271 +24402,274 @@ namespace EasyParking.Droid
 			public const int camioneta = 2131165312;
 			
 			// aapt resource value: 0x7F070081
-			public const int clear_button_icon = 2131165313;
+			public const int cerrar = 2131165313;
 			
 			// aapt resource value: 0x7F070082
-			public const int comment = 2131165314;
+			public const int clear_button_icon = 2131165314;
 			
 			// aapt resource value: 0x7F070083
-			public const int design_fab_background = 2131165315;
+			public const int comment = 2131165315;
 			
 			// aapt resource value: 0x7F070084
-			public const int design_ic_visibility = 2131165316;
+			public const int design_fab_background = 2131165316;
 			
 			// aapt resource value: 0x7F070085
-			public const int design_ic_visibility_off = 2131165317;
+			public const int design_ic_visibility = 2131165317;
 			
 			// aapt resource value: 0x7F070086
-			public const int design_password_eye = 2131165318;
+			public const int design_ic_visibility_off = 2131165318;
 			
 			// aapt resource value: 0x7F070087
-			public const int design_snackbar_background = 2131165319;
+			public const int design_password_eye = 2131165319;
 			
 			// aapt resource value: 0x7F070088
-			public const int DownButton = 2131165320;
+			public const int design_snackbar_background = 2131165320;
 			
 			// aapt resource value: 0x7F070089
-			public const int dropdownbuttonimage = 2131165321;
+			public const int DownButton = 2131165321;
 			
 			// aapt resource value: 0x7F07008A
-			public const int easyparkinglogo = 2131165322;
+			public const int dropdownbuttonimage = 2131165322;
 			
 			// aapt resource value: 0x7F07008B
-			public const int easyparkinglogovector = 2131165323;
+			public const int easyparkinglogo = 2131165323;
 			
 			// aapt resource value: 0x7F07008C
-			public const int editar01 = 2131165324;
+			public const int easyparkinglogovector = 2131165324;
 			
 			// aapt resource value: 0x7F07008D
-			public const int EmptyImage = 2131165325;
+			public const int editar01 = 2131165325;
 			
 			// aapt resource value: 0x7F07008E
-			public const int estrella = 2131165326;
+			public const int EmptyImage = 2131165326;
 			
 			// aapt resource value: 0x7F07008F
-			public const int FFFFFF = 2131165327;
+			public const int estrella = 2131165327;
 			
 			// aapt resource value: 0x7F070090
-			public const int heart = 2131165328;
+			public const int FFFFFF = 2131165328;
 			
 			// aapt resource value: 0x7F070091
-			public const int heartFill = 2131165329;
+			public const int heart = 2131165329;
 			
 			// aapt resource value: 0x7F070092
-			public const int ic_arrow_down_24dp = 2131165330;
+			public const int heartFill = 2131165330;
 			
 			// aapt resource value: 0x7F070093
-			public const int ic_clock_black_24dp = 2131165331;
+			public const int ic_arrow_down_24dp = 2131165331;
 			
 			// aapt resource value: 0x7F070094
-			public const int ic_keyboard_black_24dp = 2131165332;
+			public const int ic_clock_black_24dp = 2131165332;
 			
 			// aapt resource value: 0x7F070095
-			public const int ic_mtrl_checked_circle = 2131165333;
+			public const int ic_keyboard_black_24dp = 2131165333;
 			
 			// aapt resource value: 0x7F070096
-			public const int ic_mtrl_chip_checked_black = 2131165334;
+			public const int ic_mtrl_checked_circle = 2131165334;
 			
 			// aapt resource value: 0x7F070097
-			public const int ic_mtrl_chip_checked_circle = 2131165335;
+			public const int ic_mtrl_chip_checked_black = 2131165335;
 			
 			// aapt resource value: 0x7F070098
-			public const int ic_mtrl_chip_close_circle = 2131165336;
-			
-			// aapt resource value: 0x7F07009A
-			public const int inputlayout_togglecollapseicon = 2131165338;
-			
-			// aapt resource value: 0x7F07009B
-			public const int inputlayout_togglevisibleicon = 2131165339;
+			public const int ic_mtrl_chip_checked_circle = 2131165336;
 			
 			// aapt resource value: 0x7F070099
-			public const int input_layout_drop_down_icon = 2131165337;
+			public const int ic_mtrl_chip_close_circle = 2131165337;
+			
+			// aapt resource value: 0x7F07009B
+			public const int inputlayout_togglecollapseicon = 2131165339;
 			
 			// aapt resource value: 0x7F07009C
-			public const int logo = 2131165340;
+			public const int inputlayout_togglevisibleicon = 2131165340;
+			
+			// aapt resource value: 0x7F07009A
+			public const int input_layout_drop_down_icon = 2131165338;
 			
 			// aapt resource value: 0x7F07009D
-			public const int map = 2131165341;
+			public const int logo = 2131165341;
 			
 			// aapt resource value: 0x7F07009E
-			public const int mapa = 2131165342;
+			public const int map = 2131165342;
 			
 			// aapt resource value: 0x7F07009F
-			public const int material_cursor_drawable = 2131165343;
+			public const int mapa = 2131165343;
 			
 			// aapt resource value: 0x7F0700A0
-			public const int material_ic_calendar_black_24dp = 2131165344;
+			public const int material_cursor_drawable = 2131165344;
 			
 			// aapt resource value: 0x7F0700A1
-			public const int material_ic_clear_black_24dp = 2131165345;
+			public const int material_ic_calendar_black_24dp = 2131165345;
 			
 			// aapt resource value: 0x7F0700A2
-			public const int material_ic_edit_black_24dp = 2131165346;
+			public const int material_ic_clear_black_24dp = 2131165346;
 			
 			// aapt resource value: 0x7F0700A3
-			public const int material_ic_keyboard_arrow_left_black_24dp = 2131165347;
+			public const int material_ic_edit_black_24dp = 2131165347;
 			
 			// aapt resource value: 0x7F0700A4
-			public const int material_ic_keyboard_arrow_next_black_24dp = 2131165348;
+			public const int material_ic_keyboard_arrow_left_black_24dp = 2131165348;
 			
 			// aapt resource value: 0x7F0700A5
-			public const int material_ic_keyboard_arrow_previous_black_24dp = 2131165349;
+			public const int material_ic_keyboard_arrow_next_black_24dp = 2131165349;
 			
 			// aapt resource value: 0x7F0700A6
-			public const int material_ic_keyboard_arrow_right_black_24dp = 2131165350;
+			public const int material_ic_keyboard_arrow_previous_black_24dp = 2131165350;
 			
 			// aapt resource value: 0x7F0700A7
-			public const int material_ic_menu_arrow_down_black_24dp = 2131165351;
+			public const int material_ic_keyboard_arrow_right_black_24dp = 2131165351;
 			
 			// aapt resource value: 0x7F0700A8
-			public const int material_ic_menu_arrow_up_black_24dp = 2131165352;
+			public const int material_ic_menu_arrow_down_black_24dp = 2131165352;
 			
 			// aapt resource value: 0x7F0700A9
-			public const int moto = 2131165353;
+			public const int material_ic_menu_arrow_up_black_24dp = 2131165353;
 			
 			// aapt resource value: 0x7F0700AA
-			public const int mtrl_dialog_background = 2131165354;
+			public const int moto = 2131165354;
 			
 			// aapt resource value: 0x7F0700AB
-			public const int mtrl_dropdown_arrow = 2131165355;
+			public const int mtrl_dialog_background = 2131165355;
 			
 			// aapt resource value: 0x7F0700AC
-			public const int mtrl_ic_arrow_drop_down = 2131165356;
+			public const int mtrl_dropdown_arrow = 2131165356;
 			
 			// aapt resource value: 0x7F0700AD
-			public const int mtrl_ic_arrow_drop_up = 2131165357;
+			public const int mtrl_ic_arrow_drop_down = 2131165357;
 			
 			// aapt resource value: 0x7F0700AE
-			public const int mtrl_ic_cancel = 2131165358;
+			public const int mtrl_ic_arrow_drop_up = 2131165358;
 			
 			// aapt resource value: 0x7F0700AF
-			public const int mtrl_ic_error = 2131165359;
+			public const int mtrl_ic_cancel = 2131165359;
 			
 			// aapt resource value: 0x7F0700B0
-			public const int mtrl_navigation_bar_item_background = 2131165360;
+			public const int mtrl_ic_error = 2131165360;
 			
 			// aapt resource value: 0x7F0700B1
-			public const int mtrl_popupmenu_background = 2131165361;
+			public const int mtrl_navigation_bar_item_background = 2131165361;
 			
 			// aapt resource value: 0x7F0700B2
-			public const int mtrl_popupmenu_background_dark = 2131165362;
+			public const int mtrl_popupmenu_background = 2131165362;
 			
 			// aapt resource value: 0x7F0700B3
-			public const int mtrl_tabs_default_indicator = 2131165363;
+			public const int mtrl_popupmenu_background_dark = 2131165363;
 			
 			// aapt resource value: 0x7F0700B4
-			public const int navigation_empty_icon = 2131165364;
+			public const int mtrl_tabs_default_indicator = 2131165364;
 			
 			// aapt resource value: 0x7F0700B5
-			public const int notification_action_background = 2131165365;
+			public const int navigation_empty_icon = 2131165365;
 			
 			// aapt resource value: 0x7F0700B6
-			public const int notification_bg = 2131165366;
+			public const int notification_action_background = 2131165366;
 			
 			// aapt resource value: 0x7F0700B7
-			public const int notification_bg_low = 2131165367;
+			public const int notification_bg = 2131165367;
 			
 			// aapt resource value: 0x7F0700B8
-			public const int notification_bg_low_normal = 2131165368;
+			public const int notification_bg_low = 2131165368;
 			
 			// aapt resource value: 0x7F0700B9
-			public const int notification_bg_low_pressed = 2131165369;
+			public const int notification_bg_low_normal = 2131165369;
 			
 			// aapt resource value: 0x7F0700BA
-			public const int notification_bg_normal = 2131165370;
+			public const int notification_bg_low_pressed = 2131165370;
 			
 			// aapt resource value: 0x7F0700BB
-			public const int notification_bg_normal_pressed = 2131165371;
+			public const int notification_bg_normal = 2131165371;
 			
 			// aapt resource value: 0x7F0700BC
-			public const int notification_icon_background = 2131165372;
+			public const int notification_bg_normal_pressed = 2131165372;
 			
 			// aapt resource value: 0x7F0700BD
-			public const int notification_template_icon_bg = 2131165373;
+			public const int notification_icon_background = 2131165373;
 			
 			// aapt resource value: 0x7F0700BE
-			public const int notification_template_icon_low_bg = 2131165374;
+			public const int notification_template_icon_bg = 2131165374;
 			
 			// aapt resource value: 0x7F0700BF
-			public const int notification_tile_bg = 2131165375;
+			public const int notification_template_icon_low_bg = 2131165375;
 			
 			// aapt resource value: 0x7F0700C0
-			public const int notify_panel_notification_icon_bg = 2131165376;
+			public const int notification_tile_bg = 2131165376;
 			
 			// aapt resource value: 0x7F0700C1
-			public const int perfil = 2131165377;
+			public const int notify_panel_notification_icon_bg = 2131165377;
 			
 			// aapt resource value: 0x7F0700C2
-			public const int peso = 2131165378;
+			public const int perfil = 2131165378;
 			
 			// aapt resource value: 0x7F0700C3
-			public const int preference_list_divider_material = 2131165379;
+			public const int peso = 2131165379;
 			
 			// aapt resource value: 0x7F0700C4
-			public const int Reserva = 2131165380;
+			public const int preference_list_divider_material = 2131165380;
 			
 			// aapt resource value: 0x7F0700C5
-			public const int settings01 = 2131165381;
+			public const int Reserva = 2131165381;
 			
 			// aapt resource value: 0x7F0700C6
-			public const int sfcheckbox_animation = 2131165382;
+			public const int settings01 = 2131165382;
 			
 			// aapt resource value: 0x7F0700C7
-			public const int sfcheckbox_checked = 2131165383;
+			public const int sfcheckbox_animation = 2131165383;
 			
 			// aapt resource value: 0x7F0700C8
-			public const int sfcheckbox_checked_indeterminate = 2131165384;
+			public const int sfcheckbox_checked = 2131165384;
 			
 			// aapt resource value: 0x7F0700C9
-			public const int sfcheckbox_checked_unchecked = 2131165385;
+			public const int sfcheckbox_checked_indeterminate = 2131165385;
 			
 			// aapt resource value: 0x7F0700CA
-			public const int sfcheckbox_indeterminate = 2131165386;
+			public const int sfcheckbox_checked_unchecked = 2131165386;
 			
 			// aapt resource value: 0x7F0700CB
-			public const int sfcheckbox_indeterminate_checked = 2131165387;
+			public const int sfcheckbox_indeterminate = 2131165387;
 			
 			// aapt resource value: 0x7F0700CC
-			public const int sfcheckbox_indeterminate_unchecked = 2131165388;
+			public const int sfcheckbox_indeterminate_checked = 2131165388;
 			
 			// aapt resource value: 0x7F0700CD
-			public const int sfcheckbox_unchecked = 2131165389;
+			public const int sfcheckbox_indeterminate_unchecked = 2131165389;
 			
 			// aapt resource value: 0x7F0700CE
-			public const int sfcheckbox_unchecked_checked = 2131165390;
+			public const int sfcheckbox_unchecked = 2131165390;
 			
 			// aapt resource value: 0x7F0700CF
-			public const int sfcheckbox_unchecked_indeterminate = 2131165391;
+			public const int sfcheckbox_unchecked_checked = 2131165391;
 			
 			// aapt resource value: 0x7F0700D0
-			public const int SignalParking = 2131165392;
+			public const int sfcheckbox_unchecked_indeterminate = 2131165392;
 			
 			// aapt resource value: 0x7F0700D1
-			public const int splash_screen = 2131165393;
+			public const int SignalParking = 2131165393;
 			
 			// aapt resource value: 0x7F0700D2
-			public const int tarifas = 2131165394;
+			public const int splash_screen = 2131165394;
 			
 			// aapt resource value: 0x7F0700D3
-			public const int test_custom_background = 2131165395;
+			public const int tarifas = 2131165395;
 			
 			// aapt resource value: 0x7F0700D4
-			public const int tooltip_frame_dark = 2131165396;
+			public const int test_custom_background = 2131165396;
 			
 			// aapt resource value: 0x7F0700D5
-			public const int tooltip_frame_light = 2131165397;
+			public const int tooltip_frame_dark = 2131165397;
 			
 			// aapt resource value: 0x7F0700D6
-			public const int ubicacion = 2131165398;
+			public const int tooltip_frame_light = 2131165398;
 			
 			// aapt resource value: 0x7F0700D7
-			public const int UpButton = 2131165399;
+			public const int ubicacion = 2131165399;
 			
 			// aapt resource value: 0x7F0700D8
-			public const int upload = 2131165400;
+			public const int UpButton = 2131165400;
 			
 			// aapt resource value: 0x7F0700D9
-			public const int warning = 2131165401;
+			public const int upload = 2131165401;
+			
+			// aapt resource value: 0x7F0700DA
+			public const int warning = 2131165402;
 			
 			static Drawable()
 			{

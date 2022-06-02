@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
                           xmlns:ListCollection="clr-namespace:System.Collections.Generic;assembly=netstandard" 
 
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:custom="clr-namespace:EasyParking.Custom" xmlns:inputLayout="clr-namespace:Syncfusion.XForms.TextInputLayout;assembly=Syncfusion.Core.XForms" xmlns:syncfusion="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms" xmlns:views="clr-namespace:EasyParking.Components" xmlns:combobox="clr-namespace:Syncfusion.XForms.ComboBox;assembly=Syncfusion.SfComboBox.XForms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:custom="clr-namespace:EasyParking.Custom" xmlns:inputLayout="clr-namespace:Syncfusion.XForms.TextInputLayout;assembly=Syncfusion.Core.XForms" xmlns:syncfusion="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms" xmlns:views="clr-namespace:EasyParking.Components" xmlns:combobox="clr-namespace:Syncfusion.XForms.ComboBox;assembly=Syncfusion.SfComboBox.XForms" xmlns:numeric="clr-namespace:Syncfusion.SfNumericUpDown.XForms;assembly=Syncfusion.SfNumericUpDown.XForms" xmlns:syncfusion1="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms"
              x:Class="EasyParking.Views.Estacionamientos.Estacionamiento">
 
     <NavigationPage.TitleView>
@@ -14,11 +14,11 @@
             <StackLayout Padding="10,10,10,10" Spacing="10" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
 
                 <AbsoluteLayout HorizontalOptions="FillAndExpand"  HeightRequest="250">
-                    <ImageButton AbsoluteLayout.LayoutBounds="0,0,1,1" AbsoluteLayout.LayoutFlags="All" CornerRadius="3" BorderColor="Gray" BorderWidth="1.5" BackgroundColor="Transparent"/>
+                    <ImageButton x:Name="Imagen" AbsoluteLayout.LayoutBounds="0,0,1,1" AbsoluteLayout.LayoutFlags="All" Aspect="AspectFit" CornerRadius="3" BorderColor="Gray" BorderWidth="1.5" BackgroundColor="Transparent"/>
 
                     <StackLayout AbsoluteLayout.LayoutBounds="0.5,0.5" AbsoluteLayout.LayoutFlags="PositionProportional">
-                        <Image Source="EmptyImage.png" HeightRequest="50" WidthRequest="50"/>
-                        <custom:CustomLabel  Text="Imagen del lugar" FontSize="16" TextColor="Gray"/>
+                        <Image x:Name="imagenEmpty" Source="EmptyImage.png" HeightRequest="50" WidthRequest="50"/>
+                        <custom:CustomLabel x:Name="labelimagenEmpty"  Text="Imagen del lugar" FontSize="16" TextColor="Gray"/>
                     </StackLayout>
 
                 </AbsoluteLayout>
@@ -32,14 +32,14 @@
                         <ColumnDefinition Width="*" />
                     </Grid.ColumnDefinitions>
 
-                    <syncfusion:SfButton Grid.Column="0" Grid.Row="0"  Text="Tomar foto" HorizontalOptions="FillAndExpand" HeightRequest="40"  
+                    <syncfusion:SfButton Grid.Column="0" Grid.Row="0" x:Name="btnTomarFoto" Clicked="btnTomarFoto_Clicked" Text="Tomar foto" HorizontalOptions="FillAndExpand" HeightRequest="40"  
                                          Padding="0" FontSize="14"
                                          BorderColor="#2968C8" BorderWidth="1.5" TextColor="#2968C8" BackgroundColor="Transparent" 
                                          VerticalTextAlignment="Center" HorizontalTextAlignment="Center"
                                          CornerRadius="3" ShowIcon="True" ImageAlignment="Right" ImageSource="camera.png"   />
 
 
-                    <syncfusion:SfButton Grid.Column="1" Grid.Row="0" Text="Seleccionar foto" HorizontalOptions="FillAndExpand" HeightRequest="40" 
+                    <syncfusion:SfButton Grid.Column="1" Grid.Row="0" x:Name="btnSeleccionarFoto" Clicked="btnSeleccionarFoto_Clicked" Text="Seleccionar foto" HorizontalOptions="FillAndExpand" HeightRequest="40" 
                                          Padding="0"
                                          FontSize="14" BorderColor="#2968C8" BorderWidth="1.5" TextColor="#2968C8" BackgroundColor="Transparent"  
                                          VerticalTextAlignment="Center"  HorizontalTextAlignment="Center"
@@ -50,13 +50,184 @@
 
 
                 <inputLayout:SfTextInputLayout FocusedColor="#2968C8"   ContainerType="Outlined" Hint="Nombre del lugar" BackgroundColor="Transparent" ContainerBackgroundColor="Transparent"  HorizontalOptions="FillAndExpand" VerticalOptions="Center"  HelperText="Obligatorio *">
-                    <custom:CustomEntry   Keyboard="Default" Placeholder="Ingrese el nombre" ClearButtonVisibility="WhileEditing" HorizontalOptions="FillAndExpand"/>
+                    <custom:CustomEntry  x:Name="entryNombre"  Keyboard="Default" Placeholder="Ingrese el nombre" ClearButtonVisibility="WhileEditing" HorizontalOptions="FillAndExpand"/>
                 </inputLayout:SfTextInputLayout>
 
 
                 <inputLayout:SfTextInputLayout  FocusedColor="#2968C8"  ContainerType="Outlined" Hint="Dirección del lugar" BackgroundColor="Transparent" ContainerBackgroundColor="Transparent"  HorizontalOptions="FillAndExpand" VerticalOptions="Center"  HelperText="Obligatorio *">
-                    <custom:CustomEntry   Keyboard="Default" Placeholder="Ingrese la dirección" ClearButtonVisibility="WhileEditing" HorizontalOptions="FillAndExpand"/>
+                    <custom:CustomEntry  x:Name="entryDireccion" Keyboard="Default" Placeholder="Ingrese la dirección" ClearButtonVisibility="WhileEditing" HorizontalOptions="FillAndExpand"/>
                 </inputLayout:SfTextInputLayout>
+
+                <Frame  CornerRadius="3" Padding="10,10,10,10" HasShadow="True"  BackgroundColor="White">
+                    <StackLayout Spacing="10">
+                        <custom:CustomLabel Text="Horarios de atención:"  FontAttributes="Bold" FontSize="16" TextColor="Black"/>
+
+                        <Grid ColumnSpacing="0" RowSpacing="10" Padding="0" >
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto" />
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="Auto" />
+                            </Grid.ColumnDefinitions>
+
+                            <custom:CustomLabel Grid.Column="0"  Grid.Row="0" Text="Lunes" VerticalOptions="Center"     FontSize="16" TextColor="Gray"/>
+
+                            <StackLayout Grid.Column="1"  Grid.Row="0" Orientation="Horizontal"  >
+
+                                <syncfusion1:SfListView x:Name="lwHorariosLunes" AutoFitMode="DynamicHeight" VerticalOptions="Center"
+                                                    IsScrollingEnabled="False" ItemSize="30"  SelectionMode="None" WidthRequest="120"
+                                                    HorizontalOptions="EndAndExpand" >
+                                    <syncfusion1:SfListView.ItemTemplate>
+                                        <DataTemplate>
+                                            <ViewCell>
+                                                <custom:CustomLabel Text="{Binding ., StringFormat='{0:N}'}" TextColor="Black" HorizontalOptions="End"/>
+                                            </ViewCell>
+                                        </DataTemplate>
+                                    </syncfusion1:SfListView.ItemTemplate>
+                                </syncfusion1:SfListView>
+
+
+                                <ImageButton  BackgroundColor="Transparent" HorizontalOptions="End" VerticalOptions="Center" Padding="5" Margin="10,0,0,0" 
+                                          WidthRequest="30" HeightRequest="30" Source="editar01.png" x:Name="btnEditarHorarioLunes" Clicked="btnEditarHorarioLunes_Clicked"  />
+                            </StackLayout>
+
+                            <custom:CustomLabel Grid.Column="0"  Grid.Row="1" Text="Martes" VerticalOptions="Center"     FontSize="16" TextColor="Gray"/>
+
+                            <StackLayout Grid.Column="1"  Grid.Row="1" Orientation="Horizontal" >
+
+                                <syncfusion1:SfListView  x:Name="lwHorariosMartes" AutoFitMode="DynamicHeight" VerticalOptions="Center"
+                                                    IsScrollingEnabled="False" ItemSize="30"  SelectionMode="None" WidthRequest="120"
+                                                    HorizontalOptions="EndAndExpand" >
+                                    <syncfusion1:SfListView.ItemTemplate>
+                                        <DataTemplate>
+                                            <ViewCell>
+                                                <custom:CustomLabel Text="{Binding ., StringFormat='{0:N}'}" TextColor="Black" HorizontalOptions="End"/>
+                                            </ViewCell>
+                                        </DataTemplate>
+                                    </syncfusion1:SfListView.ItemTemplate>
+                                </syncfusion1:SfListView>
+
+
+                                <ImageButton  BackgroundColor="Transparent" HorizontalOptions="End" VerticalOptions="Center" Padding="5" Margin="10,0,0,0" 
+                                          WidthRequest="30" HeightRequest="30" Source="editar01.png" x:Name="btnEditarHorarioMartes"   />
+                            </StackLayout>
+
+                            <custom:CustomLabel Grid.Column="0"  Grid.Row="2" Text="Miercoles" VerticalOptions="Center"     FontSize="16" TextColor="Gray"/>
+
+                            <StackLayout Grid.Column="1"  Grid.Row="2" Orientation="Horizontal"  >
+
+                                <syncfusion1:SfListView   x:Name="lwHorariosMiercoles" AutoFitMode="DynamicHeight" VerticalOptions="Center"
+                                                    IsScrollingEnabled="False" ItemSize="30"  SelectionMode="None" WidthRequest="120"
+                                                    HorizontalOptions="EndAndExpand" >
+                                    <syncfusion1:SfListView.ItemTemplate>
+                                        <DataTemplate>
+                                            <ViewCell>
+                                                <custom:CustomLabel Text="{Binding ., StringFormat='{0:N}'}" TextColor="Black" HorizontalOptions="End"/>
+                                            </ViewCell>
+                                        </DataTemplate>
+                                    </syncfusion1:SfListView.ItemTemplate>
+                                </syncfusion1:SfListView>
+
+
+                                <ImageButton  BackgroundColor="Transparent" HorizontalOptions="End" VerticalOptions="Center" Padding="5" Margin="10,0,0,0" 
+                                          WidthRequest="30" HeightRequest="30" Source="editar01.png" x:Name="btnEditarHorarioMiercoles"   />
+                            </StackLayout>
+
+                            <custom:CustomLabel Grid.Column="0"  Grid.Row="3" Text="Jueves" VerticalOptions="Center"     FontSize="16" TextColor="Gray"/>
+
+                            <StackLayout Grid.Column="1"  Grid.Row="3" Orientation="Horizontal" >
+
+                                <syncfusion1:SfListView   x:Name="lwHorariosJueves" AutoFitMode="DynamicHeight" VerticalOptions="Center"
+                                                    IsScrollingEnabled="False" ItemSize="30"  SelectionMode="None" WidthRequest="120"
+                                                    HorizontalOptions="EndAndExpand" >
+                                    <syncfusion1:SfListView.ItemTemplate>
+                                        <DataTemplate>
+                                            <ViewCell>
+                                                <custom:CustomLabel Text="{Binding ., StringFormat='{0:N}'}" TextColor="Black" HorizontalOptions="End"/>
+                                            </ViewCell>
+                                        </DataTemplate>
+                                    </syncfusion1:SfListView.ItemTemplate>
+                                </syncfusion1:SfListView>
+
+
+                                <ImageButton  BackgroundColor="Transparent" HorizontalOptions="End" VerticalOptions="Center" Padding="5" Margin="10,0,0,0" 
+                                          WidthRequest="30" HeightRequest="30" Source="editar01.png" x:Name="btnEditarHorarioJueves"   />
+                            </StackLayout>
+
+
+                            <custom:CustomLabel Grid.Column="0"  Grid.Row="4" Text="Viernes" VerticalOptions="Center"     FontSize="16" TextColor="Gray"/>
+
+                            <StackLayout Grid.Column="1"  Grid.Row="4" Orientation="Horizontal"  >
+
+                                <syncfusion1:SfListView   x:Name="lwHorariosViernes" AutoFitMode="DynamicHeight" VerticalOptions="Center"
+                                                    IsScrollingEnabled="False" ItemSize="30"  SelectionMode="None" WidthRequest="120"
+                                                    HorizontalOptions="EndAndExpand" >
+                                    <syncfusion1:SfListView.ItemTemplate>
+                                        <DataTemplate>
+                                            <ViewCell>
+                                                <custom:CustomLabel Text="{Binding ., StringFormat='{0:N}'}" TextColor="Black" HorizontalOptions="End"/>
+                                            </ViewCell>
+                                        </DataTemplate>
+                                    </syncfusion1:SfListView.ItemTemplate>
+                                </syncfusion1:SfListView>
+
+
+                                <ImageButton  BackgroundColor="Transparent" HorizontalOptions="End" VerticalOptions="Center" Padding="5" Margin="10,0,0,0" 
+                                          WidthRequest="30" HeightRequest="30" Source="editar01.png" x:Name="btnEditarHorarioViernes"   />
+                            </StackLayout>
+
+                            <custom:CustomLabel Grid.Column="0"  Grid.Row="5" Text="Sabado" VerticalOptions="Center"     FontSize="16" TextColor="Gray"/>
+
+                            <StackLayout Grid.Column="1"  Grid.Row="5" Orientation="Horizontal"  >
+
+                                <syncfusion1:SfListView   x:Name="lwHorariosSabado" AutoFitMode="DynamicHeight" VerticalOptions="Center"
+                                                    IsScrollingEnabled="False" ItemSize="30"  SelectionMode="None" WidthRequest="120"
+                                                    HorizontalOptions="EndAndExpand" >
+                                    <syncfusion1:SfListView.ItemTemplate>
+                                        <DataTemplate>
+                                            <ViewCell>
+                                                <custom:CustomLabel Text="{Binding ., StringFormat='{0:N}'}" TextColor="Black" HorizontalOptions="End"/>
+                                            </ViewCell>
+                                        </DataTemplate>
+                                    </syncfusion1:SfListView.ItemTemplate>
+                                </syncfusion1:SfListView>
+
+
+                                <ImageButton  BackgroundColor="Transparent" HorizontalOptions="End" VerticalOptions="Center" Padding="5" Margin="10,0,0,0" 
+                                          WidthRequest="30" HeightRequest="30" Source="editar01.png" x:Name="btnEditarHorarioSabado"   />
+                            </StackLayout>
+
+
+                            <custom:CustomLabel Grid.Column="0"  Grid.Row="6" Text="Domingo" VerticalOptions="Center"     FontSize="16" TextColor="Gray"/>
+
+                            <StackLayout Grid.Column="1"  Grid.Row="6" Orientation="Horizontal"  >
+
+                                <syncfusion1:SfListView   x:Name="lwHorariosDomingo" AutoFitMode="DynamicHeight" VerticalOptions="Center"
+                                                    IsScrollingEnabled="False" ItemSize="30"  SelectionMode="None" WidthRequest="120"
+                                                    HorizontalOptions="EndAndExpand" >
+                                    <syncfusion1:SfListView.ItemTemplate>
+                                        <DataTemplate>
+                                            <ViewCell>
+                                                <custom:CustomLabel Text="{Binding ., StringFormat='{0:N}'}" TextColor="Black" HorizontalOptions="End"/>
+                                            </ViewCell>
+                                        </DataTemplate>
+                                    </syncfusion1:SfListView.ItemTemplate>
+                                </syncfusion1:SfListView>
+
+
+                                <ImageButton  BackgroundColor="Transparent" HorizontalOptions="End" VerticalOptions="Center" Padding="5" Margin="10,0,0,0" 
+                                          WidthRequest="30" HeightRequest="30" Source="editar01.png" x:Name="btnEditarHorarioDomingo"   />
+                            </StackLayout>
+
+                        </Grid>
+
+                                              
+                       
+
+
+                    </StackLayout>
+                </Frame>
 
                 <Frame  CornerRadius="3" Padding="10,10,10,10" HasShadow="True"  BackgroundColor="White">
                     <StackLayout>
@@ -84,7 +255,7 @@
 
                         <custom:CustomLabel Text="Seleeccione el tipo de vehículo y la cantidad de ellos que puede guardar allí:" FontAttributes="Bold" FontSize="16" TextColor="Black"/>
 
-                        <Grid ColumnSpacing="0" RowSpacing="0">
+                        <Grid ColumnSpacing="0" RowSpacing="10">
                             <Grid.RowDefinitions>
                                 <RowDefinition Height="*" />
                                 <RowDefinition Height="*" />
@@ -95,32 +266,28 @@
                                 <ColumnDefinition Width="*" />
                             </Grid.ColumnDefinitions>
 
-                            <syncfusion:SfCheckBox Grid.Column="0" Grid.Row="0" x:Name="checkBoxAuto" PropertyChanged="checkBoxAuto_PropertyChanged" Text="Autos"  Margin="0,0,0,0" VerticalOptions="Center" FontSize="18"/>
+                            <syncfusion:SfCheckBox Grid.Column="0" Grid.Row="0" x:Name="checkBoxAuto" PropertyChanged="checkBoxAuto_PropertyChanged" Text="Autos"  Margin="0,0,0,0" VerticalOptions="Center" FontSize="16"/>
 
-                            <inputLayout:SfTextInputLayout x:Name="entryCantidadAuto" FocusedColor="#2968C8"  Grid.Column="1" Grid.Row="0"   ContainerType="Outlined" Hint="Cantidad" Margin="0,0,0,0"   BackgroundColor="Transparent" ContainerBackgroundColor="Transparent" 
-                                                         HorizontalOptions="FillAndExpand"  VerticalOptions="Center"   HelperText="">
+                            <numeric:SfNumericUpDown x:Name="entryCantidadAuto" Grid.Column="1" Grid.Row="0"   HeightRequest="40"  Value="0" HorizontalOptions="FillAndExpand"   
+                                                                      EnableGroupSeparator="True" SelectAllOnFocus="True" Minimum="0"   SpinButtonAlignment="Both" TextAlignment="Center" 
+                                                                      BackgroundColor="Transparent" FontSize="18" MaximumDecimalDigits="0" >
+                            </numeric:SfNumericUpDown>
 
-                                <custom:CustomEntry   Keyboard="Numeric"     HorizontalOptions="FillAndExpand"/>
+                            <syncfusion:SfCheckBox Grid.Column="0" Grid.Row="1" x:Name="checkBoxCamioneta" PropertyChanged="checkBoxCamioneta_PropertyChanged" Text="Camionetas"  Margin="0,0,0,0" VerticalOptions="Center" FontSize="16"/>
+                            
+                            <numeric:SfNumericUpDown x:Name="entryCantidadCamioneta" Grid.Column="1" Grid.Row="1"   HeightRequest="40"  Value="0" HorizontalOptions="FillAndExpand"   
+                                                                      EnableGroupSeparator="True" SelectAllOnFocus="True" Minimum="0"   SpinButtonAlignment="Both" TextAlignment="Center" 
+                                                                      BackgroundColor="Transparent" FontSize="18" MaximumDecimalDigits="0" >
+                            </numeric:SfNumericUpDown>
 
-                            </inputLayout:SfTextInputLayout>
+                            <syncfusion:SfCheckBox Grid.Column="0" Grid.Row="2" x:Name="checkBoxMoto" PropertyChanged="checkBoxMoto_PropertyChanged" Text="Motos"  Margin="0,0,0,0" VerticalOptions="Center" FontSize="16"/>
 
-                            <syncfusion:SfCheckBox Grid.Column="0" Grid.Row="1" x:Name="checkBoxCamioneta" PropertyChanged="checkBoxCamioneta_PropertyChanged" Text="Camionetas"  Margin="0,0,0,0" VerticalOptions="Center" FontSize="18"/>
 
-                            <inputLayout:SfTextInputLayout x:Name="entryCantidadCamioneta" FocusedColor="#2968C8"  Grid.Column="1" Grid.Row="1"   ContainerType="Outlined" Hint="Cantidad"  BackgroundColor="Transparent" ContainerBackgroundColor="Transparent" 
-                                                         HorizontalOptions="FillAndExpand"  VerticalOptions="Center" Margin="0,0,0,0"  HelperText="">
+                            <numeric:SfNumericUpDown x:Name="entryCantidadMoto" Grid.Column="1" Grid.Row="2"   HeightRequest="40"  Value="0" HorizontalOptions="FillAndExpand"   
+                                                                      EnableGroupSeparator="True" SelectAllOnFocus="True" Minimum="0"   SpinButtonAlignment="Both" TextAlignment="Center" 
+                                                                      BackgroundColor="Transparent" FontSize="18" MaximumDecimalDigits="0" >
+                            </numeric:SfNumericUpDown>
 
-                                <custom:CustomEntry   Keyboard="Numeric"     HorizontalOptions="FillAndExpand"/>
-
-                            </inputLayout:SfTextInputLayout>
-
-                            <syncfusion:SfCheckBox Grid.Column="0" Grid.Row="2" x:Name="checkBoxMoto" PropertyChanged="checkBoxMoto_PropertyChanged" Text="Motos"  Margin="0,0,0,0" VerticalOptions="Center" FontSize="18"/>
-
-                            <inputLayout:SfTextInputLayout x:Name="entryCantidadMoto" FocusedColor="#2968C8"  Grid.Column="1" Grid.Row="2"   ContainerType="Outlined" Hint="Cantidad"   BackgroundColor="Transparent" ContainerBackgroundColor="Transparent" 
-                                                         HorizontalOptions="FillAndExpand"  VerticalOptions="Center" Margin="0,0,0,0" HelperText="">
-
-                                <custom:CustomEntry   Keyboard="Numeric"     HorizontalOptions="FillAndExpand"/>
-
-                            </inputLayout:SfTextInputLayout>
                         </Grid>
 
                     </StackLayout>
@@ -144,26 +311,26 @@
                         <inputLayout:SfTextInputLayout Grid.Column="0" Grid.Row="1"   ContainerType="Outlined" Hint="$ Hora"   BackgroundColor="Transparent" ContainerBackgroundColor="Transparent" 
                                                          HorizontalOptions="FillAndExpand"  VerticalOptions="Center"  HelperText="Obligatorio *">
 
-                            <custom:CustomEntry   Keyboard="Numeric" Placeholder="Ingrese el monto"    HorizontalOptions="FillAndExpand"/>
+                            <custom:CustomEntry  x:Name="entryAuto_TarifaHora"  Keyboard="Numeric" Placeholder="Ingrese el monto"    HorizontalOptions="FillAndExpand"/>
 
                         </inputLayout:SfTextInputLayout>
                         <inputLayout:SfTextInputLayout  Grid.Column="1" Grid.Row="1"    ContainerType="Outlined" Hint="$ Día "   BackgroundColor="Transparent" ContainerBackgroundColor="Transparent" 
                                                          HorizontalOptions="FillAndExpand"  VerticalOptions="Center"  HelperText="Opcional *">
 
-                            <custom:CustomEntry   Keyboard="Numeric"  Placeholder="Ingrese el monto"   HorizontalOptions="FillAndExpand"/>
+                            <custom:CustomEntry x:Name="entryAuto_TarifaDia"  Keyboard="Numeric"  Placeholder="Ingrese el monto"   HorizontalOptions="FillAndExpand"/>
 
                         </inputLayout:SfTextInputLayout>
 
                         <inputLayout:SfTextInputLayout Grid.Column="0" Grid.Row="2"   ContainerType="Outlined" Hint="$ Semana"   BackgroundColor="Transparent" ContainerBackgroundColor="Transparent" 
                                                          HorizontalOptions="FillAndExpand"  VerticalOptions="Center"  HelperText="Obligatorio *">
 
-                            <custom:CustomEntry   Keyboard="Numeric" Placeholder="Ingrese el monto"    HorizontalOptions="FillAndExpand"/>
+                            <custom:CustomEntry  x:Name="entryAuto_TarifaSemana" Keyboard="Numeric" Placeholder="Ingrese el monto"    HorizontalOptions="FillAndExpand"/>
 
                         </inputLayout:SfTextInputLayout>
                         <inputLayout:SfTextInputLayout  Grid.Column="1" Grid.Row="2"  ContainerType="Outlined" Hint="$ Mes"   BackgroundColor="Transparent" ContainerBackgroundColor="Transparent" 
                                                          HorizontalOptions="FillAndExpand"  VerticalOptions="Center"  HelperText="Opcional *">
 
-                            <custom:CustomEntry   Keyboard="Numeric"  Placeholder="Ingrese el monto"   HorizontalOptions="FillAndExpand"/>
+                            <custom:CustomEntry  x:Name="entryAuto_TarifaMes" Keyboard="Numeric"  Placeholder="Ingrese el monto"   HorizontalOptions="FillAndExpand"/>
 
                         </inputLayout:SfTextInputLayout>
 
@@ -189,26 +356,26 @@
                         <inputLayout:SfTextInputLayout Grid.Column="0" Grid.Row="1"   ContainerType="Outlined" Hint="$ Hora"   BackgroundColor="Transparent" ContainerBackgroundColor="Transparent" 
                                                          HorizontalOptions="FillAndExpand"  VerticalOptions="Center"  HelperText="Obligatorio *">
 
-                            <custom:CustomEntry   Keyboard="Numeric" Placeholder="Ingrese el monto"    HorizontalOptions="FillAndExpand"/>
+                            <custom:CustomEntry x:Name="entryCamioneta_TarifaHora"   Keyboard="Numeric" Placeholder="Ingrese el monto"    HorizontalOptions="FillAndExpand"/>
 
                         </inputLayout:SfTextInputLayout>
                         <inputLayout:SfTextInputLayout  Grid.Column="1" Grid.Row="1"    ContainerType="Outlined" Hint="$ Día "   BackgroundColor="Transparent" ContainerBackgroundColor="Transparent" 
                                                          HorizontalOptions="FillAndExpand"  VerticalOptions="Center"  HelperText="Opcional *">
 
-                            <custom:CustomEntry   Keyboard="Numeric"  Placeholder="Ingrese el monto"   HorizontalOptions="FillAndExpand"/>
+                            <custom:CustomEntry x:Name="entryCamioneta_TarifaDia"    Keyboard="Numeric"  Placeholder="Ingrese el monto"   HorizontalOptions="FillAndExpand"/>
 
                         </inputLayout:SfTextInputLayout>
 
                         <inputLayout:SfTextInputLayout Grid.Column="0" Grid.Row="2"   ContainerType="Outlined" Hint="$ Semana"   BackgroundColor="Transparent" ContainerBackgroundColor="Transparent" 
                                                          HorizontalOptions="FillAndExpand"  VerticalOptions="Center"  HelperText="Obligatorio *">
 
-                            <custom:CustomEntry   Keyboard="Numeric" Placeholder="Ingrese el monto"    HorizontalOptions="FillAndExpand"/>
+                            <custom:CustomEntry x:Name="entryCamioneta_TarifaSemana"   Keyboard="Numeric" Placeholder="Ingrese el monto"    HorizontalOptions="FillAndExpand"/>
 
                         </inputLayout:SfTextInputLayout>
                         <inputLayout:SfTextInputLayout  Grid.Column="1" Grid.Row="2"  ContainerType="Outlined" Hint="$ Mes"   BackgroundColor="Transparent" ContainerBackgroundColor="Transparent" 
                                                          HorizontalOptions="FillAndExpand"  VerticalOptions="Center"  HelperText="Opcional *">
 
-                            <custom:CustomEntry   Keyboard="Numeric"  Placeholder="Ingrese el monto"   HorizontalOptions="FillAndExpand"/>
+                            <custom:CustomEntry x:Name="entryCamioneta_TarifaMes"   Keyboard="Numeric"  Placeholder="Ingrese el monto"   HorizontalOptions="FillAndExpand"/>
 
                         </inputLayout:SfTextInputLayout>
 
@@ -234,26 +401,26 @@
                         <inputLayout:SfTextInputLayout Grid.Column="0" Grid.Row="1"   ContainerType="Outlined" Hint="$ Hora"   BackgroundColor="Transparent" ContainerBackgroundColor="Transparent" 
                                                          HorizontalOptions="FillAndExpand"  VerticalOptions="Center"  HelperText="Obligatorio *">
 
-                            <custom:CustomEntry   Keyboard="Numeric" Placeholder="Ingrese el monto"    HorizontalOptions="FillAndExpand"/>
+                            <custom:CustomEntry x:Name="entryMoto_TarifaHora"   Keyboard="Numeric" Placeholder="Ingrese el monto"    HorizontalOptions="FillAndExpand"/>
 
                         </inputLayout:SfTextInputLayout>
                         <inputLayout:SfTextInputLayout  Grid.Column="1" Grid.Row="1"    ContainerType="Outlined" Hint="$ Día "   BackgroundColor="Transparent" ContainerBackgroundColor="Transparent" 
                                                          HorizontalOptions="FillAndExpand"  VerticalOptions="Center"  HelperText="Opcional *">
 
-                            <custom:CustomEntry   Keyboard="Numeric"  Placeholder="Ingrese el monto"   HorizontalOptions="FillAndExpand"/>
+                            <custom:CustomEntry x:Name="entryMoto_TarifaDia"   Keyboard="Numeric"  Placeholder="Ingrese el monto"   HorizontalOptions="FillAndExpand"/>
 
                         </inputLayout:SfTextInputLayout>
 
                         <inputLayout:SfTextInputLayout Grid.Column="0" Grid.Row="2"   ContainerType="Outlined" Hint="$ Semana"   BackgroundColor="Transparent" ContainerBackgroundColor="Transparent" 
                                                          HorizontalOptions="FillAndExpand"  VerticalOptions="Center"  HelperText="Obligatorio *">
 
-                            <custom:CustomEntry   Keyboard="Numeric" Placeholder="Ingrese el monto"    HorizontalOptions="FillAndExpand"/>
+                            <custom:CustomEntry  x:Name="entryMoto_TarifaSemana"  Keyboard="Numeric" Placeholder="Ingrese el monto"    HorizontalOptions="FillAndExpand"/>
 
                         </inputLayout:SfTextInputLayout>
                         <inputLayout:SfTextInputLayout  Grid.Column="1" Grid.Row="2"  ContainerType="Outlined" Hint="$ Mes"   BackgroundColor="Transparent" ContainerBackgroundColor="Transparent" 
                                                          HorizontalOptions="FillAndExpand"  VerticalOptions="Center"  HelperText="Opcional *">
 
-                            <custom:CustomEntry   Keyboard="Numeric"  Placeholder="Ingrese el monto"   HorizontalOptions="FillAndExpand"/>
+                            <custom:CustomEntry x:Name="entryMoto_TarifaMes"   Keyboard="Numeric"  Placeholder="Ingrese el monto"   HorizontalOptions="FillAndExpand"/>
 
                         </inputLayout:SfTextInputLayout>
 
@@ -295,7 +462,7 @@
                             <inputLayout:SfTextInputLayout FocusedColor="#2968C8"   ContainerType="Outlined" Hint="Monto"   BackgroundColor="Transparent" ContainerBackgroundColor="Transparent" 
                                                          HorizontalOptions="FillAndExpand"  VerticalOptions="Center"  HelperText="Opcional *">
 
-                                <custom:CustomEntry   Keyboard="Numeric"     HorizontalOptions="FillAndExpand"/>
+                                <custom:CustomEntry x:Name="entryMontoReserva"   Keyboard="Numeric"     HorizontalOptions="FillAndExpand"/>
 
                             </inputLayout:SfTextInputLayout>
                         </StackLayout>
@@ -305,7 +472,7 @@
 
 
 
-                <custom:CustomButton HorizontalOptions="FillAndExpand" VerticalOptions="EndAndExpand" HeightRequest="40" CornerRadius="3"  Margin="0,10,0,20" Text="Agregar estacionamiento" FontSize="16"
+                <custom:CustomButton x:Name="btnAgregar" Clicked="btnAgregar_Clicked" HorizontalOptions="FillAndExpand" VerticalOptions="EndAndExpand" HeightRequest="40" CornerRadius="3"  Margin="0,10,0,20" Text="Agregar estacionamiento" FontSize="16"
                                  BackgroundColor="#2968C8" BorderWidth="1.5" TextColor="White"/>
                 
                 

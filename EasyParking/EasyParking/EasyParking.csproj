@@ -18,6 +18,7 @@
     <PackageReference Include="Syncfusion.Xamarin.SfNavigationDrawer" Version="20.1.0.55" />
     <PackageReference Include="Syncfusion.Xamarin.SfNumericUpDown" Version="20.1.0.55" />
     <PackageReference Include="Syncfusion.Xamarin.SfRating" Version="20.1.0.55" />
+    <PackageReference Include="Xam.Plugin.Media" Version="5.0.1" />
     <PackageReference Include="Xamarin.Forms" Version="5.0.0.2401" />
     <PackageReference Include="Xamarin.Essentials" Version="1.7.3" />
   </ItemGroup>
@@ -35,6 +36,9 @@
     <EmbeddedResource Update="Components\NavBar.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Update="Components\RangoHorario.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
     <EmbeddedResource Update="Styles\StyleEasyParking.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
@@ -45,6 +49,9 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Views\Estacionamientos\MisEstacionamientos\MisEstacionamientos.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\Estacionamientos\MisEstacionamientos\PopupRangoHorario.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Views\Favoritos\Favoritos.xaml">

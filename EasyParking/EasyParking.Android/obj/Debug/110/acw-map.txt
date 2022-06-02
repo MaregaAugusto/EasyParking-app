@@ -13,6 +13,9 @@ easyparking.droid.renders.MyEntryRender;crc64a83f1f320a18a364.MyEntryRender
 EasyParking.Droid.Renders.MyLabelRender, EasyParking.Android;crc64a83f1f320a18a364.MyLabelRender
 EasyParking.Droid.Renders.MyLabelRender;crc64a83f1f320a18a364.MyLabelRender
 easyparking.droid.renders.MyLabelRender;crc64a83f1f320a18a364.MyLabelRender
+Plugin.Media.MediaPickerActivity, Plugin.Media;crc646957603ea1820544.MediaPickerActivity
+Plugin.Media.MediaPickerActivity;crc646957603ea1820544.MediaPickerActivity
+plugin.media.MediaPickerActivity;crc646957603ea1820544.MediaPickerActivity
 Rg.Plugins.Popup.Droid.Renderers.PopupPageRenderer, Rg.Plugins.Popup;crc643dd37f507f3d9710.PopupPageRenderer
 Rg.Plugins.Popup.Droid.Renderers.PopupPageRenderer;crc643dd37f507f3d9710.PopupPageRenderer
 rg.plugins.popup.droid.renderers.PopupPageRenderer;crc643dd37f507f3d9710.PopupPageRenderer

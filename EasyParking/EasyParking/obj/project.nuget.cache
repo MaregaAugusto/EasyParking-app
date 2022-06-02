@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "OwjG365RegZQXSGkT5hSu/RuA8JZleFbufnSQ8Hu7e3IbBrvtI9Fg6YO6pYorV4DQC6aHuED+/AYvzWvSJFIVQ==",
+  "dgSpecHash": "7xiVURafQtPP89mUh7yKp/bgBUX9yOV33BLjLTs7gOYgMXB/haowBfB+bVZT7USOME9ELG/iImsWw1mwyJ0c2w==",
   "success": true,
   "projectFilePath": "C:\\ProyectosGitHubUTN\\EasyParkingApp\\EasyParking\\EasyParking\\EasyParking.csproj",
   "expectedPackageFiles": [
@@ -18,6 +18,7 @@
     "C:\\Users\\LUCIANO\\.nuget\\packages\\syncfusion.xamarin.sfnumericupdown\\20.1.0.55\\syncfusion.xamarin.sfnumericupdown.20.1.0.55.nupkg.sha512",
     "C:\\Users\\LUCIANO\\.nuget\\packages\\syncfusion.xamarin.sfrating\\20.1.0.55\\syncfusion.xamarin.sfrating.20.1.0.55.nupkg.sha512",
     "C:\\Users\\LUCIANO\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\LUCIANO\\.nuget\\packages\\xam.plugin.media\\5.0.1\\xam.plugin.media.5.0.1.nupkg.sha512",
     "C:\\Users\\LUCIANO\\.nuget\\packages\\xamarin.essentials\\1.7.3\\xamarin.essentials.1.7.3.nupkg.sha512",
     "C:\\Users\\LUCIANO\\.nuget\\packages\\xamarin.forms\\5.0.0.2401\\xamarin.forms.5.0.0.2401.nupkg.sha512"
   ],

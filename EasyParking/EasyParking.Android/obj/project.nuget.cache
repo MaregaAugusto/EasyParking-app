@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "FlYsXKVvrTbGmuxeyMl9cUO4gA73zE9rbbvTDT9woBPwtpUsmR9j5JecXCRx9U1ltkid8VhIiZZpIqNulyR0RA==",
+  "dgSpecHash": "eZ2rxyFlxVni9L4ORy6ycCOZRRZzt8fmTKvspp0peqCOHZF1GOqGxVtxdI/00cPSoMo/PZ2JJWgU+tFKM++Z7A==",
   "success": true,
   "projectFilePath": "C:\\ProyectosGitHubUTN\\EasyParkingApp\\EasyParking\\EasyParking.Android\\EasyParking.Android.csproj",
   "expectedPackageFiles": [
@@ -16,6 +16,7 @@
     "C:\\Users\\LUCIANO\\.nuget\\packages\\syncfusion.xamarin.sfnumericupdown\\20.1.0.55\\syncfusion.xamarin.sfnumericupdown.20.1.0.55.nupkg.sha512",
     "C:\\Users\\LUCIANO\\.nuget\\packages\\syncfusion.xamarin.sfrating\\20.1.0.55\\syncfusion.xamarin.sfrating.20.1.0.55.nupkg.sha512",
     "C:\\Users\\LUCIANO\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\LUCIANO\\.nuget\\packages\\xam.plugin.media\\5.0.1\\xam.plugin.media.5.0.1.nupkg.sha512",
     "C:\\Users\\LUCIANO\\.nuget\\packages\\xamarin.androidx.activity\\1.2.4.1\\xamarin.androidx.activity.1.2.4.1.nupkg.sha512",
     "C:\\Users\\LUCIANO\\.nuget\\packages\\xamarin.androidx.annotation\\1.2.0.1\\xamarin.androidx.annotation.1.2.0.1.nupkg.sha512",
     "C:\\Users\\LUCIANO\\.nuget\\packages\\xamarin.androidx.annotation.experimental\\1.1.0.1\\xamarin.androidx.annotation.experimental.1.1.0.1.nupkg.sha512",

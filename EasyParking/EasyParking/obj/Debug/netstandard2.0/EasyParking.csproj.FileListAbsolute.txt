@@ -36,18 +36,19 @@ C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking\bin\Debug\netstanda
 C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking\bin\Debug\netstandard2.0\EasyParking.dll
 C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking\bin\Debug\netstandard2.0\ref\EasyParking.dll
 C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking\bin\Debug\netstandard2.0\EasyParking.pdb
-C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking\obj\Debug\netstandard2.0\EasyParking.csproj.AssemblyReference.cache
 C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking\obj\Debug\netstandard2.0\EasyParking.GeneratedMSBuildEditorConfig.editorconfig
 C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking\obj\Debug\netstandard2.0\App.xaml.g.cs
 C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking\obj\Debug\netstandard2.0\Components\Card_Comment.xaml.g.cs
 C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking\obj\Debug\netstandard2.0\Components\Card_MenuItem.xaml.g.cs
 C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking\obj\Debug\netstandard2.0\Components\Card_Parking.xaml.g.cs
 C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking\obj\Debug\netstandard2.0\Components\NavBar.xaml.g.cs
+C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking\obj\Debug\netstandard2.0\Components\RangoHorario.xaml.g.cs
 C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
 C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking\obj\Debug\netstandard2.0\Styles\StyleEasyParking.xaml.g.cs
 C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking\obj\Debug\netstandard2.0\Views\Estacionamientos\DetalleDeEstacionamiento.xaml.g.cs
 C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking\obj\Debug\netstandard2.0\Views\Estacionamientos\Estacionamiento.xaml.g.cs
 C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking\obj\Debug\netstandard2.0\Views\Estacionamientos\MisEstacionamientos\MisEstacionamientos.xaml.g.cs
+C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking\obj\Debug\netstandard2.0\Views\Estacionamientos\MisEstacionamientos\PopupRangoHorario.xaml.g.cs
 C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking\obj\Debug\netstandard2.0\Views\Favoritos\Favoritos.xaml.g.cs
 C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking\obj\Debug\netstandard2.0\Views\Generales\PopCargando.xaml.g.cs
 C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking\obj\Debug\netstandard2.0\Views\Generales\WebViewVideos.xaml.g.cs
@@ -66,3 +67,4 @@ C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking\obj\Debug\netstanda
 C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking\obj\Debug\netstandard2.0\EasyParking.dll
 C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking\obj\Debug\netstandard2.0\ref\EasyParking.dll
 C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking\obj\Debug\netstandard2.0\EasyParking.pdb
+C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking\obj\Debug\netstandard2.0\EasyParking.csproj.AssemblyReference.cache

@@ -5,6 +5,7 @@ public class MonoPackageManager_Resources {
 		"EasyParking.Android.dll",
 		"EasyParking.dll",
 		"FormsViewGroup.dll",
+		"Plugin.Media.dll",
 		"Rg.Plugins.Popup.dll",
 		"Syncfusion.Buttons.XForms.Android.dll",
 		"Syncfusion.Buttons.XForms.dll",
