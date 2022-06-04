@@ -1,4 +1,5 @@
-﻿using System;
+﻿using EasyParking.DTO;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using static EasyParking.Views.Estacionamientos.MisEstacionamientos.PopupRangoHorario;
@@ -7,13 +8,20 @@ namespace EasyParking.Modelo
 {
     public class Estacionamiento
     {
+        public Estacionamiento()
+        {
+            for (int i = 0; i < DiasConHorarios.Length; i++)
+            {
+                DiasConHorarios[i] = new Dia();
+            }
+        }
         public int PersonaId { get; set; } // se asocia al dueño 
         public byte[] Imagen { get; set; } // podria ser lista // imagen del lugar
         public string Nombre { get; set; } // nombre del lugar
         public string Direccion { get; set; } // Direccion del lugar
-        public List<RangoH> Horarios { get; set; } // horarios en los que opera
+        public Dia[] DiasConHorarios { get; set; } = new Dia[7]; // horarios en los que opera
         public string TipoDeLugar { get; set; } // descripcion del lugar - galpon, aire libre etc..
-        public List<DataVehiculoAlojado> Vehiculos { get; set; } // vehiculos aceptados
+        public List<DataVehiculoAlojado> Vehiculos { get; set; } = new List<DataVehiculoAlojado>();// vehiculos aceptados
         public decimal MontoReserva { get; set; } // precio de la reserva si es que tiene 
 
     }

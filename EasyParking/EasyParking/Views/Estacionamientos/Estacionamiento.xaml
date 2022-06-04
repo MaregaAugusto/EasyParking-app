@@ -88,8 +88,8 @@
                                 </syncfusion1:SfListView>
 
 
-                                <ImageButton  BackgroundColor="Transparent" HorizontalOptions="End" VerticalOptions="Center" Padding="5" Margin="10,0,0,0" 
-                                          WidthRequest="30" HeightRequest="30" Source="editar01.png" x:Name="btnEditarHorarioLunes" Clicked="btnEditarHorarioLunes_Clicked"  />
+                                <ImageButton  BackgroundColor="Transparent" HorizontalOptions="End" VerticalOptions="Center" Padding="5" Margin="10,0,0,0" ClassId="LUNES"
+                                          WidthRequest="30" HeightRequest="30" Source="editar01.png" Clicked="btnEditarHorario_Clicked"  />
                             </StackLayout>
 
                             <custom:CustomLabel Grid.Column="0"  Grid.Row="1" Text="Martes" VerticalOptions="Center"     FontSize="16" TextColor="Gray"/>
@@ -109,8 +109,8 @@
                                 </syncfusion1:SfListView>
 
 
-                                <ImageButton  BackgroundColor="Transparent" HorizontalOptions="End" VerticalOptions="Center" Padding="5" Margin="10,0,0,0" 
-                                          WidthRequest="30" HeightRequest="30" Source="editar01.png" x:Name="btnEditarHorarioMartes"   />
+                                <ImageButton  BackgroundColor="Transparent" HorizontalOptions="End" VerticalOptions="Center" Padding="5" Margin="10,0,0,0" ClassId="MARTES"
+                                          WidthRequest="30" HeightRequest="30" Source="editar01.png" Clicked="btnEditarHorario_Clicked"  />
                             </StackLayout>
 
                             <custom:CustomLabel Grid.Column="0"  Grid.Row="2" Text="Miercoles" VerticalOptions="Center"     FontSize="16" TextColor="Gray"/>
@@ -130,8 +130,8 @@
                                 </syncfusion1:SfListView>
 
 
-                                <ImageButton  BackgroundColor="Transparent" HorizontalOptions="End" VerticalOptions="Center" Padding="5" Margin="10,0,0,0" 
-                                          WidthRequest="30" HeightRequest="30" Source="editar01.png" x:Name="btnEditarHorarioMiercoles"   />
+                                <ImageButton  BackgroundColor="Transparent" HorizontalOptions="End" VerticalOptions="Center" Padding="5" Margin="10,0,0,0" ClassId="MIERCOLES"
+                                          WidthRequest="30" HeightRequest="30" Source="editar01.png"  Clicked="btnEditarHorario_Clicked"  />
                             </StackLayout>
 
                             <custom:CustomLabel Grid.Column="0"  Grid.Row="3" Text="Jueves" VerticalOptions="Center"     FontSize="16" TextColor="Gray"/>
@@ -151,8 +151,8 @@
                                 </syncfusion1:SfListView>
 
 
-                                <ImageButton  BackgroundColor="Transparent" HorizontalOptions="End" VerticalOptions="Center" Padding="5" Margin="10,0,0,0" 
-                                          WidthRequest="30" HeightRequest="30" Source="editar01.png" x:Name="btnEditarHorarioJueves"   />
+                                <ImageButton  BackgroundColor="Transparent" HorizontalOptions="End" VerticalOptions="Center" Padding="5" Margin="10,0,0,0" ClassId="JUEVES"
+                                          WidthRequest="30" HeightRequest="30" Source="editar01.png" Clicked="btnEditarHorario_Clicked" />
                             </StackLayout>
 
 
@@ -173,8 +173,8 @@
                                 </syncfusion1:SfListView>
 
 
-                                <ImageButton  BackgroundColor="Transparent" HorizontalOptions="End" VerticalOptions="Center" Padding="5" Margin="10,0,0,0" 
-                                          WidthRequest="30" HeightRequest="30" Source="editar01.png" x:Name="btnEditarHorarioViernes"   />
+                                <ImageButton  BackgroundColor="Transparent" HorizontalOptions="End" VerticalOptions="Center" Padding="5" Margin="10,0,0,0" ClassId="VIERNES"
+                                          WidthRequest="30" HeightRequest="30" Source="editar01.png"   Clicked="btnEditarHorario_Clicked" />
                             </StackLayout>
 
                             <custom:CustomLabel Grid.Column="0"  Grid.Row="5" Text="Sabado" VerticalOptions="Center"     FontSize="16" TextColor="Gray"/>
@@ -194,8 +194,8 @@
                                 </syncfusion1:SfListView>
 
 
-                                <ImageButton  BackgroundColor="Transparent" HorizontalOptions="End" VerticalOptions="Center" Padding="5" Margin="10,0,0,0" 
-                                          WidthRequest="30" HeightRequest="30" Source="editar01.png" x:Name="btnEditarHorarioSabado"   />
+                                <ImageButton  BackgroundColor="Transparent" HorizontalOptions="End" VerticalOptions="Center" Padding="5" Margin="10,0,0,0" ClassId="SABADO"
+                                          WidthRequest="30" HeightRequest="30" Source="editar01.png" Clicked="btnEditarHorario_Clicked"   />
                             </StackLayout>
 
 
@@ -216,8 +216,8 @@
                                 </syncfusion1:SfListView>
 
 
-                                <ImageButton  BackgroundColor="Transparent" HorizontalOptions="End" VerticalOptions="Center" Padding="5" Margin="10,0,0,0" 
-                                          WidthRequest="30" HeightRequest="30" Source="editar01.png" x:Name="btnEditarHorarioDomingo"   />
+                                <ImageButton  BackgroundColor="Transparent" HorizontalOptions="End" VerticalOptions="Center" Padding="5" Margin="10,0,0,0" ClassId="DOMINGO"
+                                          WidthRequest="30" HeightRequest="30" Source="editar01.png" Clicked="btnEditarHorario_Clicked"   />
                             </StackLayout>
 
                         </Grid>

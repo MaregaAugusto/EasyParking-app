@@ -1,4 +1,5 @@
-﻿using EasyParking.Views.Estacionamientos.MisEstacionamientos;
+﻿using EasyParking.DTO;
+using EasyParking.Views.Estacionamientos.MisEstacionamientos;
 using EasyParking.Views.Generales;
 using EasyParking.Views.PerfilDeNegocio.Tarifas.Tarifa;
 using Plugin.Media;
@@ -21,6 +22,7 @@ namespace EasyParking.Views.Estacionamientos
     {
         List<byte[]> BytesLista = new List<byte[]>();
         byte[] ImagenArray = null;
+        Modelo.Estacionamiento estacionamiento = new Modelo.Estacionamiento();
 
         Stream STREAM;
         List<ImageSource> ImageSourceLista = new List<ImageSource>();
@@ -51,30 +53,30 @@ namespace EasyParking.Views.Estacionamientos
             PeriodosLunes.Add(h2);
             PeriodosLunes.Add(h3);
 
-            lwHorariosLunes.ItemsSource = new string[]
-                                            {
-                                              h.Periodo,
-                                              h2.Periodo,
-                                                h2.Periodo,
-                                              h3.Periodo
-                                            };
+            //lwHorariosLunes.ItemsSource = new string[]
+            //                                {
+            //                                  h.Periodo,
+            //                                  h2.Periodo,
+            //                                    h2.Periodo,
+            //                                  h3.Periodo
+            //                                };
 
-            lwHorariosMartes.ItemsSource = new string[]
-                                           {
-                                              h3.Periodo
-                                           };
+            //lwHorariosMartes.ItemsSource = new string[]
+            //                               {
+            //                                  h3.Periodo
+            //                               };
 
-            lwHorariosMiercoles.ItemsSource = new string[]
-                                           {
-                                              h.Periodo,
-                                              h3.Periodo
-                                           };
+            //lwHorariosMiercoles.ItemsSource = new string[]
+            //                               {
+            //                                  h.Periodo,
+            //                                  h3.Periodo
+            //                               };
 
-            lwHorariosSabado.ItemsSource = new string[]
-                                           {
-                                              h.Periodo,
-                                              h3.Periodo
-                                           };
+            //lwHorariosSabado.ItemsSource = new string[]
+            //                               {
+            //                                  h.Periodo,
+            //                                  h3.Periodo
+            //                               };
 
 
         }
@@ -191,11 +193,8 @@ namespace EasyParking.Views.Estacionamientos
             }
         }
 
-        private async void btnEditarHorarioLunes_Clicked(object sender, EventArgs e)
-        {
-            await PopupNavigation.Instance.PushAsync(new PopupRangoHorario());
-
-        }
+      
+       
 
         private async void btnTomarFoto_Clicked(object sender, EventArgs e)
         {
@@ -309,17 +308,81 @@ namespace EasyParking.Views.Estacionamientos
             //file.Dispose();
         }
 
+
+        private async void btnEditarHorario_Clicked(object sender, EventArgs e)
+        {
+            ImageButton btn = (ImageButton)sender;
+            var Dia = btn.ClassId;
+            Enum.Dia dia = (Enum.Dia)System.Enum.Parse(typeof(Enum.Dia), Dia);
+
+            var p = new PopupRangoHorario();
+            await PopupNavigation.Instance.PushAsync(p);
+            p.MyEvent += async (args, args2) =>
+            {
+                List<string> respuesta = args; // lista de los horarios en string
+                List<RangoH> ListaDeHorarios = args2; // lista de los horarios en objeto RangoH
+
+                if (respuesta.Count != 0)
+                {
+                    switch (dia)
+                    {
+                        case Enum.Dia.LUNES:
+                            estacionamiento.DiasConHorarios[0].Horarios = ListaDeHorarios;
+                            estacionamiento.DiasConHorarios[0].DiaDeLaSemana = dia;
+                            lwHorariosLunes.ItemsSource = respuesta;
+                            break;
+                        case Enum.Dia.MARTES:
+                            estacionamiento.DiasConHorarios[1].Horarios = ListaDeHorarios;
+                            estacionamiento.DiasConHorarios[1].DiaDeLaSemana = dia;
+                            lwHorariosMartes.ItemsSource = respuesta;
+                            break;
+                        case Enum.Dia.MIERCOLES:
+                            estacionamiento.DiasConHorarios[2].Horarios = ListaDeHorarios;
+                            estacionamiento.DiasConHorarios[2].DiaDeLaSemana = dia;
+                            lwHorariosMiercoles.ItemsSource = respuesta;
+                            break;
+                        case Enum.Dia.JUEVES:
+                            estacionamiento.DiasConHorarios[3].Horarios = ListaDeHorarios;
+                            estacionamiento.DiasConHorarios[3].DiaDeLaSemana = dia;
+                            lwHorariosJueves.ItemsSource = respuesta;
+                            break;
+                        case Enum.Dia.VIERNES:
+                            estacionamiento.DiasConHorarios[4].Horarios = ListaDeHorarios;
+                            estacionamiento.DiasConHorarios[4].DiaDeLaSemana = dia;
+                            lwHorariosViernes.ItemsSource = respuesta;
+                            break;
+                        case Enum.Dia.SABADO:
+                            estacionamiento.DiasConHorarios[5].Horarios = ListaDeHorarios;
+                            estacionamiento.DiasConHorarios[5].DiaDeLaSemana = dia;
+                            lwHorariosSabado.ItemsSource = respuesta;
+                            break;
+                        case Enum.Dia.DOMINGO:
+                            estacionamiento.DiasConHorarios[6].Horarios = ListaDeHorarios;
+                            estacionamiento.DiasConHorarios[6].DiaDeLaSemana = dia;
+                            lwHorariosDomingo.ItemsSource = respuesta;
+                            break;
+                    }
+
+                }
+            };
+        }
+
+
+
         private void btnAgregar_Clicked(object sender, EventArgs e)
         {
-            Modelo.Estacionamiento estacionamiento = new Modelo.Estacionamiento();
 
-            estacionamiento.Imagen = ImagenArray;
+            estacionamiento.Imagen = ImagenArray; // IMAGEN DEL LUGAR
 
-            estacionamiento.Nombre = entryNombre.Text;
+            estacionamiento.Nombre = entryNombre.Text; // NOMBRE DEL LUGAR
 
-            estacionamiento.Direccion = entryDireccion.Text;
+            estacionamiento.Direccion = entryDireccion.Text; // DIRECCION DEL LUGAR
 
-            estacionamiento.TipoDeLugar = comboBoxTipoDeLugar.Text;
+            estacionamiento.TipoDeLugar = comboBoxTipoDeLugar.Text; // TIPO DEL LUGAR
+
+                                                                    // LOS RANGO HORARIOS YA SE CARGARON ANTES EN EL EVENTO --> btnEditarHorario_Clicked
+
+            //********** TEMA VEHICULOS ACEPTADOS Y SUS TARIFAS **********//
 
             if ((bool)checkBoxAuto.IsChecked && Convert.ToInt32(entryCantidadAuto.Value) != 0)  // AUTO DESDE ACA
             {
@@ -362,7 +425,12 @@ namespace EasyParking.Views.Estacionamientos
                 estacionamiento.Vehiculos.Add(dataVehiculo); // HASTA ACA
             }
 
-            estacionamiento.MontoReserva = Convert.ToDecimal(entryMontoReserva.Text);
+            //********************//
+
+
+            estacionamiento.MontoReserva = Convert.ToDecimal(entryMontoReserva.Text); // MONTO DE LA RESERVA
+
+            var xxx = estacionamiento;
 
         }
     }
