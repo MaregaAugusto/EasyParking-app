@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:custom="clr-namespace:EasyParking.Custom" xmlns:buttons="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms"
+             x:Class="EasyParking.Views.Login.Login" NavigationPage.HasNavigationBar="False">
+   
+    <StackLayout Spacing="0">
+        <StackLayout VerticalOptions="CenterAndExpand" Spacing="25">
+            <Image Source="logo.png" HeightRequest="200" WidthRequest="200" BackgroundColor="Transparent"/>
+            <custom:CustomLabel Text="Easy Parking" FontSize="30" TextColor="Black" FontAttributes="Bold" HorizontalOptions="CenterAndExpand" />
+        </StackLayout>
+
+
+        <StackLayout VerticalOptions="CenterAndExpand" Spacing="10">
+            <buttons:SfButton  Text="Iniciar sesión"  ShadowColor="Black" HeightRequest="50" ImageWidth="25"  VerticalOptions="EndAndExpand"   HorizontalOptions="FillAndExpand" CornerRadius="5"
+                                          HorizontalTextAlignment="Center" BorderWidth="1" TextColor="LightYellow" Padding="0" 
+                                          BackgroundColor="#17202A"   Margin="20,0,20,0"  FontSize="18" x:Name="btnIniciarSesion" Clicked="btnIniciarSesion_Clicked"
+                                            />
+
+            <buttons:SfButton  Text="Registrarme"  TextColor="#17202A" HeightRequest="50" ImageWidth="25" FontSize="18" VerticalOptions="EndAndExpand"   HorizontalOptions="FillAndExpand" CornerRadius="5"
+                                          HorizontalTextAlignment="Center" BorderWidth="1"  Padding="0" 
+                                          BackgroundColor="Transparent" BorderColor="#17202A"   Margin="20,0,20,0" x:Name="btnRegistrarme"   Clicked="btnRegistrarme_Clicked"
+                                            />
+
+            <buttons:SfButton  Text="Olvidé mi contraseña"  TextColor="#17202A" HeightRequest="50" ImageWidth="25" FontSize="18" VerticalOptions="EndAndExpand"   HorizontalOptions="FillAndExpand" CornerRadius="5"
+                                          HorizontalTextAlignment="Center" BorderWidth="1"  Padding="0" 
+                                          BackgroundColor="Transparent" x:Name="btnOlvideMiContraseña" Clicked="btnOlvideMiContraseña_Clicked"   Margin="20,0,20,0"  
+                                            />
+        </StackLayout>
+
+    </StackLayout>
+</ContentPage>

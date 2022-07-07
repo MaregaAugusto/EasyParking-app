@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:views="clr-namespace:EasyParking.Components" xmlns:rating="clr-namespace:Syncfusion.SfRating.XForms;assembly=Syncfusion.SfRating.XForms" xmlns:buttons="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms" xmlns:inputLayout="clr-namespace:Syncfusion.XForms.TextInputLayout;assembly=Syncfusion.Core.XForms" xmlns:custom="clr-namespace:EasyParking.Custom" xmlns:border="clr-namespace:Syncfusion.XForms.Border;assembly=Syncfusion.Core.XForms"
+             x:Class="EasyParking.Views.Reseñas.AgregarReseña">
+
+
+    <NavigationPage.TitleView>
+        <views:NavBar x:Name="navBar" IsVisibleBoxSearch="False"  Title="Mi reseña"  IsVisibleFavoritos="False" Margin="0,0,10,0"  />
+    </NavigationPage.TitleView>
+    <StackLayout Padding="10" Spacing="25">
+
+        <Frame  CornerRadius="3" Padding="0" HasShadow="True"  BackgroundColor="White" >
+
+            <StackLayout Spacing="0">
+                <border:SfBorder BackgroundColor="#FCF3CF" CornerRadius="3,3,0,0" Padding="3,5,3,5" HorizontalOptions="FillAndExpand" BorderColor="Transparent" BorderWidth="0">
+                    <StackLayout Spacing="0" Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+                        <custom:CustomLabel  Text="Dinos que piensas"  FontSize="18" HorizontalOptions="Start" VerticalOptions="Center" Margin="10,0,0,0" TextColor="Black" />
+                        <custom:CustomLabel  Text="(máx 350 caracteres)" HorizontalOptions="EndAndExpand"  FontSize="12" VerticalOptions="Center" Margin="0,0,10,0" TextColor="Gray" />
+                    </StackLayout>
+                </border:SfBorder>
+
+                <Editor HorizontalOptions="FillAndExpand" Placeholder="Ingresa tu reseña" MaxLength="350" HeightRequest="200"  AutoSize="TextChanges" VerticalOptions="FillAndExpand" BackgroundColor="#FAFAFA" />
+
+            </StackLayout>
+        </Frame>
+
+        <Frame  CornerRadius="3" Padding="0" HasShadow="True"  BackgroundColor="White">
+
+            <StackLayout Spacing="0">
+
+                <border:SfBorder BackgroundColor="#FCF3CF" CornerRadius="3,3,0,0" Padding="3,5,3,5" HorizontalOptions="FillAndExpand" BorderColor="Transparent" BorderWidth="0">
+                    <custom:CustomLabel  Text="¿Que puntaje le das?" FontSize="18" HorizontalOptions="Center" VerticalOptions="Center" Margin="10,0,0,0" TextColor="Black" />
+                </border:SfBorder>
+
+                <rating:SfRating Value="0" ItemSize="20" Margin="20" BackgroundColor="Transparent" HorizontalOptions="Center" HeightRequest="20"  VerticalOptions="Center" >
+                    <rating:SfRating.RatingSettings>
+                        <rating:SfRatingSettings RatedFill="#FFCC3D" UnRatedFill="Gray"/>
+                    </rating:SfRating.RatingSettings>
+                </rating:SfRating>
+            </StackLayout>
+        </Frame>
+       
+
+        <buttons:SfButton  Text="Enviar reseña"  ShadowColor="Black" HeightRequest="40" ImageWidth="25" FontSize="16" VerticalOptions="EndAndExpand"   HorizontalOptions="FillAndExpand" CornerRadius="3"
+                                          HorizontalTextAlignment="Center" BorderWidth="1" TextColor="LightYellow" Padding="0" 
+                                          BackgroundColor="#2968C8"   Margin="0" x:Name="btnEnviar" Clicked="btnEnviar_Clicked"
+                                            />
+    </StackLayout>
+</ContentPage>

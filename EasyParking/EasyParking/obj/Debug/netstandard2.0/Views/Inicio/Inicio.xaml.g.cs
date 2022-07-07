@@ -20,13 +20,13 @@ namespace EasyParking.Views.Inicio {
         private global::EasyParking.Components.NavBar navBar;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
-        private global::EasyParking.Components.Card_Parking Card_Parking;
+        private global::Syncfusion.ListView.XForms.SfListView lwlisado;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private void InitializeComponent() {
             global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(Inicio));
             navBar = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::EasyParking.Components.NavBar>(this, "navBar");
-            Card_Parking = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::EasyParking.Components.Card_Parking>(this, "Card_Parking");
+            lwlisado = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Syncfusion.ListView.XForms.SfListView>(this, "lwlisado");
         }
     }
 }

@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:views="clr-namespace:EasyParking.Components" xmlns:inputLayout="clr-namespace:Syncfusion.XForms.TextInputLayout;assembly=Syncfusion.Core.XForms" xmlns:custom="clr-namespace:EasyParking.Custom"
+             x:Class="EasyParking.Views.Login.OlvideMiContraseña">
+
+
+    <NavigationPage.TitleView>
+        <views:NavBar x:Name="navBar"    Title="Olvidé mi contraseña" IsVisibleFavoritos="False" IsVisibleBoxSearch="False"  />
+    </NavigationPage.TitleView>
+
+    <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" >
+        <StackLayout Spacing="20" Margin="15,15,15,0">
+            <inputLayout:SfTextInputLayout      ContainerType="Outlined" Hint="Email" BackgroundColor="Transparent" ContainerBackgroundColor="Transparent"   HorizontalOptions="FillAndExpand" VerticalOptions="Center"  HelperText="Ingrese el email con el que se registro, se le enviar un correo a esa dirección para proceder *">
+                <custom:CustomEntry x:Name="entryEmail"  Keyboard="Default" ClearButtonVisibility="WhileEditing" HorizontalOptions="FillAndExpand"/>
+            </inputLayout:SfTextInputLayout>
+
+
+        </StackLayout>
+
+        <custom:CustomButton x:Name="btnEnviarCorreo"  VerticalOptions="EndAndExpand"
+                             Margin="20"
+                             CornerRadius="3" 
+                             Text="Enviar" Font="20" 
+                             TextColor="White" 
+                             BackgroundColor="#17202A"/>
+
+    </StackLayout>
+</ContentPage>

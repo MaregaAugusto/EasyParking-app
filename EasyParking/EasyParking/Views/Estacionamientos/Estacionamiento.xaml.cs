@@ -110,8 +110,8 @@ namespace EasyParking.Views.Estacionamientos
 
                 using (MemoryStream memory = new MemoryStream())
                 {
-
                     stream.CopyTo(memory);
+                    
                     imageArray = memory.ToArray();
                 }
 
@@ -199,11 +199,13 @@ namespace EasyParking.Views.Estacionamientos
         private async void btnTomarFoto_Clicked(object sender, EventArgs e)
         {
             var result = await MediaPicker.CapturePhotoAsync();
-
+          
             if (result != null)
             {
                 STREAM = await result.OpenReadAsync();
+                
                 Imagen.Source = ImageSource.FromStream(() => STREAM);
+                Imagen.Rotation = 90;
                 imagenEmpty.IsVisible = labelimagenEmpty.IsVisible = false;
                 ImageSource IM = Imagen.Source;
                 ConvertSourceToBytes4(result, IM);
@@ -431,6 +433,8 @@ namespace EasyParking.Views.Estacionamientos
             estacionamiento.MontoReserva = Convert.ToDecimal(entryMontoReserva.Text); // MONTO DE LA RESERVA
 
             var xxx = estacionamiento;
+
+            App.Estacionamientos.Add(estacionamiento);
 
         }
     }

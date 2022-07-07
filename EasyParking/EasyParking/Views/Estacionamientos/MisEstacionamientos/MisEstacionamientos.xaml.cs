@@ -25,5 +25,26 @@ namespace EasyParking.Views.Estacionamientos.MisEstacionamientos
             await Navigation.PushAsync(new Estacionamiento());
             await PopupNavigation.Instance.PopAsync();
         }
+
+        private async void btnEliminar_Clicked(object sender, EventArgs e)
+        {
+            bool result = await DisplayAlert("Eliminar Estacionamiento", "¿seguro desea eliminarlo?", "Si, eliminar", "No");
+
+            if (result)
+            {
+                Tools.Tools.Messages("Estacionamiento eliminado");
+            }
+        }
+
+        private async void btnPausar_Clicked(object sender, EventArgs e)
+        {
+           
+            bool result = await DisplayAlert("Pausar publicación", "¿seguro desea pausarla?", "Si, pausar", "No");
+
+            if (result)
+            {
+                Tools.Tools.Messages("Publicación pausada");
+            }
+        }
     }
 }

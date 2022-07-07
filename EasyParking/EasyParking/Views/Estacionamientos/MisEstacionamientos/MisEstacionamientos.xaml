@@ -207,16 +207,16 @@
                     </border:SfBorder>
 
                     <StackLayout Orientation="Horizontal" Spacing="0" Margin="0" Padding="0" VerticalOptions="EndAndExpand">
-                        <buttons:SfButton x:Name="btnEliminar"  Text="Eliminar estacionamiento"    HorizontalOptions="FillAndExpand" CornerRadius="3"
-                                          HorizontalTextAlignment="Center" BorderWidth="1" TextColor="Red" Padding="0" 
+                        <buttons:SfButton   Text="Eliminar estacionamiento"    HorizontalOptions="FillAndExpand" CornerRadius="3"
+                                          HorizontalTextAlignment="Center" BorderWidth="1" TextColor="#E74C3C" Padding="0" 
                                           BackgroundColor="Transparent"   Margin="0"   
-                                          VerticalOptions="EndAndExpand" />
+                                          VerticalOptions="EndAndExpand" x:Name="btnEliminar" Clicked="btnEliminar_Clicked"/>
 
 
                         <buttons:SfButton Text="Pausar publicación"  Padding="0" FontSize="14" CornerRadius="3"
                                           BorderWidth="1" TextColor="Gray" BackgroundColor="Transparent" HorizontalOptions="FillAndExpand"
                                           VerticalTextAlignment="Start"   Margin="0,0,0,0"
-                                                              x:Name="btnVerMapa" />
+                                                              x:Name="btnPausar" Clicked="btnPausar_Clicked"/>
 
 
                     </StackLayout>
@@ -227,7 +227,7 @@
             </Frame>
 
         </StackLayout>
-        <ImageButton Source="agregar.png"   x:Name="btnAgregar" Clicked="btnAgregar_Clicked"
+        <ImageButton Source="agregar01.png"   x:Name="btnAgregar" Clicked="btnAgregar_Clicked"
                      AbsoluteLayout.LayoutBounds="0.95,0.95" WidthRequest="50" HeightRequest="50" BackgroundColor="Transparent"  AbsoluteLayout.LayoutFlags="PositionProportional">
             <VisualStateManager.VisualStateGroups>
                 <VisualStateGroup x:Name="CommonStates">

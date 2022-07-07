@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:views="clr-namespace:EasyParking.Components" xmlns:custom="clr-namespace:EasyParking.Custom" xmlns:border="clr-namespace:Syncfusion.XForms.Border;assembly=Syncfusion.Core.XForms"
+             x:Class="EasyParking.Views.MisVehiculos.MisVehiculos">
+
+    <NavigationPage.TitleView>
+        <views:NavBar x:Name="navBar"    Title="Mis vehículos" IsVisibleFavoritos="False" IsVisibleBoxSearch="False"  />
+    </NavigationPage.TitleView>
+
+    <AbsoluteLayout  AbsoluteLayout.LayoutBounds="0,0,1,1" AbsoluteLayout.LayoutFlags="All">
+        <ScrollView  AbsoluteLayout.LayoutBounds="0,0,1,1" AbsoluteLayout.LayoutFlags="All">
+            <StackLayout Padding="10,10,10,10" Spacing="0" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                    <Frame  CornerRadius="3" Padding="0" HasShadow="True" Margin="10,20,10,10"  BackgroundColor="White">
+                        <StackLayout Spacing="0">
+                            <border:SfBorder BorderColor = "Gainsboro" BackgroundColor="Gainsboro"  BorderWidth="4" Margin="0,0,0,0">
+                                <!--<custom:CustomLabel Grid.Column="0" Grid.Row="0" Text="Auto" FontSize="16" Margin="0" HorizontalOptions="Center" FontAttributes="Bold"  TextColor="Black"  MaxLines="4"  LineBreakMode="TailTruncation"/>-->
+                            </border:SfBorder>
+
+                            <Grid Padding="10">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto" />
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <custom:CustomLabel Grid.Column="0" Grid.Row="0" Text="Tipo:" FontSize="16" Margin="0" HorizontalOptions="Center" FontAttributes="Bold"  TextColor="Black"  MaxLines="4"  LineBreakMode="TailTruncation"/>
+                                <custom:CustomLabel Grid.Column="0" Grid.Row="1" Text="Auto" FontSize="16" Margin="0" HorizontalOptions="Center"  TextColor="Black"  MaxLines="4"  LineBreakMode="TailTruncation"/>
+                                <custom:CustomLabel Grid.Column="1" Grid.Row="0" Text="Patente:" FontSize="16" Margin="0"  HorizontalOptions="Center" FontAttributes="Bold"  TextColor="Black"  MaxLines="4"  LineBreakMode="TailTruncation"/>
+                                <custom:CustomLabel Grid.Column="1" Grid.Row="1" Text="AC 654 FG" FontSize="16" Margin="0"  HorizontalOptions="Center"  TextColor="Black"  MaxLines="4"  LineBreakMode="TailTruncation"/>
+
+                            </Grid>
+
+                        </StackLayout>
+                    </Frame>
+
+                    <Frame  CornerRadius="3" Padding="0" HasShadow="True" Margin="10,20,10,10"  BackgroundColor="White">
+                        <StackLayout Spacing="0">
+                            <border:SfBorder BorderColor = "Gainsboro" BackgroundColor="Gainsboro"  BorderWidth="4" Margin="0,0,0,0">
+                                <!--<custom:CustomLabel Grid.Column="0" Grid.Row="0" Text="Moto" FontSize="16" Margin="0" HorizontalOptions="Center" FontAttributes="Bold"  TextColor="Black"  MaxLines="4"  LineBreakMode="TailTruncation"/>-->
+                            </border:SfBorder>
+
+                            <Grid Padding="10">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto" />
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <custom:CustomLabel Grid.Column="0" Grid.Row="0" Text="Tipo:" FontSize="16" Margin="0" HorizontalOptions="Center" FontAttributes="Bold"  TextColor="Black"  MaxLines="4"  LineBreakMode="TailTruncation"/>
+                                <custom:CustomLabel Grid.Column="0" Grid.Row="1" Text="Moto" FontSize="16" Margin="0" HorizontalOptions="Center"  TextColor="Black"  MaxLines="4"  LineBreakMode="TailTruncation"/>
+                                <custom:CustomLabel Grid.Column="1" Grid.Row="0" Text="Patente:" FontSize="16" Margin="0"  HorizontalOptions="Center" FontAttributes="Bold"  TextColor="Black"  MaxLines="4"  LineBreakMode="TailTruncation"/>
+                                <custom:CustomLabel Grid.Column="1" Grid.Row="1" Text="AS568" FontSize="16" Margin="0"  HorizontalOptions="Center"  TextColor="Black"  MaxLines="4"  LineBreakMode="TailTruncation"/>
+
+                            </Grid>
+
+                        </StackLayout>
+                    </Frame>
+                </StackLayout>
+
+
+        </ScrollView>
+        
+        <ImageButton Source="agregar01.png"   x:Name="btnAgregar" Clicked="btnAgregar_Clicked"
+                     AbsoluteLayout.LayoutBounds="0.95,0.95" WidthRequest="50" HeightRequest="50" BackgroundColor="Transparent"  AbsoluteLayout.LayoutFlags="PositionProportional">
+            <VisualStateManager.VisualStateGroups>
+                <VisualStateGroup x:Name="CommonStates">
+                    <VisualState x:Name="Normal">
+                        <VisualState.Setters>
+                            <Setter Property="Scale" Value="1"/>
+                        </VisualState.Setters>
+                    </VisualState>
+
+                    <VisualState x:Name="Pressed">
+                        <VisualState.Setters>
+                            <Setter Property="Scale" Value="0.8"/>
+                        </VisualState.Setters>
+                    </VisualState>
+
+                </VisualStateGroup>
+            </VisualStateManager.VisualStateGroups>
+        </ImageButton>
+
+
+    </AbsoluteLayout>
+
+
+
+</ContentPage>

@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:views="clr-namespace:EasyParking.Components" xmlns:inputLayout="clr-namespace:Syncfusion.XForms.TextInputLayout;assembly=Syncfusion.Core.XForms" xmlns:custom="clr-namespace:EasyParking.Custom"
+             x:Class="EasyParking.Views.Login.Registrarme">
+
+    <NavigationPage.TitleView>
+        <views:NavBar x:Name="navBar"    Title="Registro" IsVisibleFavoritos="False" IsVisibleBoxSearch="False"  />
+    </NavigationPage.TitleView>
+
+    <ScrollView>
+        <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Padding="15" >
+            <StackLayout Spacing="10" >
+                <inputLayout:SfTextInputLayout  ContainerType="Outlined" Hint="Nombre"    BackgroundColor="Transparent" ContainerBackgroundColor="Transparent"   HorizontalOptions="FillAndExpand" VerticalOptions="Center"  HelperText="Obligatorio *">
+                    <custom:CustomEntry  x:Name="entryNombre" ClearButtonVisibility="WhileEditing"   Keyboard="Default" HorizontalOptions="FillAndExpand" />
+                </inputLayout:SfTextInputLayout>
+
+                <inputLayout:SfTextInputLayout  ContainerType="Outlined" Hint="Apellido"     BackgroundColor="Transparent" ContainerBackgroundColor="Transparent"   HorizontalOptions="FillAndExpand" VerticalOptions="Center"  HelperText="Obligatorio *">
+                    <custom:CustomEntry  x:Name="entryApellido" ClearButtonVisibility="WhileEditing"   Keyboard="Default" HorizontalOptions="FillAndExpand" />
+                </inputLayout:SfTextInputLayout>
+
+                <inputLayout:SfTextInputLayout      ContainerType="Outlined" Hint="Email" BackgroundColor="Transparent" ContainerBackgroundColor="Transparent"   HorizontalOptions="FillAndExpand" VerticalOptions="Center"  HelperText="Obligatorio *">
+                    <custom:CustomEntry x:Name="entryEmail"  Keyboard="Default" ClearButtonVisibility="WhileEditing" HorizontalOptions="FillAndExpand"/>
+                </inputLayout:SfTextInputLayout>
+
+                <inputLayout:SfTextInputLayout  ContainerType="Outlined" Hint="Contraseña"   EnablePasswordVisibilityToggle="true"   BackgroundColor="Transparent" ContainerBackgroundColor="Transparent"   HorizontalOptions="FillAndExpand" VerticalOptions="Center"  HelperText="Mínimo 8 caracteres *">
+                    <custom:CustomEntry  x:Name="entryContraseña" ClearButtonVisibility="WhileEditing"   Keyboard="Default" HorizontalOptions="FillAndExpand" />
+                </inputLayout:SfTextInputLayout>
+
+                <inputLayout:SfTextInputLayout  ContainerType="Outlined" Hint="Confirmar contraseña"   EnablePasswordVisibilityToggle="true"   BackgroundColor="Transparent" ContainerBackgroundColor="Transparent"   HorizontalOptions="FillAndExpand" VerticalOptions="Center"  HelperText="Mínimo 8 caracteres *">
+                    <custom:CustomEntry  x:Name="entryConfirmarContraseña" ClearButtonVisibility="WhileEditing"   Keyboard="Default" HorizontalOptions="FillAndExpand" />
+                </inputLayout:SfTextInputLayout>
+
+                <inputLayout:SfTextInputLayout  ContainerType="Outlined" Hint="DNI"      BackgroundColor="Transparent" ContainerBackgroundColor="Transparent"   HorizontalOptions="FillAndExpand" VerticalOptions="Center"  HelperText="Obligatorio *">
+                    <custom:CustomEntry  x:Name="entryDNI" ClearButtonVisibility="WhileEditing" MaxLength="8"   Keyboard="Default" HorizontalOptions="FillAndExpand" />
+                </inputLayout:SfTextInputLayout>
+
+            </StackLayout>
+
+            <custom:CustomButton x:Name="btnRegistrarme"  VerticalOptions="EndAndExpand"
+                             CornerRadius="3" 
+                             Text="Registrarme" Font="20" 
+                             TextColor="White" 
+                             BackgroundColor="#17202A"/>
+
+        </StackLayout>
+
+    </ScrollView>
+
+</ContentPage> 

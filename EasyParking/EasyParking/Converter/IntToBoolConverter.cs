@@ -9,11 +9,11 @@ namespace EasyParking.Converter
         public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
         {
             var v = (int)value;
-            if (v == 5)
+            if (v == 4)
             {
                 return true;
             }
-            else if (v == 10)
+            else if (v == 3)
             {
                 return true;
             }

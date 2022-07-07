@@ -2,6 +2,7 @@
 using EasyParking.Views.Estacionamientos.MisEstacionamientos;
 using EasyParking.Views.Generales;
 using EasyParking.Views.PerfilDeNegocio.PdN_Inicio;
+using EasyParking.Views.Reservas.MisReservas;
 using EasyParking.Views.Reservas.Reserva;
 using Rg.Plugins.Popup.Services;
 using System.Collections.Generic;
@@ -20,6 +21,7 @@ namespace EasyParking.Views.Menu
         MasterPageItem page3;
         MasterPageItem page4;
         MasterPageItem page5;
+        MasterPageItem page6;
 
 
 
@@ -42,15 +44,15 @@ namespace EasyParking.Views.Menu
                 }
             });
 
-            page1 = new MasterPageItem() { id = 1, Title = "Reservas", Icon = "Reserva.png" };
+            page1 = new MasterPageItem() { id = 1, Title = "Mis reservas", Icon = "Reserva.png" };
             page2 = new MasterPageItem() { id = 2, Title = "Favoritos", Icon = "heart.png" };
-            page3 = new MasterPageItem() { id = 3, Title = "Perfil de negocio", Icon = "perfil.png" };
-       //     page4 = new MasterPageItem() { id = 4, Title = "Mis Estacionamientos", Icon = "SignalParking.png" };
-            page5 = new MasterPageItem() { id = 5, Title = "Configuración", Icon = "settings01.png" };
+            page3 = new MasterPageItem() { id = 3, Title = "Mis vehículos", Icon = "key.png" };
+            page4 = new MasterPageItem() { id = 4, Title = "Perfil de negocio", Icon = "perfil.png" };
+            page5 = new MasterPageItem() { id = 5, Title = "Mi cuenta", Icon = "usuario.png" };
             menuList.Add(page1);
             menuList.Add(page2);
             menuList.Add(page3);
-         //   menuList.Add(page4);
+            menuList.Add(page4);
             menuList.Add(page5);
 
             navigationDrawerList.ItemsSource = menuList;
@@ -65,7 +67,7 @@ namespace EasyParking.Views.Menu
             {
                 case 1:
                     await PopupNavigation.Instance.PushAsync(new PopCargando());
-                    await Navigation.PushAsync(new Reserva());
+                    await Navigation.PushAsync(new MisReservas());
                     await PopupNavigation.Instance.PopAsync();
                     break;
                 case 2:
@@ -75,14 +77,14 @@ namespace EasyParking.Views.Menu
                     break;
                 case 3:
                     await PopupNavigation.Instance.PushAsync(new PopCargando());
+                    await Navigation.PushAsync(new MisVehiculos.MisVehiculos());
+                    await PopupNavigation.Instance.PopAllAsync();
+                    break;
+                    case 4:
+                    await PopupNavigation.Instance.PushAsync(new PopCargando());
                     await Navigation.PushAsync(new PdN_Inicio());
                     await PopupNavigation.Instance.PopAllAsync();
                     break;
-                    //case 4:
-                    //    await PopupNavigation.Instance.PushAsync(new PopCargando());
-                    //    await Navigation.PushAsync(new Configuraciones.Configuraciones());
-                    //    await PopupNavigation.Instance.PopAllAsync();
-                    //    break;
                     //case 5:
                     //    await PopupNavigation.Instance.PushAsync(new PopCargando());
                     //    await Navigation.PushAsync(new Inicio.Inicio());

@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:custom="clr-namespace:EasyParking.Custom" xmlns:views="clr-namespace:EasyParking.Components"
+             x:Class="EasyParking.Views.Reseñas.ReseñaEnviada" >
+
+
+    <NavigationPage.TitleView>
+        <views:NavBar x:Name="navBar" Title="¡Listo!"   IsVisibleBoxSearch="False" IsVisibleFavoritos="False" Margin="0,0,0,0"  />
+    </NavigationPage.TitleView>
+    
+    <AbsoluteLayout BackgroundColor="Transparent" x:Name="abs1">
+
+            <StackLayout  AbsoluteLayout.LayoutBounds="0.5,0.5" AbsoluteLayout.LayoutFlags="PositionProportional">
+                <Image Source="enviado.png" x:Name="imagen"  HeightRequest="100" WidthRequest="100" BackgroundColor="Transparent"/>
+
+                <custom:CustomLabel Text="¡Gracias por darnos tu opinión!" TextColor="Black" FontSize="25" Margin="2,15,2,10" MaxLines="8" LineBreakMode="TailTruncation"
+                                     HorizontalOptions="Center"/>
+
+            </StackLayout>
+            <!--<custom:CustomButton Text="Volver" x:Name="btnReseñaEnviada"  BorderColor="#26B99A" BorderWidth="2" AbsoluteLayout.LayoutBounds="0.5,0.82,0.95,50" AbsoluteLayout.LayoutFlags="PositionProportional,WidthProportional" FontSize="16" BackgroundColor="Transparent" />-->
+
+
+
+    </AbsoluteLayout>
+</ContentPage>

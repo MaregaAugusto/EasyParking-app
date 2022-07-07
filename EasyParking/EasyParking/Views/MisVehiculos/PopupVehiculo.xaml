@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<pages:PopupPage  xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"                             
+                  xmlns:ListCollection="clr-namespace:System.Collections.Generic;assembly=netstandard" 
+
+                  xmlns:animations="clr-namespace:Rg.Plugins.Popup.Animations;assembly=Rg.Plugins.Popup"
+                  xmlns:inputLayout="clr-namespace:Syncfusion.XForms.TextInputLayout;assembly=Syncfusion.Core.XForms"
+                  xmlns:custom="clr-namespace:EasyParking.Custom"
+                  xmlns:pages="clr-namespace:Rg.Plugins.Popup.Pages;assembly=Rg.Plugins.Popup" xmlns:combobox="clr-namespace:Syncfusion.XForms.ComboBox;assembly=Syncfusion.SfComboBox.XForms"
+                  x:Class="EasyParking.Views.MisVehiculos.PopupVehiculo">
+
+
+    <pages:PopupPage.Animation>
+        <animations:ScaleAnimation DurationIn="400"
+                                   DurationOut="300"
+                                   EasingIn="SinOut"
+                                   EasingOut="SinIn"
+                                   HasBackgroundAnimation="True"
+                                   PositionIn="Center"
+                                   PositionOut="Center"
+                                   ScaleIn="1.2"
+                                   ScaleOut="0.8" />
+    </pages:PopupPage.Animation>
+
+    <AbsoluteLayout AbsoluteLayout.LayoutBounds="0,0,1,1" AbsoluteLayout.LayoutFlags="All" BackgroundColor="Transparent" >
+
+        <Frame CornerRadius="5" Padding="15" Margin="0" BackgroundColor="White"  AbsoluteLayout.LayoutBounds="0.5,0.5,0.85,0.95"  VerticalOptions="Center" AbsoluteLayout.LayoutFlags="All">
+            <StackLayout Spacing="10">
+                <custom:CustomLabel  Text="Vehiculo" FontSize="18" MaxLines="2" HorizontalOptions="Center" VerticalOptions="Center" FontAttributes="Bold" TextColor="Black" />
+
+                <!--<inputLayout:SfTextInputLayout  ContainerType="Outlined" Hint="Tipo" BackgroundColor="Transparent" ContainerBackgroundColor="Transparent"   HorizontalOptions="FillAndExpand" VerticalOptions="Center"  HelperText="Obligatorio *">
+                    <Editor x:Name="editorTipo" MinimumHeightRequest="100" AutoSize="TextChanges" Placeholder="Ingrese el tipo"  Keyboard="Default"  HorizontalOptions="FillAndExpand"/>
+                </inputLayout:SfTextInputLayout>-->
+
+                <combobox:SfComboBox HeightRequest="40" x:Name="comboBox"  WatermarkColor="{StaticResource Color7}" Watermark="Tipo de vehiculo">
+                    <combobox:SfComboBox.ComboBoxSource>
+                        <ListCollection:List x:TypeArguments="x:String">
+                            <x:String>Auto</x:String>
+                            <x:String>Moto</x:String>
+                            <x:String>Camioneta</x:String>
+                        </ListCollection:List>
+                    </combobox:SfComboBox.ComboBoxSource>
+                </combobox:SfComboBox>
+                
+                <inputLayout:SfTextInputLayout  ContainerType="Outlined" Hint="Patente" BackgroundColor="Transparent" ContainerBackgroundColor="Transparent"   HorizontalOptions="FillAndExpand" VerticalOptions="Center"  HelperText="Obligatorio *">
+                    <custom:CustomEntry x:Name="editorPatente" MinimumHeightRequest="100"  Placeholder="Ingrese la patente"  Keyboard="Default"  HorizontalOptions="FillAndExpand"/>
+                </inputLayout:SfTextInputLayout>
+
+                <StackLayout HorizontalOptions="FillAndExpand" Orientation="Horizontal" Spacing="10" Margin="0,10,0,0">
+                    <custom:CustomButton x:Name="btnCancelar" Clicked="btnCancelar_Clicked" BackgroundColor="Transparent" BorderWidth="1"
+                                         TextColor="{StaticResource Color7}" BorderColor="{StaticResource Color7}" Text="Cancelar"  
+                                        HeightRequest="40" VerticalOptions="Center" FontSize="16" CornerRadius="3" Padding="15,0,15,0" HorizontalOptions="FillAndExpand"/>
+                  
+                    <custom:CustomButton x:Name="btnAceptar" BackgroundColor="{StaticResource Color7}" Text="Agregar" TextColor="White"
+                                        HeightRequest="40" VerticalOptions="Center" FontSize="16" CornerRadius="3" Padding="15,0,15,0" HorizontalOptions="FillAndExpand"  />
+                </StackLayout>
+
+
+            </StackLayout>
+
+        </Frame>
+
+    </AbsoluteLayout>
+</pages:PopupPage>

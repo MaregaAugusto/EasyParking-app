@@ -6,10 +6,13 @@
 
     <Color x:Key="Color1">#FECD45</Color>
     <Color x:Key="Color2">#FFCC3D</Color>
-    <Color x:Key="Color3">#D73E45</Color>
+    <Color x:Key="Color3">#E74C3C</Color>
     <Color x:Key="Color4">#2980B9</Color>
-    <Color x:Key="Color5">#2968C8</Color>
-    
+    <Color x:Key="Color5">#2968C8</Color> 
+    <Color x:Key="Color6">#2968C8</Color>
+    <Color x:Key="Color7">#17202A</Color>
+    <Color x:Key="Color8">#1A5276</Color>
+
     <Color x:Key="ColorW">White</Color>
     <Color x:Key="ColorB">Black</Color>
     <Color x:Key="ColorG">Gray</Color>

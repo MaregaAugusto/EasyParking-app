@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:views="clr-namespace:EasyParking.Components" xmlns:custom="clr-namespace:EasyParking.Custom" xmlns:inputLayout="clr-namespace:Syncfusion.XForms.TextInputLayout;assembly=Syncfusion.Core.XForms"
+             x:Class="EasyParking.Views.Login.IniciarSesion">
+
+
+
+    <NavigationPage.TitleView>
+        <views:NavBar x:Name="navBar"    Title="Login" IsVisibleFavoritos="False" IsVisibleBoxSearch="False"  />
+    </NavigationPage.TitleView>
+
+    <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" >
+        <StackLayout Spacing="20" Margin="15,15,15,0">
+            <inputLayout:SfTextInputLayout      ContainerType="Outlined" Hint="Usuario" BackgroundColor="Transparent" ContainerBackgroundColor="Transparent"   HorizontalOptions="FillAndExpand" VerticalOptions="Center"  HelperText="Obligatorio *">
+                <custom:CustomEntry x:Name="UsuarioApp"  Keyboard="Default" ClearButtonVisibility="WhileEditing" HorizontalOptions="FillAndExpand"/>
+            </inputLayout:SfTextInputLayout>
+
+            <inputLayout:SfTextInputLayout  ContainerType="Outlined" Hint="Contraseña"   EnablePasswordVisibilityToggle="true"   BackgroundColor="Transparent" ContainerBackgroundColor="Transparent"   HorizontalOptions="FillAndExpand" VerticalOptions="Center"  HelperText="Obligatorio *">
+                <custom:CustomEntry  x:Name="ContraseñaDeUsuarioApp" ClearButtonVisibility="WhileEditing"   Keyboard="Default" HorizontalOptions="FillAndExpand" />
+            </inputLayout:SfTextInputLayout>
+
+        </StackLayout>
+
+        <custom:CustomButton x:Name="btnIniciarSesion"  VerticalOptions="EndAndExpand"
+                             Margin="20"
+                             CornerRadius="3" 
+                             Text="Continuar" FontSize="18" Clicked="btnIniciarSesion_Clicked"
+                             TextColor="White" 
+                             BackgroundColor="#17202A"/>
+
+    </StackLayout>
+
+</ContentPage>

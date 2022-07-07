@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:views="clr-namespace:EasyParking.Components" xmlns:buttons="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms" xmlns:custom="clr-namespace:EasyParking.Custom" xmlns:border="clr-namespace:Syncfusion.XForms.Border;assembly=Syncfusion.Core.XForms"
+             x:Class="EasyParking.Views.PerfilDeNegocio.MarcarSalida.MarcarSalida">
+
+    <NavigationPage.TitleView>
+        <views:NavBar x:Name="navBar" Title="Marcar Salida"   IsVisibleBoxSearch="False" IsVisibleFavoritos="False" Margin="0,0,10,0"  />
+    </NavigationPage.TitleView>
+
+    <StackLayout Padding="10" Spacing="5">
+
+
+        <Frame  CornerRadius="3" Padding="0" HasShadow="True"  BackgroundColor="White">
+            <StackLayout Spacing="0">
+                <!--<border:SfBorder BackgroundColor="#EAEDED" CornerRadius="3,3,0,0" Padding="3,5,3,5" HorizontalOptions="FillAndExpand" BorderColor="Transparent" BorderWidth="0">
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" Spacing="2"  VerticalOptions="Center">
+                            <custom:CustomLabel  Text="Esperando su llegada" Margin="5,0,0,0" FontSize="18" 
+                                                 VerticalOptions="Center" TextColor="Black" 
+                                                 FontFamily="Lobster"/>
+                            <Image Source="hourglass.png" HeightRequest="25" WidthRequest="25" HorizontalOptions="EndAndExpand" VerticalOptions="Center"/>
+                        </StackLayout>
+                    </border:SfBorder>-->
+
+                <StackLayout Orientation="Horizontal" Margin="0" HorizontalOptions="FillAndExpand" Spacing="5">
+
+                    <Image Aspect="Fill" Rotation="0"   WidthRequest="60"  BackgroundColor="Red" HeightRequest="50"  
+                              Source="https://upload.wikimedia.org/wikipedia/commons/c/c1/Lionel_Messi_20180626.jpg"/>
+
+
+                    <StackLayout BackgroundColor="Transparent" HorizontalOptions="FillAndExpand" Padding="10" Spacing="10">
+                        <custom:CustomLabel Text="Lionel Messi"  Margin="0" FontSize="16"  TextColor="Black"  MaxLines="4"  LineBreakMode="TailTruncation"/>
+                        <custom:CustomLabel Text="Auto -- AV 654 RT" FontSize="16" Margin="0"  TextColor="Black"  MaxLines="4"  LineBreakMode="TailTruncation"/>
+
+                    </StackLayout>
+
+
+
+
+
+
+
+
+                </StackLayout>
+
+            </StackLayout>
+
+        </Frame>
+
+
+        <buttons:SfButton CornerRadius="3" HasShadow="True" Text="Se ha ido"  Padding="0" FontSize="14" TextColor="#0366D6" HorizontalOptions="FillAndExpand" VerticalTextAlignment="Start"   
+                                                               BackgroundColor="White"   ShadowColor="Gainsboro" x:Name="btnSehaIdo" Clicked="btnSehaIdo_Clicked" />
+
+
+
+    </StackLayout>
+
+
+</ContentPage>

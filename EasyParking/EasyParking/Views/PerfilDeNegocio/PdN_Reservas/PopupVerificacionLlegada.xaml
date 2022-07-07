@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<pages:PopupPage  xmlns:pages="http://rotorgames.com" xmlns:inputLayout="clr-namespace:Syncfusion.XForms.TextInputLayout;assembly=Syncfusion.Core.XForms" xmlns:custom="clr-namespace:EasyParking.Custom" xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"                   xmlns:animations="clr-namespace:Rg.Plugins.Popup.Animations;assembly=Rg.Plugins.Popup"
+
+             x:Class="EasyParking.Views.PerfilDeNegocio.PdN_Reservas.PopupVerificacionLlegada">
+
+
+    <pages:PopupPage.Animation>
+        <animations:ScaleAnimation DurationIn="400"
+                                   DurationOut="300"
+                                   EasingIn="SinOut"
+                                   EasingOut="SinIn"
+                                   HasBackgroundAnimation="True"
+                                   PositionIn="Center"
+                                   PositionOut="Center"
+                                   ScaleIn="1.2"
+                                   ScaleOut="0.8" />
+    </pages:PopupPage.Animation>
+
+    <AbsoluteLayout AbsoluteLayout.LayoutBounds="0,0,1,1" AbsoluteLayout.LayoutFlags="All" BackgroundColor="Transparent" >
+
+        <Frame CornerRadius="5" Padding="15" Margin="0" BackgroundColor="White"  AbsoluteLayout.LayoutBounds="0.5,0.5,0.85,0.95"  VerticalOptions="Center" AbsoluteLayout.LayoutFlags="All">
+            <StackLayout Spacing="10">
+                <custom:CustomLabel  Text="Validación de código" FontSize="18" MaxLines="2" HorizontalOptions="Center" VerticalOptions="Center" FontAttributes="Bold" TextColor="Black" />
+
+                <inputLayout:SfTextInputLayout  ContainerType="Outlined" Hint="Código" BackgroundColor="Transparent" ContainerBackgroundColor="Transparent"   HorizontalOptions="FillAndExpand" VerticalOptions="Center"  HelperText="Obligatorio *">
+                    <custom:CustomEntry x:Name="entryCodigo" MinimumHeightRequest="100"  Placeholder="Ingrese el código"  Keyboard="Default"  HorizontalOptions="FillAndExpand"/>
+                </inputLayout:SfTextInputLayout>
+
+                <StackLayout HorizontalOptions="FillAndExpand" Orientation="Horizontal" Spacing="10" Margin="0,10,0,0">
+                    <custom:CustomButton x:Name="btnCancelar" Clicked="btnCancelar_Clicked" BackgroundColor="Transparent" BorderWidth="1"
+                                         TextColor="{StaticResource Color7}" BorderColor="{StaticResource Color7}" Text="Cancelar"  
+                                        HeightRequest="40" VerticalOptions="Center" FontSize="16" CornerRadius="3" Padding="15,0,15,0" HorizontalOptions="FillAndExpand"/>
+
+                    <custom:CustomButton x:Name="btnValidar" BackgroundColor="{StaticResource Color7}" Text="Validar" TextColor="White"
+                                        HeightRequest="40" VerticalOptions="Center" FontSize="16" CornerRadius="3" Padding="15,0,15,0" HorizontalOptions="FillAndExpand"  />
+                </StackLayout>
+
+
+            </StackLayout>
+
+        </Frame>
+
+    </AbsoluteLayout>
+    </pages:PopupPage>

@@ -52,6 +52,24 @@ namespace EasyParking.Views.PerfilDeNegocio.PdN_Inicio
 
             ListaItemsDelMenu.Add(itemReservasActuales);
 
+            ItemDelMenu itemMarcarSalida = new ItemDelMenu
+            {
+                Descripcion = "Marcar Salida",
+                Icono = "exit.png",
+                Id = id++
+            };
+
+            ListaItemsDelMenu.Add(itemMarcarSalida);
+
+            ItemDelMenu itemHistorialDeReservas = new ItemDelMenu
+            {
+                Descripcion = "Historial de reservas",
+                Icono = "expediente.png",
+                Id = id++
+            };
+
+            ListaItemsDelMenu.Add(itemHistorialDeReservas);
+
 
 
             lwlistado.ItemsSource = ListaItemsDelMenu;
@@ -76,21 +94,22 @@ namespace EasyParking.Views.PerfilDeNegocio.PdN_Inicio
                     await Navigation.PushAsync(new Tarifa(true,true,true));
                     await PopupNavigation.Instance.PopAsync();
                     break;
-                    //case 3:
-                    //    await PopupNavigation.Instance.PushAsync(new PopCargando());
-                    //    await Navigation.PushAsync(new PdN_Inicio());
-                    //    await PopupNavigation.Instance.PopAllAsync();
-                    //    break;
-                    //case 4:
-                    //    await PopupNavigation.Instance.PushAsync(new PopCargando());
-                    //    await Navigation.PushAsync(new Configuraciones.Configuraciones());
-                    //    await PopupNavigation.Instance.PopAllAsync();
-                    //    break;
-                    //case 5:
-                    //    await PopupNavigation.Instance.PushAsync(new PopCargando());
-                    //    await Navigation.PushAsync(new Inicio.Inicio());
-                    //    await PopupNavigation.Instance.PopAllAsync();
-                    //    break;
+                case 3:
+                    await PopupNavigation.Instance.PushAsync(new PopCargando());
+                    await Navigation.PushAsync(new PerfilDeNegocio.PdN_Reservas.PdN_Reservas());
+                    await PopupNavigation.Instance.PopAsync();
+                    break;
+                case 4:
+                    await PopupNavigation.Instance.PushAsync(new PopCargando());
+                    await Navigation.PushAsync(new PerfilDeNegocio.MarcarSalida.MarcarSalida());
+                    await PopupNavigation.Instance.PopAllAsync();
+                    break;
+                case 5:
+                    await PopupNavigation.Instance.PushAsync(new PopCargando());
+                    await Navigation.PushAsync(new PerfilDeNegocio.HistorialDeReservas.HistorialDeReservas());
+                    await PopupNavigation.Instance.PopAllAsync();
+                    break;
+
             }
         }
     }
