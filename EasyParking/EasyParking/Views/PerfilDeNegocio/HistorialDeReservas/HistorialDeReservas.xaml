@@ -1,17 +1,49 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:views="clr-namespace:EasyParking.Components"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:views="clr-namespace:EasyParking.Components" xmlns:buttons="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms" xmlns:custom="clr-namespace:EasyParking.Custom"
              x:Class="EasyParking.Views.PerfilDeNegocio.HistorialDeReservas.HistorialDeReservas">
 
     <NavigationPage.TitleView>
         <views:NavBar x:Name="navBar" IsVisibleBoxSearch="False"  Title="Historial de reservas"  IsVisibleFavoritos="False" Margin="0,0,10,0"  />
     </NavigationPage.TitleView>
-    
-    <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
-    </ContentPage.Content>
+
+    <StackLayout Padding="10" Spacing="5">
+
+
+        <Frame  CornerRadius="3" Padding="0" HasShadow="True"  BackgroundColor="White">
+            <StackLayout Spacing="0">
+
+                <StackLayout Orientation="Horizontal" Margin="0" HorizontalOptions="FillAndExpand" Spacing="5">
+
+                    <Image Aspect="Fill" Rotation="0"   WidthRequest="60"  BackgroundColor="Red" HeightRequest="50"  
+                              Source="https://upload.wikimedia.org/wikipedia/commons/c/c1/Lionel_Messi_20180626.jpg"/>
+
+
+                    <StackLayout BackgroundColor="Transparent" HorizontalOptions="FillAndExpand" Padding="10" Spacing="10">
+                        <custom:CustomLabel Text="Lionel Messi"  Margin="0" FontSize="16"  TextColor="Black"  MaxLines="4"  LineBreakMode="TailTruncation"/>
+                        <custom:CustomLabel Text="Auto -- AV 654 RT" FontSize="16" Margin="0"  TextColor="Black"  MaxLines="4"  LineBreakMode="TailTruncation"/>
+
+                    </StackLayout>
+
+
+
+
+
+
+
+
+                </StackLayout>
+
+            </StackLayout>
+
+        </Frame>
+
+        <buttons:SfButton  Text="Dejar una reseña del cliente"  ShadowColor="Gainsboro"    HorizontalOptions="FillAndExpand" CornerRadius="3"
+                                          HorizontalTextAlignment="Center" BorderWidth="1" TextColor="#2968C8" Padding="0" 
+                                          BackgroundColor="White"   Margin="0" x:Name="btnAgregarReseña" Clicked="btnAgregarReseña_Clicked" 
+                                          HasShadow="True" ShowIcon="True" ImageAlignment="Right" ImageSource="comment.png"  />
+
+
+    </StackLayout>
+
 </ContentPage>

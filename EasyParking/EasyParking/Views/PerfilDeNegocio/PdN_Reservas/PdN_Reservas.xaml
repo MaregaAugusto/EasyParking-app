@@ -51,8 +51,8 @@
 
 
             <StackLayout Orientation="Horizontal" Spacing="5" Margin="0" Padding="0" VerticalOptions="EndAndExpand">
-                <buttons:SfButton CornerRadius="3" HasShadow="True" Text="Cancelar"  Padding="0" FontSize="14" TextColor="{StaticResource Color3}" HorizontalOptions="FillAndExpand" VerticalTextAlignment="Start"   Margin="0,0,0,0"
-                                                               BackgroundColor="White"   ShadowColor="Gainsboro" />
+                <buttons:SfButton CornerRadius="3" HasShadow="True" Text="Cancelar" Clicked="btnCancelar_Clicked"  Padding="0" FontSize="14" TextColor="{StaticResource Color3}" HorizontalOptions="FillAndExpand" VerticalTextAlignment="Start"   Margin="0,0,0,0"
+                                                               BackgroundColor="White" x:Name="btnCancelar"   ShadowColor="Gainsboro" />
 
                 <buttons:SfButton CornerRadius="3" HasShadow="True" Text="Ha llegado"  Padding="0" FontSize="14" TextColor="{StaticResource Color4}" HorizontalOptions="FillAndExpand" VerticalTextAlignment="Start"   Margin="0,0,0,0"
                                                                BackgroundColor="White" x:Name="btnHaLlegado" Clicked="btnHaLlegado_Clicked"   ShadowColor="Gainsboro" />

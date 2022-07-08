@@ -20,12 +20,16 @@ namespace EasyParking.Views.PerfilDeNegocio.PdN_Reservas {
         private global::EasyParking.Components.NavBar navBar;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
+        private global::Syncfusion.XForms.Buttons.SfButton btnCancelar;
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private global::Syncfusion.XForms.Buttons.SfButton btnHaLlegado;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private void InitializeComponent() {
             global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(PdN_Reservas));
             navBar = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::EasyParking.Components.NavBar>(this, "navBar");
+            btnCancelar = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Syncfusion.XForms.Buttons.SfButton>(this, "btnCancelar");
             btnHaLlegado = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Syncfusion.XForms.Buttons.SfButton>(this, "btnHaLlegado");
         }
     }

@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using EasyParking.Views.Reseñas;
+using System;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -15,6 +12,11 @@ namespace EasyParking.Views.PerfilDeNegocio.HistorialDeReservas
         public HistorialDeReservas()
         {
             InitializeComponent();
+        }
+
+        private async void btnAgregarReseña_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new AgregarReseña());
         }
     }
 }

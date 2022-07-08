@@ -22,5 +22,10 @@ namespace EasyParking.Views.PerfilDeNegocio.PdN_Reservas
         {
             await PopupNavigation.Instance.PushAsync(new PopupVerificacionLlegada());
         }
+
+        private async void btnCancelar_Clicked(object sender, EventArgs e)
+        {
+            await DisplayAlert("Cancelar Reserva", "¿seguro desea cancelarla?", "Si, cancelar", "No");
+        }
     }
 }

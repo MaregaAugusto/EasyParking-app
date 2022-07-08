@@ -20,9 +20,13 @@ namespace EasyParking.Views.PerfilDeNegocio.HistorialDeReservas {
         private global::EasyParking.Components.NavBar navBar;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
+        private global::Syncfusion.XForms.Buttons.SfButton btnAgregarReseña;
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private void InitializeComponent() {
             global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(HistorialDeReservas));
             navBar = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::EasyParking.Components.NavBar>(this, "navBar");
+            btnAgregarReseña = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Syncfusion.XForms.Buttons.SfButton>(this, "btnAgregarReseña");
         }
     }
 }
