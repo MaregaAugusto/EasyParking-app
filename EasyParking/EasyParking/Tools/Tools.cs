@@ -12,43 +12,36 @@ namespace EasyParking.Tools
         public static List<Estacionamiento> GetEstacionamientosMock()
         {
             Estacionamiento estacionamiento = new Estacionamiento();
-
             estacionamiento.Imagen = null;// // IMAGEN DEL LUGAR
-
-            estacionamiento.Nombre = "";// // NOMBRE DEL LUGAR
-
-            estacionamiento.Direccion = "";// // DIRECCION DEL LUGAR
-
-            estacionamiento.TipoDeLugar = "";// // TIPO DEL LUGAR
-
+            estacionamiento.Nombre = "Villa Auto";// // NOMBRE DEL LUGAR
+            estacionamiento.Direccion = "Ayacucho 500";// // DIRECCION DEL LUGAR
+            estacionamiento.TipoDeLugar = "Galpon";// // TIPO DEL LUGAR
             // LOS RANGO HORARIOS YA SE CARGARON ANTES EN EL EVENTO --> btnEditarHorario_Clicked
 
             //********** TEMA VEHICULOS ACEPTADOS Y SUS TARIFAS **********//
 
             DataVehiculoAlojado dataVehiculo = new DataVehiculoAlojado();
             dataVehiculo.TipoDeVehiculo = "Auto";
-            dataVehiculo.CapacidadDeAlojamiento = 0;
-            dataVehiculo.Tarifa_Hora = 0;
-            dataVehiculo.Tarifa_Dia = 0;
-            dataVehiculo.Tarifa_Semana = 0;
-            dataVehiculo.Tarifa_Mes = 0;
+            dataVehiculo.CapacidadDeAlojamiento = 6;
+            dataVehiculo.Tarifa_Hora = 100;
+            dataVehiculo.Tarifa_Dia = 500;
+            dataVehiculo.Tarifa_Semana = 3000;
+            dataVehiculo.Tarifa_Mes = 10000;
 
             estacionamiento.Vehiculos.Add(dataVehiculo); // HASTA ACA
 
-
             DataVehiculoAlojado dataVehiculo1 = new DataVehiculoAlojado();
             dataVehiculo1.TipoDeVehiculo = "Moto";
-            dataVehiculo1.CapacidadDeAlojamiento = 0;
-            dataVehiculo1.Tarifa_Hora = 0;
-            dataVehiculo1.Tarifa_Dia = 0;
-            dataVehiculo1.Tarifa_Semana = 0;
-            dataVehiculo1.Tarifa_Mes = 0;
+            dataVehiculo1.CapacidadDeAlojamiento = 10;
+            dataVehiculo1.Tarifa_Hora = 25;
+            dataVehiculo1.Tarifa_Dia = 50;
+            dataVehiculo1.Tarifa_Semana = 300;
+            dataVehiculo1.Tarifa_Mes = 1200;
 
             estacionamiento.Vehiculos.Add(dataVehiculo1); // HASTA ACA
 
-
             DataVehiculoAlojado dataVehiculo2 = new DataVehiculoAlojado();
-            dataVehiculo2.TipoDeVehiculo = "Moto";
+            dataVehiculo2.TipoDeVehiculo = "Camioneta";
             dataVehiculo2.CapacidadDeAlojamiento = 0;
             dataVehiculo2.Tarifa_Hora = 0;
             dataVehiculo2.Tarifa_Dia = 0;
@@ -57,11 +50,77 @@ namespace EasyParking.Tools
 
             estacionamiento.Vehiculos.Add(dataVehiculo2); // HASTA ACA
 
-
-            estacionamiento.MontoReserva = 0; // MONTO DE LA RESERVA
-
+            estacionamiento.MontoReserva = 100; // MONTO DE LA RESERVA
 
             App.Estacionamientos.Add(estacionamiento);
+
+            //###################################################################################
+            Estacionamiento estacionamiento2 = new Estacionamiento();
+            estacionamiento2.Imagen = null;// // IMAGEN DEL LUGAR
+            estacionamiento2.Nombre = "Aparcadero";// // NOMBRE DEL LUGAR
+            estacionamiento2.Direccion = "Vicente López y Planes 150";// // DIRECCION DEL LUGAR
+            estacionamiento2.TipoDeLugar = "Casa";// // TIPO DEL LUGAR
+            // LOS RANGO HORARIOS YA SE CARGARON ANTES EN EL EVENTO --> btnEditarHorario_Clicked
+
+            //********** TEMA VEHICULOS ACEPTADOS Y SUS TARIFAS **********//
+
+            DataVehiculoAlojado dataVehiculo3 = new DataVehiculoAlojado();
+            dataVehiculo3.TipoDeVehiculo = "Auto";
+            dataVehiculo3.CapacidadDeAlojamiento = 1;
+            dataVehiculo3.Tarifa_Hora = 100;
+            dataVehiculo3.Tarifa_Dia = 500;
+            dataVehiculo3.Tarifa_Semana = 3000;
+            dataVehiculo3.Tarifa_Mes = 10000;
+
+            estacionamiento2.Vehiculos.Add(dataVehiculo3); // HASTA ACA
+
+            estacionamiento2.MontoReserva = 100; // MONTO DE LA RESERVA
+
+            App.Estacionamientos.Add(estacionamiento2);
+            //###################################################################################
+            Estacionamiento estacionamiento3 = new Estacionamiento();
+            estacionamiento3.Imagen = null;// // IMAGEN DEL LUGAR
+            estacionamiento3.Nombre = "Cuna Auto";// // NOMBRE DEL LUGAR
+            estacionamiento3.Direccion = "C. French 1550";// // DIRECCION DEL LUGAR
+            estacionamiento3.TipoDeLugar = "terreno";// // TIPO DEL LUGAR
+            // LOS RANGO HORARIOS YA SE CARGARON ANTES EN EL EVENTO --> btnEditarHorario_Clicked
+
+            //********** TEMA VEHICULOS ACEPTADOS Y SUS TARIFAS **********//
+
+            DataVehiculoAlojado dataVehiculo4 = new DataVehiculoAlojado();
+            dataVehiculo4.TipoDeVehiculo = "Auto";
+            dataVehiculo4.CapacidadDeAlojamiento = 10;
+            dataVehiculo4.Tarifa_Hora = 100;
+            dataVehiculo4.Tarifa_Dia = 500;
+            dataVehiculo4.Tarifa_Semana = 3000;
+            dataVehiculo4.Tarifa_Mes = 10000;
+
+            estacionamiento3.Vehiculos.Add(dataVehiculo4); // HASTA ACA
+
+            DataVehiculoAlojado dataVehiculo5 = new DataVehiculoAlojado();
+            dataVehiculo5.TipoDeVehiculo = "Camioneta";
+            dataVehiculo5.CapacidadDeAlojamiento = 10;
+            dataVehiculo5.Tarifa_Hora = 200;
+            dataVehiculo5.Tarifa_Dia = 1000;
+            dataVehiculo5.Tarifa_Semana = 5000;
+            dataVehiculo5.Tarifa_Mes = 20000;
+
+            estacionamiento3.Vehiculos.Add(dataVehiculo5); // HASTA ACA
+
+            DataVehiculoAlojado dataVehiculo6 = new DataVehiculoAlojado();
+            dataVehiculo6.TipoDeVehiculo = "Moto";
+            dataVehiculo6.CapacidadDeAlojamiento = 20;
+            dataVehiculo6.Tarifa_Hora = 50;
+            dataVehiculo6.Tarifa_Dia = 200;
+            dataVehiculo6.Tarifa_Semana = 1000;
+            dataVehiculo6.Tarifa_Mes = 5000;
+
+            estacionamiento3.Vehiculos.Add(dataVehiculo6); // HASTA ACA
+
+            estacionamiento3.MontoReserva = 100; // MONTO DE LA RESERVA
+
+            App.Estacionamientos.Add(estacionamiento3);
+            //###################################################################################
 
             return App.Estacionamientos;
         }

@@ -3742,18 +3742,18 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\LUCIANO\\.nuget\\packages\\": {},
+    "C:\\Users\\augus\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\ProyectosGitHubUTN\\EasyParkingApp\\EasyParking\\EasyParking.Android\\EasyParking.Android.csproj",
+      "projectUniqueName": "D:\\proyecto\\EasyParking-app\\EasyParking\\EasyParking.Android\\EasyParking.Android.csproj",
       "projectName": "EasyParking.Android",
-      "projectPath": "C:\\ProyectosGitHubUTN\\EasyParkingApp\\EasyParking\\EasyParking.Android\\EasyParking.Android.csproj",
-      "packagesPath": "C:\\Users\\LUCIANO\\.nuget\\packages\\",
-      "outputPath": "C:\\ProyectosGitHubUTN\\EasyParkingApp\\EasyParking\\EasyParking.Android\\obj\\",
+      "projectPath": "D:\\proyecto\\EasyParking-app\\EasyParking\\EasyParking.Android\\EasyParking.Android.csproj",
+      "packagesPath": "C:\\Users\\augus\\.nuget\\packages\\",
+      "outputPath": "D:\\proyecto\\EasyParking-app\\EasyParking\\EasyParking.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -3761,7 +3761,7 @@
         "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\LUCIANO\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\augus\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
@@ -3771,14 +3771,13 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "http://20.85.241.82:12525/nuget": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "monoandroid11.0": {
           "projectReferences": {
-            "C:\\ProyectosGitHubUTN\\EasyParkingApp\\EasyParking\\EasyParking\\EasyParking.csproj": {
-              "projectPath": "C:\\ProyectosGitHubUTN\\EasyParkingApp\\EasyParking\\EasyParking\\EasyParking.csproj"
+            "D:\\proyecto\\EasyParking-app\\EasyParking\\EasyParking\\EasyParking.csproj": {
+              "projectPath": "D:\\proyecto\\EasyParking-app\\EasyParking\\EasyParking\\EasyParking.csproj"
             }
           }
         }
