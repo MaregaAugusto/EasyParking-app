@@ -34,7 +34,7 @@
 
                         <StackLayout Orientation="Horizontal" Margin="0" HorizontalOptions="FillAndExpand" Spacing="5">
 
-                            <Image Aspect="Fill" Rotation="0"   WidthRequest="130"  BackgroundColor="Red" HeightRequest="130"  
+                            <Image Aspect="Fill" Rotation="0"   WidthRequest="130"  BackgroundColor="Transparent" HeightRequest="130"  
                               Source="https://imgar.zonapropcdn.com/avisos/1/00/27/31/65/31/720x532/1615800904.jpg"/>
 
 
