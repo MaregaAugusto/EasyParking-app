@@ -6,7 +6,9 @@
 
     <ContentView.Resources>
         <ResourceDictionary>
-            <local:ByteArrayToImageSource     x:Key="ByteArrayToImageSource" />
+            <local:ByteArrayToImageSource  x:Key="ByteArrayToImageSource" />
+            <local:ZeroToBool              x:Key="ZeroToBool" />
+            <local:BoolToFavoritoImagen    x:Key="BoolToFavoritoImagen" />
         </ResourceDictionary>
     </ContentView.Resources>
 
@@ -16,8 +18,22 @@
             <Frame  CornerRadius="3" Padding="0" HasShadow="True"  BackgroundColor="White">
                 <StackLayout Orientation="Horizontal" Margin="0" HorizontalOptions="FillAndExpand" Spacing="5">
 
-                    <Image Aspect="Fill" Rotation="0"   WidthRequest="130"  BackgroundColor="Red" HeightRequest="130"  
-                              Source="{Binding Imagen, Converter={StaticResource ByteArrayToImageSource}}"/>
+                    <AbsoluteLayout>
+
+                        <ImageButton Source="{Binding Imagen, Converter={StaticResource ByteArrayToImageSource}}" Aspect="Fill"
+                                     x:Name="imagenCard" Clicked="imagenCard_Clicked"   Style="{StaticResource ImagenItemStyle}"  
+                                     BackgroundColor="Transparent" VerticalOptions="Start"/>
+
+
+                        <ActivityIndicator AbsoluteLayout.LayoutFlags="PositionProportional" AbsoluteLayout.LayoutBounds="0.5,0.5" x:Name="activity" BindingContext="{x:Reference imagenCard}" IsRunning="{Binding IsLoading}"
+                                   Color="Gray"  
+                                   HeightRequest="40"
+                                   WidthRequest="40"
+                                   BackgroundColor="Transparent"/>
+
+                    </AbsoluteLayout>
+                    <!--<Image Aspect="Fill" Rotation="0"   WidthRequest="130"  BackgroundColor="Red" HeightRequest="130"  
+                              Source="{Binding Imagen, Converter={StaticResource ByteArrayToImageSource}}"/>-->
 
 
                     <StackLayout BackgroundColor="Transparent" HorizontalOptions="FillAndExpand" Spacing="0">
@@ -36,7 +52,7 @@
 
                             <ImageButton  BackgroundColor="Transparent" HorizontalOptions="End"  Padding="5" Margin="0,0,0,0" 
                                                                       WidthRequest="30" HeightRequest="30"
-                                                                   Source="heart.png" 
+                                                                   Source="{Binding Favorito, Converter={StaticResource BoolToFavoritoImagen}}" 
                                                                       VerticalOptions="StartAndExpand">
                                 <VisualStateManager.VisualStateGroups>
                                     <VisualStateGroup x:Name="CommonStates">
@@ -84,11 +100,10 @@
                                 <custom:CustomLabel  Text="3.3" FontSize="15" VerticalOptions="Center" TextColor="Black" />
                             </StackLayout>
 
-                            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Spacing="0"  VerticalOptions="Center">
-                                <custom:CustomLabel  Text="Reserva: " FontSize="15" VerticalOptions="Center" TextColor="Black" />
-                                <Frame BackgroundColor="#1A5276"   Margin="0" CornerRadius="4" Padding="0" HorizontalOptions="Start">
-                                    <custom:CustomLabel  Text = "{Binding MontoReserva,StringFormat='${0:N0}', Mode=OneWay}" FontSize="14" Margin="4,0,4,0" FontAttributes="Bold" VerticalOptions="Center" TextColor="White" />
-                                </Frame>
+                            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Spacing="0"  VerticalOptions="Center" IsVisible="{Binding MontoReserva, Converter={StaticResource ZeroToBool}}">
+                                <custom:CustomLabel  Text="Reserva:" FontSize="15" VerticalOptions="Center" TextColor="Black" />
+                                <Image Source="peso.png" HeightRequest="16" WidthRequest="16" VerticalOptions="Center"/>
+                                <custom:CustomLabel  Text = "{Binding MontoReserva,StringFormat='{0:N0}', Mode=OneWay}" FontSize="14" Margin="0,0,4,0" VerticalOptions="Center" TextColor="#17202A" />
                             </StackLayout>
 
                             <custom:CustomLabel HorizontalOptions="EndAndExpand"  Text="a 1.5 km" Margin="0,0,10,0" FontSize="15" VerticalOptions="Center" TextColor="Black" />
@@ -110,7 +125,7 @@
             </Frame>
 
             <StackLayout Orientation="Horizontal" Spacing="5" Margin="0" Padding="0" VerticalOptions="EndAndExpand">
-                <buttons:SfButton CornerRadius="3" HasShadow="True" x:Name="btnReserva" Clicked="btnReserva_Clicked"  Text="Reservar"   HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" TextColor="White" Padding="0" 
+                <buttons:SfButton CornerRadius="3" HasShadow="True" x:Name="btnReserva" Clicked="btnReserva_Clicked" IsVisible="{Binding MontoReserva, Converter={StaticResource ZeroToBool}}"  Text="Reservar"   HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" TextColor="White" Padding="0" 
                                                               BackgroundColor="#2968C8"   Margin="0"   FontAttributes="Bold"  VerticalOptions="EndAndExpand"  ShadowColor="Gainsboro" />
 
                 <buttons:SfButton CornerRadius="3" HasShadow="True" Text="Ver más"  Padding="0" FontSize="14" TextColor="#0366D6" HorizontalOptions="FillAndExpand" VerticalTextAlignment="Start"   Margin="0,0,0,0"

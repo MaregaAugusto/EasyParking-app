@@ -41,5 +41,10 @@ namespace EasyParking.Components
         {
             OnClicked_VerMapa?.Invoke(this, EventArgs.Empty);
         }
+
+        private void imagenCard_Clicked(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -23,8 +23,22 @@
 
                 <StackLayout Orientation="Horizontal" Margin="0" HorizontalOptions="FillAndExpand" Spacing="5">
 
-                    <Image Aspect="Fill" Rotation="0"   WidthRequest="60"  BackgroundColor="Red" HeightRequest="50"  
+                    <AbsoluteLayout  WidthRequest="60"   HeightRequest="50"  >
+
+                        <Image Aspect="Fill" Rotation="0"   x:Name="imagenCard" WidthRequest="60"
                               Source="https://upload.wikimedia.org/wikipedia/commons/c/c1/Lionel_Messi_20180626.jpg"/>
+
+
+                        <ActivityIndicator AbsoluteLayout.LayoutFlags="PositionProportional" AbsoluteLayout.LayoutBounds="0.5,0.5" x:Name="activity" BindingContext="{x:Reference imagenCard}" IsRunning="{Binding IsLoading}"
+                                   Color="Gray"  
+                                   HeightRequest="40"
+                                   WidthRequest="40"
+                                   BackgroundColor="Transparent"/>
+
+                    </AbsoluteLayout>
+                    
+                    <!--<Image Aspect="Fill" Rotation="0"   WidthRequest="60"  BackgroundColor="Red" HeightRequest="50"  
+                              Source="https://upload.wikimedia.org/wikipedia/commons/c/c1/Lionel_Messi_20180626.jpg"/>-->
 
 
                     <StackLayout BackgroundColor="Transparent" HorizontalOptions="FillAndExpand" Padding="10" Spacing="10">

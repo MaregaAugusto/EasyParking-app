@@ -43,7 +43,7 @@
 
         <buttons:SfButton  Text="Enviar reseña"  ShadowColor="Black" HeightRequest="40" ImageWidth="25" FontSize="16" VerticalOptions="EndAndExpand"   HorizontalOptions="FillAndExpand" CornerRadius="3"
                                           HorizontalTextAlignment="Center" BorderWidth="1" TextColor="LightYellow" Padding="0" 
-                                          BackgroundColor="#2968C8"   Margin="0" x:Name="btnEnviar" Clicked="btnEnviar_Clicked"
+                                          BackgroundColor="{StaticResource Color7}"   Margin="0" x:Name="btnEnviar" Clicked="btnEnviar_Clicked"
                                             />
     </StackLayout>
 </ContentPage>

@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<pages:PopupPage  xmlns:custom="clr-namespace:EasyParking.Custom" xmlns:border="clr-namespace:Syncfusion.XForms.Border;assembly=Syncfusion.Core.XForms" xmlns:views="clr-namespace:EasyParking.Components" xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:animations="clr-namespace:Rg.Plugins.Popup.Animations;assembly=Rg.Plugins.Popup"  xmlns:pages="clr-namespace:Rg.Plugins.Popup.Pages;assembly=Rg.Plugins.Popup" xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms"
+                  x:Class="EasyParking.Views.MisVehiculos.PopupMisVehiculos">
+
+
+
+    <pages:PopupPage.Animation>
+        <animations:ScaleAnimation DurationIn="400"
+                                   DurationOut="300"
+                                   EasingIn="SinOut"
+                                   EasingOut="SinIn"
+                                   HasBackgroundAnimation="True"
+                                   PositionIn="Center"
+                                   PositionOut="Center"
+                                   ScaleIn="1.2"
+                                   ScaleOut="0.8" />
+    </pages:PopupPage.Animation>
+
+    <AbsoluteLayout AbsoluteLayout.LayoutBounds="0,0,1,1" AbsoluteLayout.LayoutFlags="All" BackgroundColor="Transparent" >
+
+        <Frame CornerRadius="5" Padding="15" Margin="0" BackgroundColor="White"  AbsoluteLayout.LayoutBounds="0.5,0.5,0.8,0.8"  VerticalOptions="Center" AbsoluteLayout.LayoutFlags="All">
+            <StackLayout>
+                <custom:CustomLabel Text="Seleccione un vehículo" FontSize="18" MaxLines="4" VerticalOptions="Center" HorizontalOptions="Center" TextColor="{StaticResource Color7}" />
+
+                <syncfusion:SfListView x:Name="lwlistado" AutoFitMode="DynamicHeight" ItemSpacing="0"
+                                    VerticalOptions="FillAndExpand"  SelectionMode="None">
+                    <syncfusion:SfListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <Frame  CornerRadius="3" Padding="0" HasShadow="True" Margin="10,10,10,10"  BackgroundColor="White">
+                                    <StackLayout Spacing="0">
+                                        <border:SfBorder BorderColor = "Gainsboro" BackgroundColor="Gainsboro"  BorderWidth="4" Margin="0,0,0,0">
+                                            <!--<custom:CustomLabel Grid.Column="0" Grid.Row="0" Text="Auto" FontSize="16" Margin="0" HorizontalOptions="Center" FontAttributes="Bold"  TextColor="Black"  MaxLines="4"  LineBreakMode="TailTruncation"/>-->
+                                        </border:SfBorder>
+
+                                        <Grid Padding="10">
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition Height="Auto" />
+                                            </Grid.RowDefinitions>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="*" />
+                                                <ColumnDefinition Width="*" />
+                                            </Grid.ColumnDefinitions>
+                                            <custom:CustomLabel Grid.Column="0" Grid.Row="0" Text="Tipo:" FontSize="16" Margin="0" HorizontalOptions="Center" FontAttributes="Bold"  TextColor="Black"  MaxLines="4"  LineBreakMode="TailTruncation"/>
+                                            <custom:CustomLabel Grid.Column="0" Grid.Row="1" Text="{Binding Tipo}" FontSize="16" Margin="0" HorizontalOptions="Center"  TextColor="Black"  MaxLines="4"  LineBreakMode="TailTruncation"/>
+                                            <custom:CustomLabel Grid.Column="1" Grid.Row="0" Text="Patente:" FontSize="16" Margin="0"  HorizontalOptions="Center" FontAttributes="Bold"  TextColor="Black"  MaxLines="4"  LineBreakMode="TailTruncation"/>
+                                            <custom:CustomLabel Grid.Column="1" Grid.Row="1" Text="{Binding Patente}" FontSize="16" Margin="0"  HorizontalOptions="Center"  TextColor="Black"  MaxLines="4"  LineBreakMode="TailTruncation"/>
+
+                                        </Grid>
+
+                                    </StackLayout>
+                                </Frame>
+                            </ViewCell>
+                        </DataTemplate>
+                    </syncfusion:SfListView.ItemTemplate>
+
+                </syncfusion:SfListView>
+
+
+                <custom:CustomButton x:Name="btnCancelar" Clicked="btnCancelar_Clicked" BackgroundColor="{StaticResource Color3}" Text="Cancelar" TextColor="White"
+                                        HeightRequest="40" VerticalOptions="Center" FontSize="16" CornerRadius="3" Padding="15,0,15,0" HorizontalOptions="FillAndExpand"/>
+
+
+
+            </StackLayout>
+
+        </Frame>
+
+
+
+
+    </AbsoluteLayout>
+
+
+
+</pages:PopupPage>

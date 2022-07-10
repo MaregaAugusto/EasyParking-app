@@ -15,8 +15,11 @@ namespace EasyParking.Modelo
                 DiasConHorarios[i] = new Dia();
             }
         }
+
+        public bool Favorito { get; set; } // podria ser lista // imagen del lugar
         public int PersonaId { get; set; } // se asocia al dueño 
         public byte[] Imagen { get; set; } // podria ser lista // imagen del lugar
+        public string Ciudad { get; set; } // ciudad del lugar
         public string Nombre { get; set; } // nombre del lugar
         public string Direccion { get; set; } // Direccion del lugar
         public Dia[] DiasConHorarios { get; set; } = new Dia[7]; // horarios en los que opera

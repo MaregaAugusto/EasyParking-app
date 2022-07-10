@@ -2,7 +2,7 @@
 <pages:PopupPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
                    xmlns:animations="clr-namespace:Rg.Plugins.Popup.Animations;assembly=Rg.Plugins.Popup"
-             xmlns:pages="clr-namespace:Rg.Plugins.Popup.Pages;assembly=Rg.Plugins.Popup" xmlns:syncfusion="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms" xmlns:custom="clr-namespace:EasyParking.Custom"
+             xmlns:pages="clr-namespace:Rg.Plugins.Popup.Pages;assembly=Rg.Plugins.Popup" xmlns:syncfusion="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms" xmlns:custom="clr-namespace:EasyParking.Custom" xmlns:border="clr-namespace:Syncfusion.XForms.Border;assembly=Syncfusion.Core.XForms"
                  x:Class="EasyParking.Views.Reservas.Reserva.PopupReserva">
     <pages:PopupPage.Animation>
         <animations:ScaleAnimation DurationIn="400"
@@ -56,40 +56,37 @@
                 </StackLayout>
             </Frame>
 
+
             <Frame  CornerRadius="3" Padding="10" HasShadow="True"  BackgroundColor="White">
-                <StackLayout Orientation="Horizontal">
-                    <custom:CustomLabel Text="Seleccione el tipo de vehículo: " FontSize="18" MaxLines="4" VerticalOptions="Center" TextColor="Gray" />
-                    <Grid HorizontalOptions="End">
-                        <Grid.RowDefinitions>
-                            <RowDefinition Height="Auto" />
-                        </Grid.RowDefinitions>
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="*" />
-                            <ColumnDefinition Width="*" />
-                            <ColumnDefinition Width="*" />
-                        </Grid.ColumnDefinitions>
+                <StackLayout>
+                    <custom:CustomLabel Text="Indique su vehículo: " FontSize="18" MaxLines="4" VerticalOptions="Center" TextColor="Gray" />
+                    <custom:CustomButton x:Name="btnMisVehiculos" Clicked="btnMisVehiculos_Clicked" Text="Seleccionar de mis vehículos" BackgroundColor="{StaticResource Color7}" TextColor="White" CornerRadius="3" HeightRequest="40"/>
+                    <custom:CustomButton x:Name="btnNuevoVehiculo" Clicked="btnNuevoVehiculo_Clicked" Text="Ingresar un nuevo vehículo" BackgroundColor="{StaticResource Color7}" TextColor="White" CornerRadius="3" HeightRequest="40"/>
 
-                        <Frame HorizontalOptions="Center" Padding="5" Grid.Column="0" Grid.Row="0">
-                            <StackLayout>
-                                <RadioButton x:Name="radiobuttonAuto"/>
-                                <Image Source="auto.png" HeightRequest="20" WidthRequest="20"/>
-                            </StackLayout>
+                    <Frame  CornerRadius="3" Padding="0" HasShadow="True" Margin="5,10,5,10"  BackgroundColor="White">
+                        <StackLayout Spacing="0">
+                            <border:SfBorder BorderColor = "Gainsboro" BackgroundColor="Gainsboro"  BorderWidth="4" Margin="0,0,0,0">
+                                <!--<custom:CustomLabel Grid.Column="0" Grid.Row="0" Text="Moto" FontSize="16" Margin="0" HorizontalOptions="Center" FontAttributes="Bold"  TextColor="Black"  MaxLines="4"  LineBreakMode="TailTruncation"/>-->
+                            </border:SfBorder>
 
-                        </Frame>
-                        <Frame  HorizontalOptions="Center" Padding="5" Grid.Column="1" Grid.Row="0">
-                            <StackLayout>
-                                <RadioButton x:Name="radiobuttonCamioneta"/>
-                                <Image Source="camioneta.png" HeightRequest="20" WidthRequest="20"/>
-                            </StackLayout>
-                        </Frame>
-                        <Frame  HorizontalOptions="Center" Padding="5" Grid.Column="2" Grid.Row="0">
-                            <StackLayout>
-                                <RadioButton x:Name="radiobuttonMoto"/>
-                                <Image Source="moto.png" HeightRequest="20" WidthRequest="20"/>
-                            </StackLayout>
-                        </Frame>
-                    </Grid>
+                            <Grid Padding="10">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto" />
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <custom:CustomLabel Grid.Column="0" Grid.Row="0" Text="Tipo:" FontSize="16" Margin="0" HorizontalOptions="Center" FontAttributes="Bold"  TextColor="Black"  MaxLines="4"  LineBreakMode="TailTruncation"/>
+                                <custom:CustomLabel Grid.Column="0" Grid.Row="1" Text="Moto" FontSize="16" Margin="0" HorizontalOptions="Center"  TextColor="Black"  MaxLines="4"  LineBreakMode="TailTruncation"/>
+                                <custom:CustomLabel Grid.Column="1" Grid.Row="0" Text="Patente:" FontSize="16" Margin="0"  HorizontalOptions="Center" FontAttributes="Bold"  TextColor="Black"  MaxLines="4"  LineBreakMode="TailTruncation"/>
+                                <custom:CustomLabel Grid.Column="1" Grid.Row="1" Text="AS568" FontSize="16" Margin="0"  HorizontalOptions="Center"  TextColor="Black"  MaxLines="4"  LineBreakMode="TailTruncation"/>
 
+                            </Grid>
+
+                        </StackLayout>
+                    </Frame>
+                    
                 </StackLayout>
             </Frame>
 
@@ -112,12 +109,12 @@
                     <ColumnDefinition Width="*" />
                 </Grid.ColumnDefinitions>
 
-                <syncfusion:SfButton Grid.Column="0" Grid.Row="0" x:Name="btnCancelar" Clicked="btnCancelar_Clicked"   Text="Cancelar" FontSize="16" HeightRequest="40"   HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" TextColor="#2968C8" Padding="0"  CornerRadius="3"
-                                                              BorderColor="#2968C8" BorderWidth="2"  BackgroundColor="Transparent"  Margin="0,10,0,10" FontAttributes="Bold"  VerticalOptions="EndAndExpand" />
+                <syncfusion:SfButton Grid.Column="0" Grid.Row="0" x:Name="btnCancelar" Clicked="btnCancelar_Clicked"   Text="Cancelar" FontSize="16" HeightRequest="40"   HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" TextColor="{StaticResource Color7}" Padding="0"  CornerRadius="3"
+                                                              BorderColor="{StaticResource Color7}" BorderWidth="2"  BackgroundColor="Transparent"  Margin="0,10,0,10" FontAttributes="Bold"  VerticalOptions="EndAndExpand" />
 
 
                 <syncfusion:SfButton Grid.Column="1" Grid.Row="0" x:Name="btnConfirmarReserva"  Text="Pagar" FontSize="16" HeightRequest="40"   HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" TextColor="White" Padding="0"  CornerRadius="3"
-                                                              BackgroundColor="#2968C8"   Margin="0,10,0,10" FontAttributes="Bold"  VerticalOptions="EndAndExpand" />
+                                                              BackgroundColor="{StaticResource Color7}"   Margin="0,10,0,10" FontAttributes="Bold"  VerticalOptions="EndAndExpand" />
 
 
 

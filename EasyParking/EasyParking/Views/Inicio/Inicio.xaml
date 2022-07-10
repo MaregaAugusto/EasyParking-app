@@ -6,7 +6,7 @@
 
 
     <NavigationPage.TitleView>
-        <views:NavBar x:Name="navBar"    IsVisibleTituloDePagina="False" IsVisibleFavoritos="False" Margin="0,0,10,0"  />
+        <views:NavBar x:Name="navBar"    IsVisibleTituloDePagina="False" IsVisibleFavoritos="False" Margin="0,0,10,0" SearchBar_Focused="navBar_SearchBar_Focused"  />
     </NavigationPage.TitleView>
     
     <ContentPage.Content>
@@ -145,7 +145,7 @@
 
 
         <syncfusion:SfListView  x:Name="lwlisado"   AutoFitMode="DynamicHeight"
-                                VerticalOptions="Center"
+                                VerticalOptions="Center" SelectionBackgroundColor="Transparent"
                                                     HorizontalOptions="EndAndExpand" >
             <syncfusion:SfListView.ItemTemplate>
                 <DataTemplate>

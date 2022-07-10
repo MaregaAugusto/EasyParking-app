@@ -15,7 +15,7 @@ namespace EasyParking
         public static List<Modelo.Estacionamiento> Estacionamientos { get; set; } = new List<Modelo.Estacionamiento>();
         public App()
         {
-            Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("NjI4MjcxQDMyMzAyZTMxMmUzMEpHU2lJMXV3ZkYzZUlLUFUrWFJ1eFhVUjlCN2Vsakh6M1lhLzUydE1xNHc9");
+            Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("NjcyODEwQDMyMzAyZTMyMmUzMG5CS0JZb1FVSWgxeXR4cml5S1VQb3dJdGJ3YlgvbUl1V3ppNE1VL25ReFk9");
 
             InitializeComponent();
 

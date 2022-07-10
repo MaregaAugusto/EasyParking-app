@@ -17,6 +17,7 @@
     <PackageReference Include="Syncfusion.Xamarin.SfListView" Version="20.1.0.55" />
     <PackageReference Include="Syncfusion.Xamarin.SfNavigationDrawer" Version="20.1.0.55" />
     <PackageReference Include="Syncfusion.Xamarin.SfNumericUpDown" Version="20.1.0.55" />
+    <PackageReference Include="Syncfusion.Xamarin.SfRangeSlider" Version="20.2.0.36" />
     <PackageReference Include="Syncfusion.Xamarin.SfRating" Version="20.1.0.55" />
     <PackageReference Include="Xam.Plugin.Media" Version="5.0.1" />
     <PackageReference Include="Xamarin.Forms" Version="5.0.0.2401" />
@@ -40,6 +41,9 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Styles\StyleEasyParking.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\Estacionamientos\Busqueda.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Views\Estacionamientos\DetalleDeEstacionamiento.xaml">
@@ -81,7 +85,13 @@
     <EmbeddedResource Update="Views\Menu\MenuContainer.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Update="Views\MiCuenta\MiCuenta.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
     <EmbeddedResource Update="Views\MisVehiculos\MisVehiculos.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\MisVehiculos\PopupMisVehiculos.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Views\MisVehiculos\PopupVehiculo.xaml">

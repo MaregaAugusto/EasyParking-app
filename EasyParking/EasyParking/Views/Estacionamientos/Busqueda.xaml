@@ -1,0 +1,193 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:combobox="clr-namespace:Syncfusion.XForms.ComboBox;assembly=Syncfusion.SfComboBox.XForms"
+             x:Class="EasyParking.Views.Estacionamientos.Busqueda"  xmlns:ListCollection="clr-namespace:System.Collections.Generic;assembly=netstandard" xmlns:range="clr-namespace:Syncfusion.SfRangeSlider.XForms;assembly=Syncfusion.SfRangeSlider.XForms" xmlns:inputLayout="clr-namespace:Syncfusion.XForms.TextInputLayout;assembly=Syncfusion.Core.XForms" xmlns:custom="clr-namespace:EasyParking.Custom" xmlns:views="clr-namespace:EasyParking.Components" xmlns:numeric="clr-namespace:Syncfusion.SfNumericUpDown.XForms;assembly=Syncfusion.SfNumericUpDown.XForms" xmlns:border="clr-namespace:Syncfusion.XForms.Border;assembly=Syncfusion.Core.XForms">
+
+    <NavigationPage.TitleView>
+        <combobox:SfComboBox Margin="5,0,5,0" TextSize="20" Watermark="Seleccione la Ciudad" VerticalOptions="Center" EnableAutoSize="True"  ShowClearButton="False"
+                                             HorizontalOptions="Fill" WatermarkColor="{StaticResource Color7}"  DropDownHeaderViewHeight="30"
+                                             MaximumDropDownHeight="1000" IsEditableMode="false" >
+            <combobox:SfComboBox.ComboBoxSource>
+                <ListCollection:List x:TypeArguments="x:String">
+                    <x:String>La Plata</x:String>
+                    <x:String>San Fernando del Valle de Catamarca</x:String>
+                    <x:String>Resistencia</x:String>
+                    <x:String>Rawson</x:String>
+                    <x:String>Córdoba</x:String>
+                    <x:String>Corrientes</x:String>
+                    <x:String>Paraná</x:String>
+                    <x:String>Formosa</x:String>
+                    <x:String>San Salvador de Jujuy</x:String>
+                    <x:String>Santa Rosa</x:String>
+                    <x:String>La Rioja</x:String>
+                    <x:String>Mendoza</x:String>
+                    <x:String>Posadas</x:String>
+                    <x:String>Neuquén</x:String>
+                    <x:String>Viedma</x:String>
+                    <x:String>Salta</x:String>
+                    <x:String>San Juan</x:String>
+                    <x:String>San Luis</x:String>
+                    <x:String>Río Gallegos</x:String>
+                    <x:String>Santa Fe</x:String>
+                    <x:String>Santiago del Estero</x:String>
+                    <x:String>Ushuaia</x:String>
+                    <x:String>San Miguel de Tucumán</x:String>
+                </ListCollection:List>
+            </combobox:SfComboBox.ComboBoxSource>
+        </combobox:SfComboBox>
+    </NavigationPage.TitleView>
+
+    <ScrollView>
+        <StackLayout Padding="10" Spacing="5">
+
+
+
+            <custom:CustomLabel Text="Busqueda Simple:"  FontAttributes="Bold" FontSize="16" TextColor="Black"/>
+
+            <Frame  CornerRadius="3" Padding="10,10,10,0" HasShadow="True"  BackgroundColor="White">
+                <StackLayout>
+
+                    <inputLayout:SfTextInputLayout FocusedColor="#2968C8"   ContainerType="Outlined" Hint="Ingrese lugar o dirección"   BackgroundColor="Transparent" ContainerBackgroundColor="Transparent" 
+                                                         HorizontalOptions="FillAndExpand"  VerticalOptions="Center"  HelperText="Busqueda por nombre del lugar o dirección *">
+
+                        <custom:CustomEntry x:Name="entryBusquedaSimple"   Keyboard="Numeric"     HorizontalOptions="FillAndExpand"/>
+
+                    </inputLayout:SfTextInputLayout>
+
+                    <custom:CustomButton x:Name="btnBusquedaSimple"  HorizontalOptions="FillAndExpand" VerticalOptions="EndAndExpand" HeightRequest="40" CornerRadius="3"  Margin="0,10,0,10" Text="Buscar" FontSize="16"
+                                 BackgroundColor="{StaticResource Color7}" BorderWidth="1.5" TextColor="White"/>
+
+                </StackLayout>
+            </Frame>
+
+
+            <StackLayout HorizontalOptions="FillAndExpand" Margin="0,20,0,0" Spacing="0">
+                <custom:CustomLabel Text="Busqueda Avanzada: " Margin="0,0,0,0"  FontAttributes="Bold" FontSize="16" TextColor="Black"/>
+                <custom:CustomLabel Text="Seleccione el filtro a aplicar en la busqueda" Margin="0,0,0,0" MaxLines="4"  FontSize="13" TextColor="Gray"/>
+            </StackLayout>
+            <Frame  CornerRadius="3" Padding="10,10,10,0" HasShadow="True"  BackgroundColor="White">
+                <StackLayout Spacing="10">
+
+                  
+
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+
+                        <CheckBox VerticalOptions="Center"/>
+                        
+                        <combobox:SfComboBox Margin="5,0,5,0" TextSize="16" Watermark="Tipo de lugar" VerticalOptions="Center" EnableAutoSize="True"  
+                                             HorizontalOptions="FillAndExpand" WatermarkColor="#0366D6"  DropDownHeaderViewHeight="30"
+                                             MaximumDropDownHeight="1000" IsEditableMode="false" >
+                            <combobox:SfComboBox.ComboBoxSource>
+                                <ListCollection:List x:TypeArguments="x:String">
+                                    <x:String>Terreno al aire libre</x:String>
+                                    <x:String>Terreno parialmente cubierto</x:String>
+                                    <x:String>Galpón abierto</x:String>
+                                    <x:String>Galpón cerrado</x:String>
+                                    <x:String>Lugar bajo edificio</x:String>
+                                    <x:String>Casa</x:String>
+                                    <x:String>Todos</x:String>
+                                </ListCollection:List>
+                            </combobox:SfComboBox.ComboBoxSource>
+                        </combobox:SfComboBox>
+                    </StackLayout>
+
+         
+
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+
+                        <CheckBox VerticalOptions="Center"/>
+
+
+                        <combobox:SfComboBox Margin="5,0,5,0" TextSize="16" Watermark="Tipo de vehículo" VerticalOptions="Center" EnableAutoSize="True"  
+                                             HorizontalOptions="FillAndExpand" WatermarkColor="#0366D6"  DropDownHeaderViewHeight="30"
+                                             MaximumDropDownHeight="1000" IsEditableMode="false" >
+                            <combobox:SfComboBox.ComboBoxSource>
+                                <ListCollection:List x:TypeArguments="x:String">
+                                    <x:String>Auto</x:String>
+                                    <x:String>Camioneta</x:String>
+                                    <x:String>Moto</x:String>
+                                    <x:String>Todos</x:String>
+                                </ListCollection:List>
+                            </combobox:SfComboBox.ComboBoxSource>
+                        </combobox:SfComboBox>
+
+                    </StackLayout>
+
+          
+
+                    <StackLayout Spacing="0">
+                        <custom:CustomLabel Text="Valor de la Reserva" HorizontalOptions="Center" FontSize="18" TextColor="Gray"/>
+                        
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+
+                            <CheckBox VerticalOptions="Center" Margin="0,0,0,15"/>
+
+
+                            <StackLayout HorizontalOptions="FillAndExpand" Orientation="Horizontal">
+                                <inputLayout:SfTextInputLayout  FocusedColor="#2968C8"  ContainerType="Outlined" Hint="$ Mín." BackgroundColor="Transparent" ContainerBackgroundColor="Transparent"  HorizontalOptions="FillAndExpand" VerticalOptions="Center" HelperText="Precio *" >
+                                    <custom:CustomEntry  x:Name="entryMin" Keyboard="Default" Placeholder="$" ClearButtonVisibility="WhileEditing" HorizontalOptions="FillAndExpand"/>
+                                </inputLayout:SfTextInputLayout>
+
+                                <inputLayout:SfTextInputLayout  FocusedColor="#2968C8"  ContainerType="Outlined" Hint="$ Máx." BackgroundColor="Transparent" ContainerBackgroundColor="Transparent"  HorizontalOptions="FillAndExpand" VerticalOptions="Center" HelperText="Precio *">
+                                    <custom:CustomEntry  x:Name="entryMax" Keyboard="Default" Placeholder="$" ClearButtonVisibility="WhileEditing" HorizontalOptions="FillAndExpand"/>
+                                </inputLayout:SfTextInputLayout>
+                            </StackLayout>
+
+                        </StackLayout>
+                    </StackLayout>
+
+
+
+                    <StackLayout Spacing="0">
+                        <custom:CustomLabel Text="Distancia al lugar" HorizontalOptions="Center" FontSize="18" TextColor="Gray"/>
+
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+
+                            <CheckBox VerticalOptions="Center" Margin="0,0,0,15"/>
+
+                            <inputLayout:SfTextInputLayout  FocusedColor="#2968C8" VerticalOptions="Center"  ContainerType="Outlined" Hint="Kilometros" BackgroundColor="Transparent" ContainerBackgroundColor="Transparent"  HorizontalOptions="FillAndExpand" >
+                                <custom:CustomEntry   Keyboard="Default" Placeholder="$" ClearButtonVisibility="WhileEditing" HorizontalOptions="FillAndExpand"/>
+                            </inputLayout:SfTextInputLayout>
+
+                        </StackLayout>
+                    </StackLayout>
+
+
+
+                    <StackLayout Spacing="0">
+                        <custom:CustomLabel Text="Calificación del lugar" HorizontalOptions="Center" FontSize="18" TextColor="Gray"/>
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+
+                            <CheckBox VerticalOptions="Center" Margin="0,0,0,30"/>
+
+
+                            <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="Center" Orientation="Horizontal">
+                                <inputLayout:SfTextInputLayout  FocusedColor="#2968C8"  ContainerType="Outlined" Hint="Desde" BackgroundColor="Transparent" ContainerBackgroundColor="Transparent"  HorizontalOptions="FillAndExpand" VerticalOptions="Center" HelperText="Puntaje *" >
+                                    <custom:CustomEntry  x:Name="entryMinPuntaje" Keyboard="Default" Placeholder="$" ClearButtonVisibility="WhileEditing" HorizontalOptions="FillAndExpand"/>
+                                </inputLayout:SfTextInputLayout>
+
+                                <inputLayout:SfTextInputLayout  FocusedColor="#2968C8"  ContainerType="Outlined" Hint="Hasta" BackgroundColor="Transparent" ContainerBackgroundColor="Transparent"  HorizontalOptions="FillAndExpand" VerticalOptions="Center" HelperText="Puntaje *">
+                                    <custom:CustomEntry  x:Name="entryMaxPuntaje" Keyboard="Default" Placeholder="$" ClearButtonVisibility="WhileEditing" HorizontalOptions="FillAndExpand"/>
+                                </inputLayout:SfTextInputLayout>
+                            </StackLayout>
+
+
+                        </StackLayout>
+                    </StackLayout>
+                    
+
+
+
+
+
+                    <custom:CustomButton x:Name="btnBuscar"  HorizontalOptions="FillAndExpand" VerticalOptions="EndAndExpand" HeightRequest="40" CornerRadius="3"  Margin="0,25,0,10" Text="Buscar" FontSize="16"
+                                 BackgroundColor="{StaticResource Color7}" BorderWidth="1.5" TextColor="White"/>
+
+                </StackLayout>
+            </Frame>
+
+          
+
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

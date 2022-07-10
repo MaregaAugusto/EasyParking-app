@@ -53,6 +53,38 @@
 
                 </Grid>
 
+                <combobox:SfComboBox Margin="5,0,5,0" TextSize="16" Watermark="Ciudad" VerticalOptions="Center" EnableAutoSize="True"  
+                                             HorizontalOptions="Fill" WatermarkColor="#0366D6"  DropDownHeaderViewHeight="30"
+                                             MaximumDropDownHeight="1000" IsEditableMode="false" x:Name="comboboxCiudad" SelectionChanged="comboboxCiudad_SelectionChanged">
+                    <combobox:SfComboBox.ComboBoxSource>
+                        <ListCollection:List x:TypeArguments="x:String">
+                            <x:String>La Plata</x:String>
+                            <x:String>San Fernando del Valle de Catamarca</x:String>
+                            <x:String>Resistencia</x:String>
+                            <x:String>Rawson</x:String>
+                            <x:String>Córdoba</x:String>
+                            <x:String>Corrientes</x:String>
+                            <x:String>Paraná</x:String>
+                            <x:String>Formosa</x:String>
+                            <x:String>San Salvador de Jujuy</x:String>
+                            <x:String>Santa Rosa</x:String>
+                            <x:String>La Rioja</x:String>
+                            <x:String>Mendoza</x:String>
+                            <x:String>Posadas</x:String>
+                            <x:String>Neuquén</x:String>
+                            <x:String>Viedma</x:String>
+                            <x:String>Salta</x:String>
+                            <x:String>San Juan</x:String>
+                            <x:String>San Luis</x:String>
+                            <x:String>Río Gallegos</x:String>
+                            <x:String>Santa Fe</x:String>
+                            <x:String>Santiago del Estero</x:String>
+                            <x:String>Ushuaia</x:String>
+                            <x:String>San Miguel de Tucumán</x:String>
+                        </ListCollection:List>
+                    </combobox:SfComboBox.ComboBoxSource>
+                </combobox:SfComboBox>
+
 
                 <inputLayout:SfTextInputLayout FocusedColor="#2968C8"   ContainerType="Outlined" Hint="Nombre del lugar" BackgroundColor="Transparent" ContainerBackgroundColor="Transparent"  HorizontalOptions="FillAndExpand" VerticalOptions="Center"  HelperText="Obligatorio *">
                     <custom:CustomEntry  x:Name="entryNombre"  Keyboard="Default" Placeholder="Ingrese el nombre" ClearButtonVisibility="WhileEditing" HorizontalOptions="FillAndExpand"/>

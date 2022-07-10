@@ -17,4 +17,13 @@
     <Color x:Key="ColorB">Black</Color>
     <Color x:Key="ColorG">Gray</Color>
 
+    <!--IMAGEN-->
+    <Style x:Key="ImagenItemStyle" TargetType="Image">
+        <Setter Property="Margin" Value="0" />
+        <Setter Property="BackgroundColor" Value="#FFFFFF"  />
+        <Setter Property="WidthRequest" Value="130" />
+        <Setter Property="HeightRequest" Value="130" />
+
+    </Style>
+
 </ResourceDictionary>

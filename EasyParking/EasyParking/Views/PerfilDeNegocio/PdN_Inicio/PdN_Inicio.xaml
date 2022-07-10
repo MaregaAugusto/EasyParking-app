@@ -19,9 +19,9 @@
 
                     <DataTemplate>
                         <ViewCell>
-                            <views:Card_MenuItem x:Name="Card_MenuItem" BorderContent_BackgroundColor="{StaticResource Color2}" FrameCantidad_BackgroundColor="{StaticResource Color2}"
-                                                 LabelDescripciond_TextColor="Black" BorderContent_BorderColor="{StaticResource Color2}"
-                                                 LabelCantidad_TextColor="Black" LabelSub_Descripciond_TextColor="Black" FrameCantidad_BorderColor="Black"/>
+                            <views:Card_MenuItem x:Name="Card_MenuItem" BorderContent_BackgroundColor="Transparent" FrameCantidad_BackgroundColor="Transparent"
+                                                 LabelDescripciond_TextColor="Black" BorderContent_BorderColor="{StaticResource Color7}"
+                                                 LabelCantidad_TextColor="Black" LabelSub_Descripciond_TextColor="{StaticResource Color7}" FrameCantidad_BorderColor="{StaticResource Color7}"/>
 
 
 

@@ -21,17 +21,18 @@ namespace EasyParking.Views.Inicio
             Location posicion_actual = new Location(-27.4528818, -58.9786916);
             Location posicion_ultima = new Location(-27.4552894, -58.9882253);
             double kilometros = Location.CalculateDistance(posicion_actual, posicion_ultima, DistanceUnits.Kilometers); // resultado en kilometros
-
-
-        }
-
-        protected override void OnAppearing()
-        {
-            base.OnAppearing();
             lwlisado.ItemsSource = null;
-           lwlisado.ItemsSource = App.Estacionamientos;
+            lwlisado.ItemsSource = Tools.Tools.GetEstacionamientosMock();
 
         }
+
+        //protected override void OnAppearing()
+        //{
+        //    base.OnAppearing();
+        //    lwlisado.ItemsSource = null;
+        //   lwlisado.ItemsSource = Tools.Tools.GetEstacionamientosMock();
+
+        //}
 
         private async void Card_Parking_OnClicked_Reserva(object sender, EventArgs e)
         {
@@ -51,6 +52,11 @@ namespace EasyParking.Views.Inicio
             await Launcher.OpenAsync("geo:0,0?q=José+Hernández+465+Resistencia+Chaco");
             //await Launcher.OpenAsync("geo:0,0?q=Av. Madariaga+278+Goya+Corrientes");
             //await Launcher.OpenAsync("geo:0,0?q=297+Luis+Agote+GoyaCorrientes");}
+        }
+
+        private async void navBar_SearchBar_Focused(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Busqueda());
         }
     }
 }

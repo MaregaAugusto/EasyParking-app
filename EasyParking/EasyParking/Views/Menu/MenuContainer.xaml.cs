@@ -85,11 +85,11 @@ namespace EasyParking.Views.Menu
                     await Navigation.PushAsync(new PdN_Inicio());
                     await PopupNavigation.Instance.PopAllAsync();
                     break;
-                    //case 5:
-                    //    await PopupNavigation.Instance.PushAsync(new PopCargando());
-                    //    await Navigation.PushAsync(new Inicio.Inicio());
-                    //    await PopupNavigation.Instance.PopAllAsync();
-                    //    break;
+                case 5:
+                    await PopupNavigation.Instance.PushAsync(new PopCargando());
+                    await Navigation.PushAsync(new MiCuenta.MiCuenta());
+                    await PopupNavigation.Instance.PopAllAsync();
+                    break;
             }
             ((ListView)sender).SelectedItem = null;
             IsPresented = false;

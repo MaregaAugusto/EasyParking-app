@@ -376,6 +376,8 @@ namespace EasyParking.Views.Estacionamientos
 
             estacionamiento.Imagen = ImagenArray; // IMAGEN DEL LUGAR
 
+            estacionamiento.Ciudad = comboboxCiudad.Text; // CIUDAD DEL LUGAR
+
             estacionamiento.Nombre = entryNombre.Text; // NOMBRE DEL LUGAR
 
             estacionamiento.Direccion = entryDireccion.Text; // DIRECCION DEL LUGAR
@@ -435,6 +437,11 @@ namespace EasyParking.Views.Estacionamientos
             var xxx = estacionamiento;
 
             App.Estacionamientos.Add(estacionamiento);
+
+        }
+
+        private void comboboxCiudad_SelectionChanged(object sender, Syncfusion.XForms.ComboBox.SelectionChangedEventArgs e)
+        {
 
         }
     }

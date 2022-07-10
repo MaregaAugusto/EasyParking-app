@@ -38,7 +38,7 @@
           "lib/netstandard2.0/Rg.Plugins.Popup.dll": {}
         }
       },
-      "Syncfusion.Licensing/20.1.0.55": {
+      "Syncfusion.Licensing/20.2.0.36": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/Syncfusion.Licensing.dll": {}
@@ -60,10 +60,10 @@
           "lib/netstandard2.0/Syncfusion.Buttons.XForms.dll": {}
         }
       },
-      "Syncfusion.Xamarin.Core/20.1.0.55": {
+      "Syncfusion.Xamarin.Core/20.2.0.36": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Licensing": "20.1.0.55",
+          "Syncfusion.Licensing": "20.2.0.36",
           "Xamarin.Forms": "5.0.0.2012"
         },
         "compile": {
@@ -143,6 +143,19 @@
         },
         "runtime": {
           "lib/netstandard2.0/Syncfusion.SfNumericUpDown.XForms.dll": {}
+        }
+      },
+      "Syncfusion.Xamarin.SfRangeSlider/20.2.0.36": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Xamarin.Core": "20.2.0.36",
+          "Xamarin.Forms": "5.0.0.2012"
+        },
+        "compile": {
+          "lib/netstandard2.0/Syncfusion.SfRangeSlider.XForms.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Syncfusion.SfRangeSlider.XForms.dll": {}
         }
       },
       "Syncfusion.Xamarin.SfRating/20.1.0.55": {
@@ -400,10 +413,10 @@
         "rg.plugins.popup.nuspec"
       ]
     },
-    "Syncfusion.Licensing/20.1.0.55": {
-      "sha512": "99kMT+jzFB66J9km+75Awzpqnua6kF4oCP5+Eezw34nZSjT55ldN5iniyOsT0hDxX24JUjbrpXS/a4vEX7SIpg==",
+    "Syncfusion.Licensing/20.2.0.36": {
+      "sha512": "+tqb0Bl9Ip1/hu1tDOUbJx524q3G3nY46vSXbUBQpJKE7nuWSkTDHLycvnK4/aw32Amn8FP4yPS59iXXZKIBew==",
       "type": "package",
-      "path": "syncfusion.licensing/20.1.0.55",
+      "path": "syncfusion.licensing/20.2.0.36",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -418,7 +431,6 @@
         "lib/net45/Syncfusion.Licensing.dll",
         "lib/net451/Syncfusion.Licensing.dll",
         "lib/net46/Syncfusion.Licensing.dll",
-        "lib/net5.0-windows10.0/Syncfusion.Licensing.dll",
         "lib/net5.0/Syncfusion.Licensing.dll",
         "lib/net6.0/Syncfusion.Licensing.dll",
         "lib/netcoreapp3.1/Syncfusion.Licensing.dll",
@@ -428,7 +440,7 @@
         "lib/netstandard2.0/Syncfusion.Licensing.dll",
         "lib/portable-win+net45+wp80+win81+wpa81/Syncfusion.Licensing.dll",
         "lib/uap10.0/Syncfusion.Licensing.dll",
-        "syncfusion.licensing.20.1.0.55.nupkg.sha512",
+        "syncfusion.licensing.20.2.0.36.nupkg.sha512",
         "syncfusion.licensing.nuspec",
         "syncfusion_logo.png"
       ]
@@ -467,10 +479,10 @@
         "syncfusion_logo.png"
       ]
     },
-    "Syncfusion.Xamarin.Core/20.1.0.55": {
-      "sha512": "DNePSLPWAdjs1rBaZaGTC5PO8CPLz7g+yZ7d7APd28E25BnfHWbNRo2Y1xSrPECoELA3sMI7eSlV+gEHXILZCg==",
+    "Syncfusion.Xamarin.Core/20.2.0.36": {
+      "sha512": "QJUrVSLEB+DrBzkMH8uqpMiLYckRAuMVoED2By6575ysSQruN5OwivVmwEKuQjP7dsglXDHaZIb775oUx0dbWg==",
       "type": "package",
-      "path": "syncfusion.xamarin.core/20.1.0.55",
+      "path": "syncfusion.xamarin.core/20.2.0.36",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -497,7 +509,7 @@
         "lib/uap10.0/Syncfusion.Core.XForms.UWP/TILRenderer/ToggleIcons/ToggleVisibleIcon.xaml",
         "lib/uap10.0/Syncfusion.Core.XForms.dll",
         "lib/uap10.0/Syncfusion.Core.XForms.xml",
-        "syncfusion.xamarin.core.20.1.0.55.nupkg.sha512",
+        "syncfusion.xamarin.core.20.2.0.36.nupkg.sha512",
         "syncfusion.xamarin.core.nuspec",
         "syncfusion_logo.png"
       ]
@@ -673,6 +685,38 @@
         "lib/uap10.0/Syncfusion.SfNumericUpDown.XForms.xml",
         "syncfusion.xamarin.sfnumericupdown.20.1.0.55.nupkg.sha512",
         "syncfusion.xamarin.sfnumericupdown.nuspec",
+        "syncfusion_logo.png"
+      ]
+    },
+    "Syncfusion.Xamarin.SfRangeSlider/20.2.0.36": {
+      "sha512": "78kFQSfq60+UX1M/rKtN4L4qX7JEg2hBzKJz8oLSwGijwOMGRf1AwKfdteysAjgVL7U2ASC/+vtGzLMpG5ceMA==",
+      "type": "package",
+      "path": "syncfusion.xamarin.sfrangeslider/20.2.0.36",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "README.md",
+        "lib/MonoAndroid10.0/Syncfusion.SfRangeSlider.Android.dll",
+        "lib/MonoAndroid10.0/Syncfusion.SfRangeSlider.Android.xml",
+        "lib/MonoAndroid10.0/Syncfusion.SfRangeSlider.XForms.Android.dll",
+        "lib/MonoAndroid10.0/Syncfusion.SfRangeSlider.XForms.dll",
+        "lib/MonoAndroid10.0/Syncfusion.SfRangeSlider.XForms.xml",
+        "lib/Xamarin.iOS10/Syncfusion.SfRangeSlider.XForms.dll",
+        "lib/Xamarin.iOS10/Syncfusion.SfRangeSlider.XForms.iOS.dll",
+        "lib/Xamarin.iOS10/Syncfusion.SfRangeSlider.XForms.xml",
+        "lib/Xamarin.iOS10/Syncfusion.SfRangeSlider.iOS.dll",
+        "lib/Xamarin.iOS10/Syncfusion.SfRangeSlider.iOS.xml",
+        "lib/netstandard2.0/Syncfusion.SfRangeSlider.XForms.dll",
+        "lib/netstandard2.0/Syncfusion.SfRangeSlider.XForms.xml",
+        "lib/portable-win+net45+wp80+win81+wpa81/Syncfusion.SfRangeSlider.XForms.dll",
+        "lib/portable-win+net45+wp80+win81+wpa81/Syncfusion.SfRangeSlider.XForms.xml",
+        "lib/uap10.0/Syncfusion.SfRangeSlider.XForms.UWP.XML",
+        "lib/uap10.0/Syncfusion.SfRangeSlider.XForms.UWP.dll",
+        "lib/uap10.0/Syncfusion.SfRangeSlider.XForms.dll",
+        "lib/uap10.0/Syncfusion.SfRangeSlider.XForms.xml",
+        "syncfusion.xamarin.sfrangeslider.20.2.0.36.nupkg.sha512",
+        "syncfusion.xamarin.sfrangeslider.nuspec",
         "syncfusion_logo.png"
       ]
     },
@@ -1062,6 +1106,7 @@
       "Syncfusion.Xamarin.SfListView >= 20.1.0.55",
       "Syncfusion.Xamarin.SfNavigationDrawer >= 20.1.0.55",
       "Syncfusion.Xamarin.SfNumericUpDown >= 20.1.0.55",
+      "Syncfusion.Xamarin.SfRangeSlider >= 20.2.0.36",
       "Syncfusion.Xamarin.SfRating >= 20.1.0.55",
       "Xam.Plugin.Media >= 5.0.1",
       "Xamarin.Essentials >= 1.7.3",
@@ -1146,6 +1191,10 @@
           "Syncfusion.Xamarin.SfNumericUpDown": {
             "target": "Package",
             "version": "[20.1.0.55, )"
+          },
+          "Syncfusion.Xamarin.SfRangeSlider": {
+            "target": "Package",
+            "version": "[20.2.0.36, )"
           },
           "Syncfusion.Xamarin.SfRating": {
             "target": "Package",

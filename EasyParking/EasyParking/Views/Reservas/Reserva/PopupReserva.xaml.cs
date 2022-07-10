@@ -1,4 +1,5 @@
-﻿using Rg.Plugins.Popup.Services;
+﻿using EasyParking.Views.MisVehiculos;
+using Rg.Plugins.Popup.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,12 +17,22 @@ namespace EasyParking.Views.Reservas.Reserva
         public PopupReserva()
         {
             InitializeComponent();
-            radiobuttonAuto.IsChecked = true;
+            //radiobuttonAuto.IsChecked = true;
         }
 
         private async void btnCancelar_Clicked(object sender, EventArgs e)
         {
             await PopupNavigation.Instance.PopAsync();
+        }
+
+        private async void btnMisVehiculos_Clicked(object sender, EventArgs e)
+        {
+            await PopupNavigation.Instance.PushAsync(new PopupMisVehiculos());
+        }
+
+        private async void btnNuevoVehiculo_Clicked(object sender, EventArgs e)
+        {
+            await PopupNavigation.Instance.PushAsync(new PopupVehiculo());
         }
     }
 }
