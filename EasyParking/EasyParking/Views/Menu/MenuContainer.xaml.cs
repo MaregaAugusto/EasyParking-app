@@ -1,9 +1,7 @@
 ﻿using EasyParking.MenuItems;
-using EasyParking.Views.Estacionamientos.MisEstacionamientos;
 using EasyParking.Views.Generales;
 using EasyParking.Views.PerfilDeNegocio.PdN_Inicio;
 using EasyParking.Views.Reservas.MisReservas;
-using EasyParking.Views.Reservas.Reserva;
 using Rg.Plugins.Popup.Services;
 using System.Collections.Generic;
 using Xamarin.Forms;
@@ -29,6 +27,7 @@ namespace EasyParking.Views.Menu
         {
             InitializeComponent();
 
+            //labelNombreDeUsuario.Text = 
             menuList = new List<MasterPageItem>();
 
 
@@ -80,7 +79,7 @@ namespace EasyParking.Views.Menu
                     await Navigation.PushAsync(new MisVehiculos.MisVehiculos());
                     await PopupNavigation.Instance.PopAllAsync();
                     break;
-                    case 4:
+                case 4:
                     await PopupNavigation.Instance.PushAsync(new PopCargando());
                     await Navigation.PushAsync(new PdN_Inicio());
                     await PopupNavigation.Instance.PopAllAsync();

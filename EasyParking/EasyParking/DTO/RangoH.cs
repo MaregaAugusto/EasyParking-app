@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace EasyParking.DTO
+﻿namespace EasyParking.DTO
 {
 
     public class RangoH

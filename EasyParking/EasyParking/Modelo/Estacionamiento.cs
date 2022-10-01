@@ -1,8 +1,5 @@
 ﻿using EasyParking.DTO;
-using System;
 using System.Collections.Generic;
-using System.Text;
-using static EasyParking.Views.Estacionamientos.MisEstacionamientos.PopupRangoHorario;
 
 namespace EasyParking.Modelo
 {
@@ -45,7 +42,7 @@ namespace EasyParking.Modelo
 
 
 
-  
+
 
 
 }

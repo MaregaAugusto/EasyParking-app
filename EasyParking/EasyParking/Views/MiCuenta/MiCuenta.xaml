@@ -49,10 +49,10 @@
                 <StackLayout Spacing="0" VerticalOptions="Center">
 
                     <StackLayout Spacing="0" VerticalOptions="Center" Orientation="Horizontal">
-                        <custom:CustomLabel Text="Bruno Mars" FontSize="22" TextColor="Black" VerticalOptions="Center" FontAttributes="Bold" HorizontalOptions="Start"/>
+                        <custom:CustomLabel x:Name="labelNombreyApellido"  FontSize="22" TextColor="Black" VerticalOptions="Center" FontAttributes="Bold" HorizontalOptions="Start"/>
                         <ImageButton  BackgroundColor="Transparent" HorizontalOptions="End"  Padding="5" Margin="0,0,0,0" 
                                                                       WidthRequest="30" HeightRequest="30"
-                                                                   Source="editar01.png" 
+                                                                   Source="editar01.png"  x:Name="btnEditarNombre" Clicked="btnEditarNombre_Clicked"
                                                                       VerticalOptions="Center">
                             <VisualStateManager.VisualStateGroups>
                                 <VisualStateGroup x:Name="CommonStates">
@@ -73,7 +73,7 @@
                         </ImageButton>
                     </StackLayout>
 
-                    <custom:CustomLabel Text="brunomars@gmail.com" FontSize="13" TextColor="Gray" VerticalOptions="Center"  HorizontalOptions="Start"/>
+                    <custom:CustomLabel x:Name="labelEmail"  FontSize="13" TextColor="Gray" VerticalOptions="Center"  HorizontalOptions="Start"/>
 
                 </StackLayout>
 
@@ -289,7 +289,7 @@
 
                     <ImageButton  BackgroundColor="Transparent" HorizontalOptions="EndAndExpand"  Padding="5" Margin="0,0,0,0" 
                                                                       WidthRequest="25" HeightRequest="25"
-                                                                   Source="arrowPointToRight.png" 
+                                                                   Source="arrowPointToRight.png"  x:Name="btnCerrarSesion" Clicked="btnCerrarSesion_Clicked"
                                                                       VerticalOptions="Center">
                         <VisualStateManager.VisualStateGroups>
                             <VisualStateGroup x:Name="CommonStates">
@@ -314,8 +314,8 @@
             </Frame>
 
 
-            <custom:CustomButton x:Name="btnEliminarCuenta"  HorizontalOptions="FillAndExpand" VerticalOptions="EndAndExpand"
-                                 HeightRequest="40" CornerRadius="3"  Margin="10,10,10,30" Text="Eliminar cuenta" FontSize="16"
+            <custom:CustomButton x:Name="btnEliminarCuenta"  HorizontalOptions="FillAndExpand" VerticalOptions="EndAndExpand" Clicked="btnEliminarCuenta_Clicked"
+                                 HeightRequest="40" CornerRadius="3"  Margin="10,10,10,30" Text="Eliminar cuenta" FontSize="16" 
                                  BorderColor="Transparent" TextColor="{StaticResource Color3}" BackgroundColor="Transparent"  BorderWidth="1.5" />
 
 

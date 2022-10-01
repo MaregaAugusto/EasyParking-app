@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace EasyParking.Modelo
+﻿namespace EasyParking.Modelo
 {
     public class DataVehiculoAlojado
     {

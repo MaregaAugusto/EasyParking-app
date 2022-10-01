@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:inputLayout="clr-namespace:Syncfusion.XForms.TextInputLayout;assembly=Syncfusion.Core.XForms" xmlns:custom="clr-namespace:EasyParking.Custom"
+             x:Class="EasyParking.Views.MiCuenta.InformacionPersonal">
+
+
+    <StackLayout Spacing="20" Margin="15,15,15,0" AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0,0,1,1">
+        <inputLayout:SfTextInputLayout      ContainerType="Outlined" Hint="Nombre" BackgroundColor="Transparent" IsEnabled="False" ContainerBackgroundColor="Transparent"   HorizontalOptions="FillAndExpand" VerticalOptions="Center"  >
+            <custom:CustomEntry x:Name="entryTelefono"  Keyboard="Default" ClearButtonVisibility="WhileEditing" HorizontalOptions="FillAndExpand"/>
+        </inputLayout:SfTextInputLayout>
+
+        <inputLayout:SfTextInputLayout  ContainerType="Outlined" Hint="Apellido"    BackgroundColor="Transparent" IsEnabled="False"  ContainerBackgroundColor="Transparent"   HorizontalOptions="FillAndExpand" VerticalOptions="Center"  >
+            <custom:CustomEntry  x:Name="entryEmail" ClearButtonVisibility="WhileEditing"   Keyboard="Default" HorizontalOptions="FillAndExpand" />
+        </inputLayout:SfTextInputLayout>
+
+        <inputLayout:SfTextInputLayout  ContainerType="Outlined" Hint="Apodo"    BackgroundColor="Transparent" ContainerBackgroundColor="Transparent"   HorizontalOptions="FillAndExpand" VerticalOptions="Center"  >
+            <custom:CustomEntry  x:Name="entryFechaDeNacimiento" ClearButtonVisibility="WhileEditing"   Keyboard="Default" HorizontalOptions="FillAndExpand" />
+        </inputLayout:SfTextInputLayout>
+        
+
+
+        <!--<buttons:SfButton  Text="Guardar cambios"  ShadowColor="Black" HeightRequest="50" ImageWidth="25"  VerticalOptions="EndAndExpand"   HorizontalOptions="FillAndExpand" CornerRadius="5"
+                                          HorizontalTextAlignment="Center" BorderWidth="1" TextColor="LightYellow" Padding="0" 
+                                          BackgroundColor="#17202A"   Margin="20,0,20,20"  FontSize="18" x:Name="btnGuardarCambios" Clicked="btnGuardarCambios_Clicked"
+                                            />-->
+
+    </StackLayout>
+</ContentPage>

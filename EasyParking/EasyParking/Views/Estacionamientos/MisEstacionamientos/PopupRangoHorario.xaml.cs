@@ -1,11 +1,8 @@
-﻿using EasyParking.Components;
-using EasyParking.DTO;
+﻿using EasyParking.DTO;
 using Rg.Plugins.Popup.Services;
-using Syncfusion.XForms.ComboBox;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
 using Xamarin.Forms;
@@ -85,7 +82,7 @@ namespace EasyParking.Views.Estacionamientos.MisEstacionamientos
             r.DesdeHora = Desde.Hours;
             r.DesdeMinuto = Desde.Minutes;
             r.HastaHora = Hasta.Hours;
-            r.HastaMinuto =Hasta.Minutes;
+            r.HastaMinuto = Hasta.Minutes;
             r.Id = id++;
 
             string MinDesde = "";
@@ -145,7 +142,7 @@ namespace EasyParking.Views.Estacionamientos.MisEstacionamientos
 
                     index++;
                 }
-                lista.Remove(lista.FirstOrDefault(x => x.Id == index) );
+                lista.Remove(lista.FirstOrDefault(x => x.Id == index));
                 lista2.Remove(detalle);
 
                 ListaFormatoX.ItemsSource = null;
@@ -163,7 +160,7 @@ namespace EasyParking.Views.Estacionamientos.MisEstacionamientos
             }
         }
 
-       
+
 
         private async void btnGuardar_Clicked(object sender, EventArgs e)
         {

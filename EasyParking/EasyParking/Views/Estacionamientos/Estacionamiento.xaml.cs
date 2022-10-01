@@ -1,6 +1,5 @@
 ﻿using EasyParking.DTO;
 using EasyParking.Views.Estacionamientos.MisEstacionamientos;
-using EasyParking.Views.Generales;
 using EasyParking.Views.PerfilDeNegocio.Tarifas.Tarifa;
 using Plugin.Media;
 using Plugin.Media.Abstractions;
@@ -8,8 +7,6 @@ using Rg.Plugins.Popup.Services;
 using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Essentials;
 using Xamarin.Forms;
@@ -111,7 +108,7 @@ namespace EasyParking.Views.Estacionamientos
                 using (MemoryStream memory = new MemoryStream())
                 {
                     stream.CopyTo(memory);
-                    
+
                     imageArray = memory.ToArray();
                 }
 
@@ -193,17 +190,17 @@ namespace EasyParking.Views.Estacionamientos
             }
         }
 
-      
-       
+
+
 
         private async void btnTomarFoto_Clicked(object sender, EventArgs e)
         {
             var result = await MediaPicker.CapturePhotoAsync();
-          
+
             if (result != null)
             {
                 STREAM = await result.OpenReadAsync();
-                
+
                 Imagen.Source = ImageSource.FromStream(() => STREAM);
                 Imagen.Rotation = 90;
                 imagenEmpty.IsVisible = labelimagenEmpty.IsVisible = false;
@@ -384,7 +381,7 @@ namespace EasyParking.Views.Estacionamientos
 
             estacionamiento.TipoDeLugar = comboBoxTipoDeLugar.Text; // TIPO DEL LUGAR
 
-                                                                    // LOS RANGO HORARIOS YA SE CARGARON ANTES EN EL EVENTO --> btnEditarHorario_Clicked
+            // LOS RANGO HORARIOS YA SE CARGARON ANTES EN EL EVENTO --> btnEditarHorario_Clicked
 
             //********** TEMA VEHICULOS ACEPTADOS Y SUS TARIFAS **********//
 

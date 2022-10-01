@@ -51,7 +51,7 @@
                                    CornerRadius="50"
                                    WidthRequest="100" />
 
-                                <custom:CustomLabel Text="Bruno Mars" FontSize="20" TextColor="Black" FontAttributes="Bold" HorizontalOptions="Center"/>
+                                <custom:CustomLabel x:Name="labelNombreDeUsuario"  FontSize="20" TextColor="Black" FontAttributes="Bold" MaxLines="4" HorizontalOptions="Center"/>
                             </StackLayout>
 
 

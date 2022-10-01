@@ -1,14 +1,9 @@
 ﻿using EasyParking.DTO;
-using EasyParking.MenuItems;
 using EasyParking.Views.Estacionamientos.MisEstacionamientos;
 using EasyParking.Views.Generales;
 using EasyParking.Views.PerfilDeNegocio.Tarifas.Tarifa;
 using Rg.Plugins.Popup.Services;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -41,7 +36,7 @@ namespace EasyParking.Views.PerfilDeNegocio.PdN_Inicio
                 Id = id++
             };
 
-          //  ListaItemsDelMenu.Add(itemTarifas);
+            //  ListaItemsDelMenu.Add(itemTarifas);
 
             ItemDelMenu itemReservasActuales = new ItemDelMenu
             {
@@ -91,7 +86,7 @@ namespace EasyParking.Views.PerfilDeNegocio.PdN_Inicio
                     break;
                 case 2:
                     await PopupNavigation.Instance.PushAsync(new PopCargando());
-                    await Navigation.PushAsync(new Tarifa(true,true,true));
+                    await Navigation.PushAsync(new Tarifa(true, true, true));
                     await PopupNavigation.Instance.PopAsync();
                     break;
                 case 3:

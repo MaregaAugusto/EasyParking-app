@@ -5,7 +5,7 @@ using Xamarin.Forms;
 
 namespace EasyParking.Converter
 {
-   public class ZeroToBool : IValueConverter
+    public class ZeroToBool : IValueConverter
     {
         public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
         {

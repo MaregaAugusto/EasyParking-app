@@ -1,11 +1,11 @@
-﻿using EasyParking.Views.Reservas.Reserva;
+﻿using EasyParking.Views.Estacionamientos;
 using EasyParking.Views.Generales;
+using EasyParking.Views.Reservas.Reserva;
 using Rg.Plugins.Popup.Services;
 using System;
+using Xamarin.Essentials;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
-using Xamarin.Essentials;
-using EasyParking.Views.Estacionamientos;
 
 namespace EasyParking.Views.Inicio
 {

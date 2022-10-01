@@ -163,50 +163,50 @@
 	.section	.rodata.map_aname.27,"aMS",%progbits,1
 	.type	.L.map_aname.27, %object
 .L.map_aname.27:
-	.asciz	"EasyParking.Android"
-	.size	.L.map_aname.27, 20
+	.asciz	"Syncfusion.SfRating.Android"
+	.size	.L.map_aname.27, 28
 
 	.section	.rodata.map_aname.28,"aMS",%progbits,1
 	.type	.L.map_aname.28, %object
 .L.map_aname.28:
-	.asciz	"Syncfusion.SfRating.Android"
-	.size	.L.map_aname.28, 28
+	.asciz	"Xamarin.AndroidX.AppCompat"
+	.size	.L.map_aname.28, 27
 
 	.section	.rodata.map_aname.29,"aMS",%progbits,1
 	.type	.L.map_aname.29, %object
 .L.map_aname.29:
-	.asciz	"Xamarin.AndroidX.AppCompat"
-	.size	.L.map_aname.29, 27
+	.asciz	"Syncfusion.SfNavigationDrawer.Android"
+	.size	.L.map_aname.29, 38
 
 	.section	.rodata.map_aname.30,"aMS",%progbits,1
 	.type	.L.map_aname.30, %object
 .L.map_aname.30:
-	.asciz	"Syncfusion.SfNavigationDrawer.Android"
+	.asciz	"Xamarin.Google.Guava.ListenableFuture"
 	.size	.L.map_aname.30, 38
 
 	.section	.rodata.map_aname.31,"aMS",%progbits,1
 	.type	.L.map_aname.31, %object
 .L.map_aname.31:
-	.asciz	"Xamarin.Google.Guava.ListenableFuture"
-	.size	.L.map_aname.31, 38
+	.asciz	"Xamarin.AndroidX.CustomView"
+	.size	.L.map_aname.31, 28
 
 	.section	.rodata.map_aname.32,"aMS",%progbits,1
 	.type	.L.map_aname.32, %object
 .L.map_aname.32:
-	.asciz	"Xamarin.AndroidX.CustomView"
-	.size	.L.map_aname.32, 28
+	.asciz	"Xamarin.Forms.Platform.Android"
+	.size	.L.map_aname.32, 31
 
 	.section	.rodata.map_aname.33,"aMS",%progbits,1
 	.type	.L.map_aname.33, %object
 .L.map_aname.33:
-	.asciz	"Xamarin.Forms.Platform.Android"
-	.size	.L.map_aname.33, 31
+	.asciz	"Xamarin.AndroidX.CoordinatorLayout"
+	.size	.L.map_aname.33, 35
 
 	.section	.rodata.map_aname.34,"aMS",%progbits,1
 	.type	.L.map_aname.34, %object
 .L.map_aname.34:
-	.asciz	"Xamarin.AndroidX.CoordinatorLayout"
-	.size	.L.map_aname.34, 35
+	.asciz	"EasyParking.Android"
+	.size	.L.map_aname.34, 20
 
 	.section	.rodata.map_aname.35,"aMS",%progbits,1
 	.type	.L.map_aname.35, %object

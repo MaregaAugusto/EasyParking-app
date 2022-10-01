@@ -9,25 +9,37 @@
         <views:NavBar x:Name="navBar"    Title="Login" IsVisibleFavoritos="False" IsVisibleBoxSearch="False"  />
     </NavigationPage.TitleView>
 
-    <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" >
-        <StackLayout Spacing="20" Margin="15,15,15,0">
+    <AbsoluteLayout AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0,0,1,1">
+        <StackLayout Spacing="20" Margin="15,15,15,0" AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0,0,1,1">
             <inputLayout:SfTextInputLayout      ContainerType="Outlined" Hint="Usuario" BackgroundColor="Transparent" ContainerBackgroundColor="Transparent"   HorizontalOptions="FillAndExpand" VerticalOptions="Center"  HelperText="Obligatorio *">
-                <custom:CustomEntry x:Name="UsuarioApp"  Keyboard="Default" ClearButtonVisibility="WhileEditing" HorizontalOptions="FillAndExpand"/>
+                <custom:CustomEntry x:Name="entryEmail"  Keyboard="Default" ClearButtonVisibility="WhileEditing" HorizontalOptions="FillAndExpand"/>
             </inputLayout:SfTextInputLayout>
 
             <inputLayout:SfTextInputLayout  ContainerType="Outlined" Hint="Contraseña"   EnablePasswordVisibilityToggle="true"   BackgroundColor="Transparent" ContainerBackgroundColor="Transparent"   HorizontalOptions="FillAndExpand" VerticalOptions="Center"  HelperText="Obligatorio *">
-                <custom:CustomEntry  x:Name="ContraseñaDeUsuarioApp" ClearButtonVisibility="WhileEditing"   Keyboard="Default" HorizontalOptions="FillAndExpand" />
+                <custom:CustomEntry  x:Name="entryContraseña" ClearButtonVisibility="WhileEditing"   Keyboard="Default" HorizontalOptions="FillAndExpand" />
             </inputLayout:SfTextInputLayout>
 
         </StackLayout>
 
-        <custom:CustomButton x:Name="btnIniciarSesion"  VerticalOptions="EndAndExpand"
-                             Margin="20"
+
+        <custom:CustomButton x:Name="btnIniciarSesion" HorizontalOptions="FillAndExpand"  AbsoluteLayout.LayoutFlags="XProportional,YProportional,WidthProportional" AbsoluteLayout.LayoutBounds="0.5,0.98,1,90"
+                             Margin="20" 
                              CornerRadius="3" 
-                             Text="Continuar" FontSize="18" Clicked="btnIniciarSesion_Clicked"
+                             Text="Continuar" FontSize="18"
+                             Clicked="btnIniciarSesion_Clicked"
                              TextColor="White" 
                              BackgroundColor="#17202A"/>
 
-    </StackLayout>
+        <ActivityIndicator x:Name="activityIndicator"  AbsoluteLayout.LayoutBounds="0.5,0.20" AbsoluteLayout.LayoutFlags="XProportional,YProportional"
+                       IsRunning="True"  
+                       IsEnabled="True"  
+                       IsVisible="False"  
+                       Color="Black"  
+                       HeightRequest="50"
+                       WidthRequest="50"
+                       BackgroundColor="Transparent"/>
+        
+    </AbsoluteLayout>
+
 
 </ContentPage>

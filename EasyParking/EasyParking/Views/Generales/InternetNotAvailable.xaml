@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+              xmlns:custom="clr-namespace:EasyParking.Custom" xmlns:buttons="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms"
+             mc:Ignorable="d"
+             x:Class="EasyParking.Views.Generales.InternetNotAvailable">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout Padding="0" BackgroundColor="Transparent" HorizontalOptions="FillAndExpand" Orientation="Vertical" Spacing="20" VerticalOptions="CenterAndExpand">
+                <custom:CustomLabel Text="¡Ups!" FontSize="35" FontAttributes="Bold" HorizontalOptions="CenterAndExpand"/>
+                <custom:CustomLabel Text="La conexion a Internet Falló" FontSize="25" HorizontalOptions="CenterAndExpand"/>
+                <custom:CustomLabel Text="Intenta de nuevo mas tarde" FontSize="25" HorizontalOptions="CenterAndExpand"/>
+                <Image Source="robot.png" BackgroundColor="Transparent"  HeightRequest="300" WidthRequest="300" HorizontalOptions="CenterAndExpand" />
+            </StackLayout>
+            <StackLayout VerticalOptions="EndAndExpand">
+                
+                <buttons:SfButton  Text="Iniciar sesión"  ShadowColor="Black" HeightRequest="50" ImageWidth="25"  VerticalOptions="EndAndExpand"   HorizontalOptions="FillAndExpand" CornerRadius="5"
+                                          HorizontalTextAlignment="Center" BorderWidth="1" TextColor="LightYellow" Padding="0" 
+                                          BackgroundColor="#17202A"   Margin="20,0,20,0"  FontSize="18" x:Name="btnCerrarApp" Clicked="btnCerrarApp_Clicked" 
+                                            />
+
+            </StackLayout>
+        </StackLayout>
+      
+    </ContentPage.Content>
+</ContentPage>

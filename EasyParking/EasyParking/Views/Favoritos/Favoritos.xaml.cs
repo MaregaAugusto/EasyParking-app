@@ -12,7 +12,7 @@ namespace EasyParking.Views.Favoritos
         {
             InitializeComponent();
 
-            lwlisado.ItemsSource = null; 
+            lwlisado.ItemsSource = null;
             List<Modelo.Estacionamiento> lista;
 
             lista = Tools.Tools.GetEstacionamientosMock();

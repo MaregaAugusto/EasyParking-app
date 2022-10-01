@@ -12,6 +12,7 @@ namespace EasyParking.Tools
 {
     public static class Tools
     {
+
         public static byte[] GetBytesFromUrl(string url)
         {
             byte[] b;

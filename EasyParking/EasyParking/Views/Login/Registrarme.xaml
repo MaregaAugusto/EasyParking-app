@@ -1,6 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:views="clr-namespace:EasyParking.Components" xmlns:inputLayout="clr-namespace:Syncfusion.XForms.TextInputLayout;assembly=Syncfusion.Core.XForms" xmlns:custom="clr-namespace:EasyParking.Custom"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                          xmlns:ListCollection="clr-namespace:System.Collections.Generic;assembly=netstandard"
+
+             xmlns:views="clr-namespace:EasyParking.Components" xmlns:inputLayout="clr-namespace:Syncfusion.XForms.TextInputLayout;assembly=Syncfusion.Core.XForms" xmlns:custom="clr-namespace:EasyParking.Custom" xmlns:combobox="clr-namespace:Syncfusion.XForms.ComboBox;assembly=Syncfusion.SfComboBox.XForms"
              x:Class="EasyParking.Views.Login.Registrarme">
 
     <NavigationPage.TitleView>
@@ -30,8 +33,32 @@
                     <custom:CustomEntry  x:Name="entryConfirmarContraseña" ClearButtonVisibility="WhileEditing"   Keyboard="Default" HorizontalOptions="FillAndExpand" />
                 </inputLayout:SfTextInputLayout>
 
-                <inputLayout:SfTextInputLayout  ContainerType="Outlined" Hint="DNI"      BackgroundColor="Transparent" ContainerBackgroundColor="Transparent"   HorizontalOptions="FillAndExpand" VerticalOptions="Center"  HelperText="Obligatorio *">
-                    <custom:CustomEntry  x:Name="entryDNI" ClearButtonVisibility="WhileEditing" MaxLength="8"   Keyboard="Default" HorizontalOptions="FillAndExpand" />
+
+
+                <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" Margin="0,0,0,5">
+
+
+
+                    <inputLayout:SfTextInputLayout ContainerType="Outlined" Hint="Documento" Margin="0,0,0,0" BackgroundColor="Transparent" ContainerBackgroundColor="Transparent"     HorizontalOptions="FillAndExpand" VerticalOptions="Center" HelperText="Obligatorio *" >
+                        <custom:CustomEntry  x:Name="entryDNI" Keyboard="Numeric" HorizontalOptions="FillAndExpand" Margin="15,0,15,0">
+
+                        </custom:CustomEntry>   
+                    </inputLayout:SfTextInputLayout>
+
+                    <inputLayout:SfTextInputLayout ContainerType="Outlined" Hint="Tipo" Margin="0,0,0,0" BackgroundColor="Transparent" ContainerBackgroundColor="Transparent"   HorizontalOptions="FillAndExpand" VerticalOptions="Center"  >
+                        <combobox:SfComboBox HeightRequest="50" Margin="15,0,15,0" TextSize="16" SelectionChanged="comboBoxTipoDeDocumento_SelectionChanged" BackgroundColor="Transparent"  x:Name="comboBoxTipoDeDocumento" MaximumDropDownHeight="300" IsEditableMode="false">
+                            <combobox:SfComboBox.ComboBoxSource>
+                                <ListCollection:List x:TypeArguments="x:String">
+                                </ListCollection:List>
+                            </combobox:SfComboBox.ComboBoxSource>
+                        </combobox:SfComboBox>
+                    </inputLayout:SfTextInputLayout>
+
+
+                </StackLayout>
+
+                <inputLayout:SfTextInputLayout  ContainerType="Outlined" Hint="Teléfono"      BackgroundColor="Transparent" ContainerBackgroundColor="Transparent"   HorizontalOptions="FillAndExpand" VerticalOptions="Center"  HelperText="Obligatorio *">
+                    <custom:CustomEntry  x:Name="entryTelefono" ClearButtonVisibility="WhileEditing" MaxLength="10"   Keyboard="Numeric" HorizontalOptions="FillAndExpand" />
                 </inputLayout:SfTextInputLayout>
 
             </StackLayout>
@@ -40,10 +67,12 @@
                              CornerRadius="3" 
                              Text="Registrarme" Font="20" 
                              TextColor="White" 
-                             BackgroundColor="#17202A"/>
-
+                             BackgroundColor="#17202A" Clicked="btnRegistrarme_Clicked"/>
         </StackLayout>
 
+
+
+      
     </ScrollView>
 
 </ContentPage> 

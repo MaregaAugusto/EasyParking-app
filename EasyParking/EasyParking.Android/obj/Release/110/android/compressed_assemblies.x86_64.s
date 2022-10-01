@@ -16,7 +16,7 @@
 
 	/* 1: EasyParking.dll */
 	/* uncompressed_file_size */
-	.long	409088
+	.long	411136
 	/* loaded */
 	.byte	0
 	/* data */

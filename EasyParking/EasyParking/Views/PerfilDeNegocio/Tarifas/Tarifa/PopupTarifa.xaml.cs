@@ -12,7 +12,7 @@ namespace EasyParking.Views.PerfilDeNegocio.Tarifas.Tarifa
             labelTipoDeVehiculo.Text = "Tarifa: " + vehiculo;
         }
 
-        private async  void btnCancelar_Clicked(object sender, System.EventArgs e)
+        private async void btnCancelar_Clicked(object sender, System.EventArgs e)
         {
             await PopupNavigation.Instance.PopAsync();
         }

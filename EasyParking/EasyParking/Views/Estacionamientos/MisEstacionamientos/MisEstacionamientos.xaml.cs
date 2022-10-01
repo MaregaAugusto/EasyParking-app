@@ -1,10 +1,6 @@
 ﻿using EasyParking.Views.Generales;
 using Rg.Plugins.Popup.Services;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -38,7 +34,7 @@ namespace EasyParking.Views.Estacionamientos.MisEstacionamientos
 
         private async void btnPausar_Clicked(object sender, EventArgs e)
         {
-           
+
             bool result = await DisplayAlert("Pausar publicación", "¿seguro desea pausarla?", "Si, pausar", "No");
 
             if (result)

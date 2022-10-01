@@ -637,3 +637,4 @@ C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking.Android\obj\Release
 C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking.Android\obj\Release\110\android\src\crc642118fa8c490a1683\ValueBar.java
 C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking.Android\obj\Release\110\android\src\crc644c2e2be3552eb7c9\SfRangeSliderRenderer.java
 C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking.Android\obj\Release\110\android\src\crc644c2e2be3552eb7c9\SfRangeSliderVisualRenderer.java
+C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking.Android\obj\Release\110\res\drawable\messi.jpg

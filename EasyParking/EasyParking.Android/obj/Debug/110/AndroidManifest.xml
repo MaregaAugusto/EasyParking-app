@@ -14,8 +14,8 @@
   <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
   <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
   <uses-permission android:name="android.permission.CAMERA" />
-  <application android:usesCleartextTraffic="true" android:allowBackup="false" android:debuggable="true" android:name="android.app.Application" android:label="com.grupo2.easyparking" android:icon="@drawable/logo" android:extractNativeLibs="true">
-    <activity android:configChanges="orientation|screenSize" android:icon="@drawable/logo" android:label="Easy Parking" android:theme="@style/MainTheme" android:name="crc64883d62bc89b36178.MainActivity" />
+  <application android:usesCleartextTraffic="true" android:allowBackup="false" android:debuggable="true" android:name="android.app.Application" android:label="com.grupo2.easyparking" android:icon="@drawable/eplogo" android:extractNativeLibs="true">
+    <activity android:configChanges="orientation|screenSize" android:icon="@drawable/eplogo" android:label="Easy Parking" android:theme="@style/MainTheme" android:name="crc64883d62bc89b36178.MainActivity" />
     <activity android:label="Easy Parking" android:noHistory="true" android:theme="@style/MyTheme.Splash" android:name="crc64883d62bc89b36178.SplashActivity" android:exported="true">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />

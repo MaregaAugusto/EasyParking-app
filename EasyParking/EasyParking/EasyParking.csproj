@@ -1,16 +1,18 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
+    <TargetFramework>netstandard2.1</TargetFramework>
     <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <DebugType>portable</DebugType>
     <DebugSymbols>true</DebugSymbols>
+    <WarningLevel>5</WarningLevel>
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
     <PackageReference Include="Rg.Plugins.Popup" Version="2.1.0" />
     <PackageReference Include="Syncfusion.Xamarin.Buttons" Version="20.1.0.55" />
     <PackageReference Include="Syncfusion.Xamarin.SfComboBox" Version="20.1.0.55" />
@@ -20,7 +22,7 @@
     <PackageReference Include="Syncfusion.Xamarin.SfRangeSlider" Version="20.2.0.36" />
     <PackageReference Include="Syncfusion.Xamarin.SfRating" Version="20.1.0.55" />
     <PackageReference Include="Xam.Plugin.Media" Version="5.0.1" />
-    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2401" />
+    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2515" />
     <PackageReference Include="Xamarin.Essentials" Version="1.7.3" />
   </ItemGroup>
 
@@ -61,6 +63,9 @@
     <EmbeddedResource Update="Views\Favoritos\Favoritos.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Update="Views\Generales\InternetNotAvailable.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
     <EmbeddedResource Update="Views\Generales\PopCargando.xaml">
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
@@ -83,6 +88,12 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Views\Menu\MenuContainer.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\MiCuenta\EditarNombre.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\MiCuenta\InformacionPersonal.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Views\MiCuenta\MiCuenta.xaml">
@@ -140,5 +151,14 @@
 
   <ItemGroup>
     <Folder Include="Views\PerfilDeNegocio\Tarifas\Tarifas_Inicio\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Model">
+      <HintPath>..\..\..\EasyParkingAPI\Model\bin\Release\netstandard2.1\Model.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceWebApi">
+      <HintPath>..\..\..\EasyParkingAPI\ServiceWebApi\bin\Release\netstandard2.1\ServiceWebApi.dll</HintPath>
+    </Reference>
   </ItemGroup>
 </Project>

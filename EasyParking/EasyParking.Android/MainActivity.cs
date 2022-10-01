@@ -8,7 +8,7 @@ using Rg.Plugins.Popup.Services;
 
 namespace EasyParking.Droid
 {
-    [Activity(Label = "Easy Parking", Icon = "@drawable/logo", Theme = "@style/MainTheme",
+    [Activity(Label = "Easy Parking", Icon = "@drawable/EPLogo", Theme = "@style/MainTheme",
          MainLauncher = false, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
 
     public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity

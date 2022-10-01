@@ -19,8 +19,8 @@
       <action android:name="android.media.browse.MediaBrowserService" />
     </intent>
   </queries>
-  <application android:name="android.app.Application" android:allowBackup="false" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:debuggable="true" android:extractNativeLibs="true" android:icon="@drawable/logo" android:label="com.grupo2.easyparking" android:usesCleartextTraffic="true">
-    <activity android:name="crc64883d62bc89b36178.MainActivity" android:configChanges="orientation|screenSize" android:icon="@drawable/logo" android:label="Easy Parking" android:theme="@style/MainTheme" />
+  <application android:name="android.app.Application" android:allowBackup="false" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:debuggable="true" android:extractNativeLibs="true" android:icon="@drawable/eplogo" android:label="com.grupo2.easyparking" android:usesCleartextTraffic="true">
+    <activity android:name="crc64883d62bc89b36178.MainActivity" android:configChanges="orientation|screenSize" android:icon="@drawable/eplogo" android:label="Easy Parking" android:theme="@style/MainTheme" />
     <activity android:name="crc64883d62bc89b36178.SplashActivity" android:exported="true" android:label="Easy Parking" android:noHistory="true" android:theme="@style/MyTheme.Splash">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />

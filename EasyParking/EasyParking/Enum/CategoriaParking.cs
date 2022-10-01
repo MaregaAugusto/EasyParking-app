@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace EasyParking.Enum
+﻿namespace EasyParking.Enum
 {
     public enum CategoriaParking
     {

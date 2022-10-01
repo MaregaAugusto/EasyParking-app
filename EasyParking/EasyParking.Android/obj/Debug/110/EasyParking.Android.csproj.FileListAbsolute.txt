@@ -781,7 +781,11 @@ C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking.Android\bin\Debug\c
 C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking.Android\bin\Debug\com.grupo2.easyparking-Signed.apk
 C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking.Android\bin\Debug\com.grupo2.easyparking-Signed.apk.idsig
 C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking.Android\bin\Debug\EasyParking.dll
+C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking.Android\bin\Debug\ServiceWebApi.dll
+C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking.Android\bin\Debug\Model.dll
 C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking.Android\bin\Debug\EasyParking.pdb
+C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking.Android\bin\Debug\ServiceWebApi.pdb
+C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking.Android\bin\Debug\Model.pdb
 C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking.Android\obj\Debug\110\MonoAndroid,Version=v11.0.AssemblyAttributes.cs
 C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking.Android\obj\Debug\110\build.props
 C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking.Android\obj\Debug\110\adb.props
@@ -899,6 +903,8 @@ C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking.Android\obj\Debug\1
 C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking.Android\obj\Debug\110\res\drawable\arrowpointtoright.png
 C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking.Android\obj\Debug\110\res\drawable\lock.png
 C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking.Android\obj\Debug\110\res\drawable\informacion.png
+C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking.Android\obj\Debug\110\res\drawable\logout.png
+C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking.Android\obj\Debug\110\res\drawable\messi.jpg
 C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking.Android\obj\Debug\110\uploadflags.txt
 C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking.Android\obj\Debug\110\resolvedassemblies.hash
 C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking.Android\obj\Debug\110\android\assets\EasyParking.Android.dll
@@ -910,6 +916,8 @@ C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking.Android\obj\Debug\1
 C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking.Android\obj\Debug\110\android\assets\Java.Interop.dll
 C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking.Android\obj\Debug\110\android\assets\Microsoft.CSharp.dll
 C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking.Android\obj\Debug\110\android\assets\Microsoft.CSharp.pdb
+C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking.Android\obj\Debug\110\android\assets\Model.dll
+C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking.Android\obj\Debug\110\android\assets\Model.pdb
 C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking.Android\obj\Debug\110\android\assets\Mono.Android.dll
 C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking.Android\obj\Debug\110\android\assets\Mono.Android.pdb
 C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking.Android\obj\Debug\110\android\assets\Mono.Security.dll
@@ -917,10 +925,13 @@ C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking.Android\obj\Debug\1
 C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking.Android\obj\Debug\110\android\assets\mscorlib.dll
 C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking.Android\obj\Debug\110\android\assets\mscorlib.pdb
 C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking.Android\obj\Debug\110\android\assets\netstandard.dll
+C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking.Android\obj\Debug\110\android\assets\Newtonsoft.Json.dll
 C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking.Android\obj\Debug\110\android\assets\Plugin.Media.dll
 C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking.Android\obj\Debug\110\android\assets\Plugin.Media.pdb
 C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking.Android\obj\Debug\110\android\assets\Rg.Plugins.Popup.dll
 C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking.Android\obj\Debug\110\android\assets\Rg.Plugins.Popup.pdb
+C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking.Android\obj\Debug\110\android\assets\ServiceWebApi.dll
+C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking.Android\obj\Debug\110\android\assets\ServiceWebApi.pdb
 C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking.Android\obj\Debug\110\android\assets\Syncfusion.Buttons.XForms.Android.dll
 C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking.Android\obj\Debug\110\android\assets\Syncfusion.Buttons.XForms.dll
 C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking.Android\obj\Debug\110\android\assets\Syncfusion.Core.XForms.Android.dll
@@ -1187,6 +1198,7 @@ C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking.Android\obj\Debug\1
 C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking.Android\obj\Debug\110\android\src\crc643f46942d9dd1fff9\ActivityIndicatorRenderer.java
 C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking.Android\obj\Debug\110\android\src\crc643f46942d9dd1fff9\AHorizontalScrollView.java
 C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking.Android\obj\Debug\110\android\src\crc643f46942d9dd1fff9\AndroidActivity.java
+C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking.Android\obj\Debug\110\android\src\crc643f46942d9dd1fff9\BaseCellAppCompatView.java
 C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking.Android\obj\Debug\110\android\src\crc643f46942d9dd1fff9\BaseCellView.java
 C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking.Android\obj\Debug\110\android\src\crc643f46942d9dd1fff9\BorderDrawable.java
 C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking.Android\obj\Debug\110\android\src\crc643f46942d9dd1fff9\BoxRenderer.java
@@ -1217,6 +1229,8 @@ C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking.Android\obj\Debug\1
 C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking.Android\obj\Debug\110\android\src\crc643f46942d9dd1fff9\DragAndDropGestureHandler.java
 C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking.Android\obj\Debug\110\android\src\crc643f46942d9dd1fff9\DragAndDropGestureHandler_CustomLocalStateData.java
 C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking.Android\obj\Debug\110\android\src\crc643f46942d9dd1fff9\EdgeSnapHelper.java
+C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking.Android\obj\Debug\110\android\src\crc643f46942d9dd1fff9\EditorAppCompatEditText.java
+C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking.Android\obj\Debug\110\android\src\crc643f46942d9dd1fff9\EditorAppCompatRenderer.java
 C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking.Android\obj\Debug\110\android\src\crc643f46942d9dd1fff9\EditorEditText.java
 C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking.Android\obj\Debug\110\android\src\crc643f46942d9dd1fff9\EditorRenderer.java
 C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking.Android\obj\Debug\110\android\src\crc643f46942d9dd1fff9\EditorRendererBase_1.java
@@ -1226,6 +1240,10 @@ C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking.Android\obj\Debug\1
 C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking.Android\obj\Debug\110\android\src\crc643f46942d9dd1fff9\EndSingleSnapHelper.java
 C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking.Android\obj\Debug\110\android\src\crc643f46942d9dd1fff9\EndSnapHelper.java
 C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking.Android\obj\Debug\110\android\src\crc643f46942d9dd1fff9\EntryAccessibilityDelegate.java
+C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking.Android\obj\Debug\110\android\src\crc643f46942d9dd1fff9\EntryAppCompatEditText.java
+C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking.Android\obj\Debug\110\android\src\crc643f46942d9dd1fff9\EntryAppCompatRenderer.java
+C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking.Android\obj\Debug\110\android\src\crc643f46942d9dd1fff9\EntryCellAppCompatEditText.java
+C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking.Android\obj\Debug\110\android\src\crc643f46942d9dd1fff9\EntryCellAppCompatView.java
 C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking.Android\obj\Debug\110\android\src\crc643f46942d9dd1fff9\EntryCellEditText.java
 C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking.Android\obj\Debug\110\android\src\crc643f46942d9dd1fff9\EntryCellView.java
 C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking.Android\obj\Debug\110\android\src\crc643f46942d9dd1fff9\EntryEditText.java
@@ -1239,6 +1257,9 @@ C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking.Android\obj\Debug\1
 C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking.Android\obj\Debug\110\android\src\crc643f46942d9dd1fff9\FormattedStringExtensions_TextDecorationSpan.java
 C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking.Android\obj\Debug\110\android\src\crc643f46942d9dd1fff9\FormsAnimationDrawable.java
 C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking.Android\obj\Debug\110\android\src\crc643f46942d9dd1fff9\FormsAppCompatActivity.java
+C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking.Android\obj\Debug\110\android\src\crc643f46942d9dd1fff9\FormsAppCompatEditText.java
+C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking.Android\obj\Debug\110\android\src\crc643f46942d9dd1fff9\FormsAppCompatEditTextBase.java
+C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking.Android\obj\Debug\110\android\src\crc643f46942d9dd1fff9\FormsAppCompatTextView.java
 C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking.Android\obj\Debug\110\android\src\crc643f46942d9dd1fff9\FormsApplicationActivity.java
 C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking.Android\obj\Debug\110\android\src\crc643f46942d9dd1fff9\FormsEditText.java
 C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking.Android\obj\Debug\110\android\src\crc643f46942d9dd1fff9\FormsEditTextBase.java
@@ -1294,6 +1315,7 @@ C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking.Android\obj\Debug\1
 C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking.Android\obj\Debug\110\android\src\crc643f46942d9dd1fff9\PageRenderer.java
 C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking.Android\obj\Debug\110\android\src\crc643f46942d9dd1fff9\PathRenderer.java
 C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking.Android\obj\Debug\110\android\src\crc643f46942d9dd1fff9\PathView.java
+C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking.Android\obj\Debug\110\android\src\crc643f46942d9dd1fff9\PickerAppCompatEditText.java
 C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking.Android\obj\Debug\110\android\src\crc643f46942d9dd1fff9\PickerEditText.java
 C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking.Android\obj\Debug\110\android\src\crc643f46942d9dd1fff9\PickerManager_PickerListener.java
 C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking.Android\obj\Debug\110\android\src\crc643f46942d9dd1fff9\PickerRenderer.java
@@ -1315,6 +1337,7 @@ C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking.Android\obj\Debug\1
 C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking.Android\obj\Debug\110\android\src\crc643f46942d9dd1fff9\ScrollLayoutManager.java
 C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking.Android\obj\Debug\110\android\src\crc643f46942d9dd1fff9\ScrollViewContainer.java
 C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking.Android\obj\Debug\110\android\src\crc643f46942d9dd1fff9\ScrollViewRenderer.java
+C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking.Android\obj\Debug\110\android\src\crc643f46942d9dd1fff9\SearchBarAppCompatRenderer.java
 C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking.Android\obj\Debug\110\android\src\crc643f46942d9dd1fff9\SearchBarRenderer.java
 C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking.Android\obj\Debug\110\android\src\crc643f46942d9dd1fff9\SelectableItemsViewAdapter_2.java
 C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking.Android\obj\Debug\110\android\src\crc643f46942d9dd1fff9\SelectableItemsViewRenderer_3.java
@@ -1354,12 +1377,14 @@ C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking.Android\obj\Debug\1
 C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking.Android\obj\Debug\110\android\src\crc643f46942d9dd1fff9\StructuredItemsViewAdapter_2.java
 C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking.Android\obj\Debug\110\android\src\crc643f46942d9dd1fff9\StructuredItemsViewRenderer_3.java
 C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking.Android\obj\Debug\110\android\src\crc643f46942d9dd1fff9\SwipeViewRenderer.java
+C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking.Android\obj\Debug\110\android\src\crc643f46942d9dd1fff9\SwitchCellAppCompatView.java
 C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking.Android\obj\Debug\110\android\src\crc643f46942d9dd1fff9\SwitchCellView.java
 C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking.Android\obj\Debug\110\android\src\crc643f46942d9dd1fff9\SwitchRenderer.java
 C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking.Android\obj\Debug\110\android\src\crc643f46942d9dd1fff9\TabbedRenderer.java
 C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking.Android\obj\Debug\110\android\src\crc643f46942d9dd1fff9\TableViewModelRenderer.java
 C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking.Android\obj\Debug\110\android\src\crc643f46942d9dd1fff9\TableViewRenderer.java
 C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking.Android\obj\Debug\110\android\src\crc643f46942d9dd1fff9\TemplatedItemViewHolder.java
+C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking.Android\obj\Debug\110\android\src\crc643f46942d9dd1fff9\TextCellAppCompatRenderer_TextCellAppCompatView.java
 C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking.Android\obj\Debug\110\android\src\crc643f46942d9dd1fff9\TextCellRenderer_TextCellView.java
 C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking.Android\obj\Debug\110\android\src\crc643f46942d9dd1fff9\TextViewHolder.java
 C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking.Android\obj\Debug\110\android\src\crc643f46942d9dd1fff9\TimePickerRenderer.java
@@ -1401,6 +1426,8 @@ C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking.Android\obj\Debug\1
 C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking.Android\obj\Debug\110\android\src\crc64720bb2db43a66fe9\NavigationPageRenderer_ClickListener.java
 C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking.Android\obj\Debug\110\android\src\crc64720bb2db43a66fe9\NavigationPageRenderer_Container.java
 C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking.Android\obj\Debug\110\android\src\crc64720bb2db43a66fe9\NavigationPageRenderer_DrawerMultiplexedListener.java
+C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking.Android\obj\Debug\110\android\src\crc64720bb2db43a66fe9\PickerAppCompatRenderer.java
+C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking.Android\obj\Debug\110\android\src\crc64720bb2db43a66fe9\PickerAppCompatRendererBase_1.java
 C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking.Android\obj\Debug\110\android\src\crc64720bb2db43a66fe9\PickerRenderer.java
 C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking.Android\obj\Debug\110\android\src\crc64720bb2db43a66fe9\PickerRendererBase_1.java
 C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking.Android\obj\Debug\110\android\src\crc64720bb2db43a66fe9\Platform_ModalContainer.java
@@ -1469,6 +1496,7 @@ C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking.Android\obj\Debug\1
 C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking.Android\obj\Debug\110\android\src\crc64ee486da937c010f4\ButtonRenderer.java
 C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking.Android\obj\Debug\110\android\src\crc64ee486da937c010f4\FrameRenderer.java
 C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking.Android\obj\Debug\110\android\src\crc64ee486da937c010f4\ImageRenderer.java
+C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking.Android\obj\Debug\110\android\src\crc64ee486da937c010f4\LabelAppCompatRenderer.java
 C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking.Android\obj\Debug\110\android\src\crc64ee486da937c010f4\LabelRenderer.java
 C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking.Android\obj\Debug\110\android\src\crc64eeb36180fe6023e2\GestureListener.java
 C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking.Android\obj\Debug\110\android\src\crc64eeb36180fe6023e2\SfEffectsViewRenderer.java
@@ -1589,4 +1617,4 @@ C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking.Android\obj\Debug\1
 C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking.Android\obj\Debug\110\stamp\_GenerateJavaStubs.stamp
 C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking.Android\obj\Debug\110\stamp\_GeneratePackageManagerJava.stamp
 C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking.Android\obj\Debug\110\stamp\_ResolveLibraryProjectImports.stamp
-C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking.Android\obj\Debug\110\res\drawable\logout.png
+C:\ProyectosGitHubUTN\EasyParkingApp\EasyParking\EasyParking.Android\obj\Debug\110\res\drawable\eplogo.png

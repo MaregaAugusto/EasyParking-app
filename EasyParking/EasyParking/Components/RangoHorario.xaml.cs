@@ -1,9 +1,6 @@
 ﻿using Syncfusion.XForms.ComboBox;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -81,7 +78,7 @@ namespace EasyParking.Components
         private void comboboxMinuto_Desde_ValueChanged(object sender, Syncfusion.XForms.ComboBox.ValueChangedEventArgs e)
         {
             ValueChanged_comboboxMinuto_Desde?.Invoke(this, EventArgs.Empty);
-       }
+        }
 
         private void comboboxHora_Hasta_ValueChanged(object sender, Syncfusion.XForms.ComboBox.ValueChangedEventArgs e)
         {
