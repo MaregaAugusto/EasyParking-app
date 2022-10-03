@@ -4,6 +4,7 @@ using EasyParking.Views.PerfilDeNegocio.PdN_Inicio;
 using EasyParking.Views.Reservas.MisReservas;
 using Rg.Plugins.Popup.Services;
 using System.Collections.Generic;
+using System.IO;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -27,7 +28,20 @@ namespace EasyParking.Views.Menu
         {
             InitializeComponent();
 
-            //labelNombreDeUsuario.Text = 
+           
+
+            if (App.UserInfo != null)
+            {
+                if (!string.IsNullOrEmpty(App.UserInfo.Apodo))
+                {
+                    labelNombreDeUsuario.Text = App.UserInfo.Apodo;
+                }
+                else
+                {
+                    labelNombreDeUsuario.Text = App.UserInfo.Nombre + " " + App.UserInfo.Apellido;
+                }
+            }
+
             menuList = new List<MasterPageItem>();
 
 
@@ -56,6 +70,20 @@ namespace EasyParking.Views.Menu
 
             navigationDrawerList.ItemsSource = menuList;
             Detail = new NavigationPage(pagina);
+        }
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
+
+            if (App.UserInfo.FotoDePerfil != null)
+            {
+                imagenDePerfil.Source = ImageSource.FromStream(() =>
+                {
+                    return new MemoryStream(App.UserInfo.FotoDePerfil);
+                });
+
+                imagenDePerfil.Rotation = 90;
+            }
         }
 
         private async void navigationDrawerList_ItemTapped(object sender, ItemTappedEventArgs e)

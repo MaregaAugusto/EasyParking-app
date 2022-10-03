@@ -1,6 +1,6 @@
 ﻿using EasyParking.DTO;
 using EasyParking.ViewControllers;
-using EasyParking.Views.Login;
+using Model;
 using ServiceWebApi;
 using ServiceWebApi.DTO;
 using System;
@@ -16,7 +16,10 @@ namespace EasyParking
         public static List<Modelo.Estacionamiento> Estacionamientos { get; set; } = new List<Modelo.Estacionamiento>();
         public static CloudData cloudData { get; set; } = new CloudData();
         public static WebApiAccess WebApiAccess { get; set; }
-    
+
+        public static UserInfo UserInfo { get; set; }
+
+
         public static NavigationPage _mainPage = null;
 
         public static string Username { get; set; }

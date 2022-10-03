@@ -1,11 +1,9 @@
 ﻿using Android.App;
-using Android.Content;
-using Android.Content.PM;
 using Android.OS;
 
 namespace EasyParking.Droid
 {
-    [Activity(Theme = "@style/MyTheme.Splash", Label ="Easy Parking",
+    [Activity(Theme = "@style/MyTheme.Splash", Label = "Easy Parking",
         MainLauncher = true,
         NoHistory = true)]
     public class SplashActivity : Activity

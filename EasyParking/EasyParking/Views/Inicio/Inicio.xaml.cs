@@ -18,9 +18,9 @@ namespace EasyParking.Views.Inicio
 
 
             //ahora calculo la distancia entre la posicion actual recien medida y la ultima guardada
-            Location posicion_actual = new Location(-27.4528818, -58.9786916);
-            Location posicion_ultima = new Location(-27.4552894, -58.9882253);
-            double kilometros = Location.CalculateDistance(posicion_actual, posicion_ultima, DistanceUnits.Kilometers); // resultado en kilometros
+            //Location posicion_actual = new Location(-27.4528818, -58.9786916);
+            //Location posicion_ultima = new Location(-27.4552894, -58.9882253);
+            //double kilometros = Location.CalculateDistance(posicion_actual, posicion_ultima, DistanceUnits.Kilometers); // resultado en kilometros
             lwlisado.ItemsSource = null;
             lwlisado.ItemsSource = Tools.Tools.GetEstacionamientosMock();
 

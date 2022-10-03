@@ -69,6 +69,9 @@
     <EmbeddedResource Update="Views\Generales\PopCargando.xaml">
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Update="Views\Generales\PopupEditSimpleData.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
     <EmbeddedResource Update="Views\Generales\WebViewVideos.xaml">
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>

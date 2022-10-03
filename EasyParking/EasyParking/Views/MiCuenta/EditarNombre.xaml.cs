@@ -1,10 +1,6 @@
 ﻿using Model;
 using ServiceWebApi;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -15,23 +11,30 @@ namespace EasyParking.Views.MiCuenta
     public partial class EditarNombre : ContentPage
     {
         private UserInfo _userInfo;
+        ServiceWebApi.AccountServiceWebApi02 accountServiceWebApi = new AccountServiceWebApi02(App.WebApiAccess);
+
         public EditarNombre(UserInfo userInfo)
         {
             InitializeComponent();
             _userInfo = userInfo;
             entryApellido.Text = userInfo.Apellido;
             entryNombre.Text = userInfo.Nombre;
-            //entryApodo.Text = userInfo.
+            if (!string.IsNullOrEmpty(userInfo.Apodo))
+            {
+                entryApodo.Text = userInfo.Apodo;
+            }
         }
 
         private async void btnGuardarCambios_Clicked(object sender, EventArgs e)
         {
             try
             {
-               
+
                 _userInfo.Apodo = entryApodo.Text.Trim();
 
-                AccountServiceWebApi.Update(_userInfo, App.Username, App.Password);
+                await accountServiceWebApi.Update(_userInfo);
+                Tools.Tools.Messages("Se guardaron los cambios");
+                App.UserInfo = await accountServiceWebApi.GetUserInfo(_userInfo.UserName);
             }
             catch (Exception ex)
             {

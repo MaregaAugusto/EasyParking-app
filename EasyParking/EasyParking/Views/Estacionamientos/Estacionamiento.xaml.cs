@@ -112,12 +112,12 @@ namespace EasyParking.Views.Estacionamientos
                     imageArray = memory.ToArray();
                 }
 
-                EstacionamientoImagen = ImageSource.FromStream(() =>
-                {
-                    return new MemoryStream(imageArray);
-                });
-
-                imageArray2 = imageArray;
+                EstacionamientoImagen = ImageSource.FromStream(() => //
+                {                                                    // Convierte de array de bytes a source imagen
+                    return new MemoryStream(imageArray);             //
+                });                                                  // 
+                                                                  
+                imageArray2 = imageArray;                          
 
                 // FotosLista.Add(imageArray2);
             }

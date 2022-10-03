@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             xmlns:customControls="clr-namespace:EasyParking.MenuItems" xmlns:sfavatar="clr-namespace:Syncfusion.XForms.AvatarView;assembly=Syncfusion.Core.XForms" xmlns:custom="clr-namespace:EasyParking.Custom"
+             xmlns:customControls="clr-namespace:EasyParking.MenuItems" xmlns:sfavatar="clr-namespace:Syncfusion.XForms.AvatarView;assembly=Syncfusion.Core.XForms" xmlns:custom="clr-namespace:EasyParking.Custom" xmlns:border="clr-namespace:Syncfusion.XForms.Border;assembly=Syncfusion.Core.XForms"
                   mc:Ignorable="d"
              NavigationPage.HasNavigationBar="False"           
 
@@ -42,14 +42,16 @@
 
                             <StackLayout  BackgroundColor="Transparent" Padding="10" AbsoluteLayout.LayoutBounds="0.5,0.5,1,1" AbsoluteLayout.LayoutFlags="PositionProportional,SizeProportional">
 
-                                <sfavatar:SfAvatarView ContentType="Custom"   Margin="0,20,0,0"
-                                   ImageSource="https://images2.revistafama.com/4lfcIqKctFrQiPli-JJM8Kf9MKE=/958x596/uploads/media/2021/10/07/tierno-video-bruno-mars-imita-1.jpg"
-
+                                <border:SfBorder BorderWidth="0.5" WidthRequest="100" Margin="0,20,0,0"  HeightRequest="100" HorizontalOptions="Center"  CornerRadius="50" BorderColor="Black" >
+                                    <Image       x:Name="imagenDePerfil"  Aspect="Fill"
+                                   Source="https://cdn-icons-png.flaticon.com/512/3069/3069172.png"
+                                   BackgroundColor="Transparent"
                                    VerticalOptions="Center"
                                    HorizontalOptions="Center"   
-                                   HeightRequest="100"
-                                   CornerRadius="50"
-                                   WidthRequest="100" />
+                                  
+                                 
+                                    />
+                                </border:SfBorder>
 
                                 <custom:CustomLabel x:Name="labelNombreDeUsuario"  FontSize="20" TextColor="Black" FontAttributes="Bold" MaxLines="4" HorizontalOptions="Center"/>
                             </StackLayout>

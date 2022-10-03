@@ -2,7 +2,6 @@
 using EasyParking.Views.Generales;
 using EasyParking.Views.Menu;
 using Rg.Plugins.Popup.Services;
-using ServiceWebApi;
 using ServiceWebApi.DTO;
 using System;
 using Xamarin.Forms;
@@ -33,7 +32,7 @@ namespace EasyParking.Views.Login
                     username = entryEmail.Text.Trim();
                     password = entryContraseña.Text.Trim();
 
-                    MsjResultadoDeAccion msjResultadoDeAccion = await Account.Account.LoginAPI(App.cloudData.URLDeAPI,username, password);
+                    MsjResultadoDeAccion msjResultadoDeAccion = await Account.Account.LoginAPI(App.cloudData.URLDeAPI, username, password);
 
                     if (!msjResultadoDeAccion.Error) // LOGIN EXITOSO
                     {
@@ -54,6 +53,7 @@ namespace EasyParking.Views.Login
                         Application.Current.Properties.Add("ContraseñaDeAPI", password);
                         await Application.Current.SavePropertiesAsync();
 
+                        App.UserInfo = await Account.Account.GetUserInfo(App.cloudData.UsuarioDeAPI);  // Obtengo los datos del usuario para trabajar en la app
 
                         Application.Current.MainPage = new NavigationPage(new MenuContainer(new Inicio.Inicio()));
 
@@ -80,7 +80,7 @@ namespace EasyParking.Views.Login
             }
             finally
             {
-                 await PopupNavigation.Instance.PopAsync();
+                await PopupNavigation.Instance.PopAsync();
             }
 
         }

@@ -5,8 +5,8 @@
     Changes to this file may cause incorrect behavior and will be lost if
     the contents are regenerated.
     -->
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="com.grupo2.easyparking" android:installLocation="auto">
-  <uses-sdk android:minSdkVersion="21" android:targetSdkVersion="30" />
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="com.grupo2.easyparking" android:installLocation="internalOnly">
+  <uses-sdk android:minSdkVersion="21" android:targetSdkVersion="29" />
   <uses-permission android:name="android.permission.INTERNET" />
   <uses-feature android:name="android.hardware.camera" android:required="false" />
   <uses-feature android:name="android.hardware.camera.autofocus" android:required="false" />
@@ -14,7 +14,7 @@
   <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
   <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
   <uses-permission android:name="android.permission.CAMERA" />
-  <application android:usesCleartextTraffic="true" android:allowBackup="false" android:debuggable="true" android:name="androidx.multidex.MultiDexApplication" android:label="com.grupo2.easyparking" android:icon="@drawable/eplogo" android:extractNativeLibs="true">
+  <application android:usesCleartextTraffic="true" android:allowBackup="false" android:debuggable="true" android:label="EasyParking" android:icon="@drawable/eplogo" android:name="androidx.multidex.MultiDexApplication" android:extractNativeLibs="true">
     <activity android:configChanges="orientation|screenSize" android:icon="@drawable/eplogo" android:label="Easy Parking" android:theme="@style/MainTheme" android:name="crc64883d62bc89b36178.MainActivity" />
     <activity android:label="Easy Parking" android:noHistory="true" android:theme="@style/MyTheme.Splash" android:name="crc64883d62bc89b36178.SplashActivity" android:exported="true">
       <intent-filter>

@@ -1,8 +1,7 @@
-﻿using ServiceWebApi;
+﻿using Model;
+using ServiceWebApi;
 using ServiceWebApi.DTO;
 using System;
-using System.Collections.Generic;
-using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Essentials;
 using Xamarin.Forms;
@@ -21,7 +20,7 @@ namespace EasyParking.Account
                 if (Connectivity.NetworkAccess == NetworkAccess.Internet)
                 {
                     App.WebApiAccess = await WebApiAccess.GetAccessAsync(url, userName, password);
-                   // var webapiaccess = await WebApiAccess.GetAccessAsync("http://40.118.242.96:12595", "cristiano@hotmail.com", "cristiano123");
+                    // var webapiaccess = await WebApiAccess.GetAccessAsync("http://40.118.242.96:12595", "cristiano@hotmail.com", "cristiano123");
 
                     if (!String.IsNullOrWhiteSpace(App.WebApiAccess.Token)) // ¿HAY TOKEN? SI
                     {
@@ -95,5 +94,18 @@ namespace EasyParking.Account
             }
         }
 
+        public static async Task<UserInfo> GetUserInfo(string username)
+        {
+            try
+            {
+                ServiceWebApi.AccountServiceWebApi02 accountServiceWebApi = new AccountServiceWebApi02(App.WebApiAccess);
+
+                return await accountServiceWebApi.GetUserInfo(username);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
     }
 }

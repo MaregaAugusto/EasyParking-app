@@ -1,9 +1,8 @@
-﻿using System;
-
+﻿
 using Android.App;
 using Android.Content.PM;
-using Android.Runtime;
 using Android.OS;
+using Android.Runtime;
 using Rg.Plugins.Popup.Services;
 
 namespace EasyParking.Droid
@@ -23,7 +22,7 @@ namespace EasyParking.Droid
 
             LoadApplication(new App());
 
-           // Window.SetStatusBarColor(Android.Graphics.Color.ParseColor("#FFCC3D"));
+            // Window.SetStatusBarColor(Android.Graphics.Color.ParseColor("#FFCC3D"));
             //Window.SetNavigationBarColor(Android.Graphics.Color.ParseColor("#FFCC3D"));
             //Window.SetBackgroundDrawableResource(0);
         }

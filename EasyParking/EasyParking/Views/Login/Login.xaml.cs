@@ -1,4 +1,6 @@
-﻿using System;
+﻿using EasyParking.Views.Generales;
+using Rg.Plugins.Popup.Services;
+using System;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -20,12 +22,16 @@ namespace EasyParking.Views.Login
 
         private async void btnIniciarSesion_Clicked(object sender, EventArgs e)
         {
+            await PopupNavigation.Instance.PushAsync(new PopCargando());
             await Navigation.PushAsync(new IniciarSesion());
+            await PopupNavigation.Instance.PopAsync();
         }
 
         private async void btnRegistrarme_Clicked(object sender, EventArgs e)
         {
+            await PopupNavigation.Instance.PushAsync(new PopCargando());
             await Navigation.PushAsync(new Registrarme());
+            await PopupNavigation.Instance.PopAsync();
         }
     }
 }

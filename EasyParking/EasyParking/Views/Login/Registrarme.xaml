@@ -57,9 +57,25 @@
 
                 </StackLayout>
 
+
+
+                <inputLayout:SfTextInputLayout Grid.Row="0"  Grid.Column="1" ContainerType="Outlined" Hint="Genero" Margin="0,0,0,0" HorizontalOptions="FillAndExpand" BackgroundColor="Transparent" ContainerBackgroundColor="Transparent"   VerticalOptions="Center"  >
+                    <combobox:SfComboBox HeightRequest="50" Margin="15,0,15,0" TextSize="16" SelectionChanged="comboBoxTipoDeSexo_SelectionChanged" BackgroundColor="Transparent"  x:Name="comboBoxTipoDeSexo" MaximumDropDownHeight="300" IsEditableMode="false">
+                        <combobox:SfComboBox.ComboBoxSource>
+                            <ListCollection:List x:TypeArguments="x:String">
+                            </ListCollection:List>
+                        </combobox:SfComboBox.ComboBoxSource>
+                    </combobox:SfComboBox>
+                </inputLayout:SfTextInputLayout>
+
                 <inputLayout:SfTextInputLayout  ContainerType="Outlined" Hint="Teléfono"      BackgroundColor="Transparent" ContainerBackgroundColor="Transparent"   HorizontalOptions="FillAndExpand" VerticalOptions="Center"  HelperText="Obligatorio *">
                     <custom:CustomEntry  x:Name="entryTelefono" ClearButtonVisibility="WhileEditing" MaxLength="10"   Keyboard="Numeric" HorizontalOptions="FillAndExpand" />
                 </inputLayout:SfTextInputLayout>
+
+                <inputLayout:SfTextInputLayout  ContainerType="Outlined" Hint="Fecha de nacimiento" BackgroundColor="Transparent" ContainerBackgroundColor="Transparent" HorizontalOptions="FillAndExpand" VerticalOptions="Center" HelperText="Obligatorio *">
+                    <DatePicker  x:Name="datePickerFechaDeNacimiento"/>
+                </inputLayout:SfTextInputLayout>
+                
 
             </StackLayout>
 

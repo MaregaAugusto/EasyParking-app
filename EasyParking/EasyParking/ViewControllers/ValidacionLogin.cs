@@ -37,7 +37,7 @@ namespace EasyParking.ViewControllers
                     else // ¿HAY CREDENCIALES GUARDADAS PREVIAMENTE? SI
                     {
                         // INTENTO LOGEARLO 
-                        MsjResultadoDeAccion msjResultado = await Account.Account.LoginAPI(App.cloudData.URLDeAPI , App.cloudData.UsuarioDeAPI, App.cloudData.ContraseñaDeAPI);
+                        MsjResultadoDeAccion msjResultado = await Account.Account.LoginAPI(App.cloudData.URLDeAPI, App.cloudData.UsuarioDeAPI, App.cloudData.ContraseñaDeAPI);
 
                         if (msjResultado.Error) // SI HUBO ERROR LO NOTIFICO CON LA PAGINA DE ERROR
                         {
@@ -45,6 +45,7 @@ namespace EasyParking.ViewControllers
                         }
                         else // NO HUBO ERROR, LO MANDO AL INICIO, TODO OK
                         {
+                            App.UserInfo = await Account.Account.GetUserInfo(App.cloudData.UsuarioDeAPI); // Obtengo los datos del usuario para trabajar en la app
                             App._mainPage = new NavigationPage(new MenuContainer(new Inicio()));
                         }
                     }

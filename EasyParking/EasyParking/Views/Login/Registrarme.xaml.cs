@@ -14,6 +14,7 @@ namespace EasyParking.Views.Login
     public partial class Registrarme : ContentPage
     {
         TipoDeDocumento tipoDeDocumento = TipoDeDocumento.NONE;
+        TipoDeSexo tipoDeSexo = TipoDeSexo.NONE;
 
         public Registrarme()
         {
@@ -21,6 +22,9 @@ namespace EasyParking.Views.Login
             comboBoxTipoDeDocumento.Text = "DNI";  // Por defecto se pone a DNI como primera opcion.
             tipoDeDocumento = TipoDeDocumento.DNI; // 
             CargarTipoDeDocumentos();
+            comboBoxTipoDeSexo.Text = "HOMBRE";  // Por defecto se pone a HOMBRE como primera opcion.
+            tipoDeSexo = TipoDeSexo.HOMBRE; // CargarTipoDeDocumentos();
+            CargarTipoDeSexo();
         }
 
         public void CargarTipoDeDocumentos()
@@ -38,6 +42,21 @@ namespace EasyParking.Views.Login
             comboBoxTipoDeDocumento.DataSource = ListaTipoDeDocumentos;
         }
 
+        public void CargarTipoDeSexo()
+        {
+            List<string> ListaTipoDeSexo = new List<string>();
+
+            foreach (var item in System.Enum.GetValues(typeof(TipoDeSexo)))
+            {
+                if (item.ToString() != TipoDeSexo.NONE.ToString())
+                {
+                    ListaTipoDeSexo.Add(item.ToString());
+
+                }
+            }
+            comboBoxTipoDeSexo.DataSource = ListaTipoDeSexo;
+        }
+
 
         private async void btnRegistrarme_Clicked(object sender, EventArgs e)
         {
@@ -51,12 +70,13 @@ namespace EasyParking.Views.Login
                 userInfo.Email = entryEmail.Text.ToLower();
                 userInfo.NumeroDeDocumento = entryDNI.Text;
                 userInfo.TipoDeDocumento = tipoDeDocumento;
+                userInfo.Sexo = tipoDeSexo;
                 userInfo.Telefono = entryTelefono.Text;
                 userInfo.Password = entryContraseña.Text;
+                userInfo.FechaDeNacimiento = new DateTime(datePickerFechaDeNacimiento.Date.Year, datePickerFechaDeNacimiento.Date.Month, datePickerFechaDeNacimiento.Date.Day);
+                ServiceWebApi.AccountServiceWebApi02 accountServiceWebApi = new AccountServiceWebApi02(App.WebApiAccess);
 
-                await PopupNavigation.Instance.PushAsync(new PopCargando());
-                AccountServiceWebApi.CreateUser(userInfo);
-
+                await WebApiAccess.CreateUserAsync(App.cloudData.URLDeAPI, userInfo);
                 await PopupNavigation.Instance.PopAsync();
                 await Navigation.PushAsync(new IniciarSesion());
                 DisplayAlert("Registro exitoso", "Ya puede logearse", "Entendido");
@@ -72,6 +92,11 @@ namespace EasyParking.Views.Login
         private void comboBoxTipoDeDocumento_SelectionChanged(object sender, Syncfusion.XForms.ComboBox.SelectionChangedEventArgs e)
         {
             tipoDeDocumento = (TipoDeDocumento)System.Enum.Parse(typeof(TipoDeDocumento), e.Value.ToString());
+        }
+
+        private void comboBoxTipoDeSexo_SelectionChanged(object sender, Syncfusion.XForms.ComboBox.SelectionChangedEventArgs e)
+        {
+            tipoDeSexo = (TipoDeSexo)System.Enum.Parse(typeof(TipoDeSexo), e.Value.ToString());
         }
     }
 }
